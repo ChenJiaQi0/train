@@ -2287,3 +2287,311 @@ Caused by: java.lang.ClassNotFoundException: top.chen.train.member.service.Membe
 2023-11-20 18:41:02.874 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2023-11-20 18:41:02.874 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
 2023-11-20 18:41:02.874 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-20 18:41:50.016 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-11-20 18:41:50.045 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22328 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-20 18:41:50.046 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-20 18:41:50.080 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-20 18:41:50.081 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-20 18:41:50.552 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6a98a533-e10f-3bbf-a0fe-c5f81fe42af7
+2023-11-20 18:41:50.975 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-20 18:41:50.982 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:41:50.982 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-20 18:41:50.983 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-20 18:41:51.020 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-20 18:41:51.021 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 940 ms
+2023-11-20 18:41:51.538 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-20 18:41:51.779 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:41:51.791 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-20 18:41:51.986 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.517 seconds (process running for 2.93)
+2023-11-20 18:41:51.989 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-20 18:41:51.989 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-20 18:43:03.788 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-20 18:43:03.788 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-20 18:43:03.789 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-11-20 18:43:03.846 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700476983838ctA  [0;39m ------------- 开始 -------------
+2023-11-20 18:43:03.846 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700476983838ctA  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
+2023-11-20 18:43:03.846 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700476983838ctA  [0;39m 类名方法: top.chen.train.member.controller.MemberController.sendCode
+2023-11-20 18:43:03.848 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700476983838ctA  [0;39m 远程地址: 127.0.0.1
+2023-11-20 18:43:03.911 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700476983838ctA  [0;39m 请求参数: [{"mobile":"13951905171"}]
+2023-11-20 18:43:03.943 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1700476983838ctA  [0;39m HikariPool-1 - Starting...
+2023-11-20 18:43:04.240 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1700476983838ctA  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1084696c
+2023-11-20 18:43:04.242 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1700476983838ctA  [0;39m HikariPool-1 - Start completed.
+2023-11-20 18:43:04.246 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700476983838ctA  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-20 18:43:04.261 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700476983838ctA  [0;39m ==> Parameters: 13951905171(String)
+2023-11-20 18:43:04.277 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1700476983838ctA  [0;39m <==    Columns: id, mobile
+2023-11-20 18:43:04.277 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1700476983838ctA  [0;39m <==        Row: 1, 13951905171
+2023-11-20 18:43:04.278 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700476983838ctA  [0;39m <==      Total: 1
+2023-11-20 18:43:04.286 INFO  top.chen.train.member.service.MemberService       :42   [32m1700476983838ctA  [0;39m 手机号存在，不插入记录
+2023-11-20 18:43:04.286 INFO  top.chen.train.member.service.MemberService       :46   [32m1700476983838ctA  [0;39m 生成验证码：8888
+2023-11-20 18:43:04.286 INFO  top.chen.train.member.service.MemberService       :48   [32m1700476983838ctA  [0;39m 保存短信记录表
+2023-11-20 18:43:04.286 INFO  top.chen.train.member.service.MemberService       :50   [32m1700476983838ctA  [0;39m 对接短信通道
+2023-11-20 18:43:04.289 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700476983838ctA  [0;39m 返回结果: {"success":true}
+2023-11-20 18:43:04.290 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700476983838ctA  [0;39m ------------- 结束 耗时：452 ms -------------
+2023-11-20 18:45:03.822 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-20 18:45:03.836 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:45:03.836 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-20 18:45:03.836 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-20 18:45:03.841 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-11-20 18:45:03.842 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:45:03.843 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:45:03.845 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-11-20 18:45:03.851 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-11-20 18:45:04.087 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22328 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-20 18:45:04.089 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-20 18:45:04.200 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6a98a533-e10f-3bbf-a0fe-c5f81fe42af7
+2023-11-20 18:45:04.252 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-20 18:45:04.253 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:45:04.253 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-20 18:45:04.253 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-20 18:45:04.267 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-20 18:45:04.267 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 177 ms
+2023-11-20 18:45:04.444 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-20 18:45:04.644 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:45:04.652 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-20 18:45:04.826 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 0.948 seconds (process running for 195.77)
+2023-11-20 18:45:04.828 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-20 18:45:04.828 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-20 18:45:04.828 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-20 18:46:13.784 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2023-11-20 18:46:13.814 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:46:13.815 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-20 18:46:13.816 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:46:13.816 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:46:14.038 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22328 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-20 18:46:14.038 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-20 18:46:14.137 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6a98a533-e10f-3bbf-a0fe-c5f81fe42af7
+2023-11-20 18:46:14.176 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-20 18:46:14.176 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:46:14.177 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-20 18:46:14.177 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-20 18:46:14.190 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-20 18:46:14.191 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 151 ms
+2023-11-20 18:46:14.343 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-20 18:46:14.532 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:46:14.534 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-20 18:46:14.712 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 0.868 seconds (process running for 265.657)
+2023-11-20 18:46:14.713 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-20 18:46:14.714 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-20 18:46:14.714 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-20 18:46:49.171 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2023-11-20 18:46:49.201 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:46:49.201 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-20 18:46:49.202 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:46:49.203 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:46:49.456 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22328 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-20 18:46:49.456 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-20 18:46:49.575 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6a98a533-e10f-3bbf-a0fe-c5f81fe42af7
+2023-11-20 18:46:49.619 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-20 18:46:49.619 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:46:49.619 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-20 18:46:49.619 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-20 18:46:49.628 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-20 18:46:49.628 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 171 ms
+2023-11-20 18:46:49.787 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-20 18:46:50.005 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:46:50.011 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-20 18:46:50.193 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 0.96 seconds (process running for 301.137)
+2023-11-20 18:46:50.194 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-20 18:46:50.194 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-20 18:46:50.195 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-20 18:47:52.020 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-11-20 18:47:52.050 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:47:52.050 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-20 18:47:52.051 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:47:52.052 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:47:52.276 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22328 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-20 18:47:52.276 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-20 18:47:52.354 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=61f150f2-95e7-3052-abcc-136669e9897c
+2023-11-20 18:47:52.389 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-20 18:47:52.390 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:47:52.390 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-20 18:47:52.390 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-20 18:47:52.406 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-20 18:47:52.406 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 128 ms
+2023-11-20 18:47:52.414 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberController' defined in file [D:\program\train\member\target\classes\top\chen\train\member\controller\MemberController.class]: Post-processing of merged bean definition failed
+2023-11-20 18:47:52.415 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-20 18:47:52.418 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-20 18:47:52.431 ERROR org.springframework.boot.SpringApplication        :820  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberController' defined in file [D:\program\train\member\target\classes\top\chen\train\member\controller\MemberController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at top.chen.train.member.config.MemberApplication.main(MemberApplication.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [top.chen.train.member.controller.MemberController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@af73881]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:740)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:672)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:340)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:277)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1082)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: top/chen/train/member/service/MemberService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:735)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: top.chen.train.member.service.MemberService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 28 common frames omitted
+2023-11-20 18:51:22.833 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22328 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-20 18:51:22.833 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-20 18:51:22.933 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6a98a533-e10f-3bbf-a0fe-c5f81fe42af7
+2023-11-20 18:51:22.980 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-20 18:51:22.981 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:51:22.981 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-20 18:51:22.981 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-20 18:51:22.989 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-20 18:51:22.989 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 154 ms
+2023-11-20 18:51:23.144 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-20 18:51:23.341 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:51:23.344 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-20 18:51:23.540 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 0.923 seconds (process running for 574.484)
+2023-11-20 18:51:23.541 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-20 18:51:23.542 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-20 18:51:23.542 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-20 18:51:36.723 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-11-20 18:51:36.734 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:51:36.734 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-20 18:51:36.735 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:51:36.736 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:51:36.975 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22328 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-20 18:51:36.975 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-20 18:51:37.064 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6a98a533-e10f-3bbf-a0fe-c5f81fe42af7
+2023-11-20 18:51:37.107 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-20 18:51:37.108 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:51:37.108 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-20 18:51:37.108 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-20 18:51:37.122 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-20 18:51:37.122 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 145 ms
+2023-11-20 18:51:37.278 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-20 18:51:37.485 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:51:37.492 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-20 18:51:37.691 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 0.932 seconds (process running for 588.636)
+2023-11-20 18:51:37.692 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-20 18:51:37.692 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-20 18:51:37.692 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-20 18:51:38.696 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-20 18:51:38.713 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:51:38.713 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-20 18:51:38.714 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:51:38.715 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:51:38.951 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22328 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-20 18:51:38.951 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-20 18:51:39.024 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6a98a533-e10f-3bbf-a0fe-c5f81fe42af7
+2023-11-20 18:51:39.065 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-20 18:51:39.065 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:51:39.065 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-20 18:51:39.065 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-20 18:51:39.078 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-20 18:51:39.078 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 126 ms
+2023-11-20 18:51:39.222 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-20 18:51:39.434 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:51:39.442 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-20 18:51:39.634 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 0.892 seconds (process running for 590.578)
+2023-11-20 18:51:39.634 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-20 18:51:39.635 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-20 18:51:39.635 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-20 18:52:32.696 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-11-20 18:52:32.727 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:52:32.727 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-20 18:52:32.728 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:52:32.729 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:52:32.971 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22328 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-20 18:52:32.971 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-20 18:52:33.051 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6a98a533-e10f-3bbf-a0fe-c5f81fe42af7
+2023-11-20 18:52:33.090 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-20 18:52:33.091 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:52:33.091 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-20 18:52:33.091 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-20 18:52:33.105 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-20 18:52:33.106 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 134 ms
+2023-11-20 18:52:33.315 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-20 18:52:33.537 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:52:33.538 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-20 18:52:33.744 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 0.99 seconds (process running for 644.688)
+2023-11-20 18:52:33.744 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-20 18:52:33.745 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-20 18:52:33.745 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-20 18:52:51.935 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-20 18:52:51.967 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:52:51.967 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-20 18:52:51.968 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:52:51.969 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:52:52.233 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22328 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-20 18:52:52.233 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-20 18:52:52.329 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6a98a533-e10f-3bbf-a0fe-c5f81fe42af7
+2023-11-20 18:52:52.371 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-20 18:52:52.372 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:52:52.372 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-20 18:52:52.372 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-20 18:52:52.379 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-20 18:52:52.379 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 145 ms
+2023-11-20 18:52:52.536 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-20 18:52:52.741 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-20 18:52:52.742 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-20 18:52:52.955 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 0.959 seconds (process running for 663.899)
+2023-11-20 18:52:52.956 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-20 18:52:52.956 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-20 18:52:52.956 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-20 18:53:33.361 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-20 18:53:33.361 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-20 18:53:33.362 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-11-20 18:53:33.368 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m170047761336692S  [0;39m ------------- 开始 -------------
+2023-11-20 18:53:33.368 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m170047761336692S  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-11-20 18:53:33.368 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m170047761336692S  [0;39m 类名方法: top.chen.train.member.controller.MemberController.login
+2023-11-20 18:53:33.368 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m170047761336692S  [0;39m 远程地址: 127.0.0.1
+2023-11-20 18:53:33.369 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m170047761336692S  [0;39m 请求参数: [{"code":"8888","mobile":"13951905172"}]
+2023-11-20 18:53:33.370 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m170047761336692S  [0;39m HikariPool-2 - Starting...
+2023-11-20 18:53:33.381 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m170047761336692S  [0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24699694
+2023-11-20 18:53:33.381 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m170047761336692S  [0;39m HikariPool-2 - Start completed.
+2023-11-20 18:53:33.381 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m170047761336692S  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-20 18:53:33.381 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m170047761336692S  [0;39m ==> Parameters: 13951905172(String)
+2023-11-20 18:53:33.382 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m170047761336692S  [0;39m <==      Total: 0
+2023-11-20 18:53:33.385 ERROR t.c.t.common.controller.ControllerExceptionHandler:46   [32m170047761336692S  [0;39m 业务异常：{}请先获取短信验证码
+2023-11-20 18:53:33.387 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m170047761336692S  [0;39m Resolved [top.chen.train.common.exception.BusinessException]
+2023-11-20 18:54:03.829 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m170047764382858Q  [0;39m ------------- 开始 -------------
+2023-11-20 18:54:03.829 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m170047764382858Q  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-11-20 18:54:03.829 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m170047764382858Q  [0;39m 类名方法: top.chen.train.member.controller.MemberController.login
+2023-11-20 18:54:03.829 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m170047764382858Q  [0;39m 远程地址: 127.0.0.1
+2023-11-20 18:54:03.829 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m170047764382858Q  [0;39m 请求参数: [{"code":"8888","mobile":"13951905171"}]
+2023-11-20 18:54:03.830 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m170047764382858Q  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-20 18:54:03.830 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m170047764382858Q  [0;39m ==> Parameters: 13951905171(String)
+2023-11-20 18:54:03.831 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m170047764382858Q  [0;39m <==    Columns: id, mobile
+2023-11-20 18:54:03.831 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m170047764382858Q  [0;39m <==        Row: 1, 13951905171
+2023-11-20 18:54:03.831 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m170047764382858Q  [0;39m <==      Total: 1
+2023-11-20 18:54:03.862 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m170047764382858Q  [0;39m 返回结果: {"content":{"id":1,"mobile":"13951905171"},"success":true}
+2023-11-20 18:54:03.862 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m170047764382858Q  [0;39m ------------- 结束 耗时：34 ms -------------

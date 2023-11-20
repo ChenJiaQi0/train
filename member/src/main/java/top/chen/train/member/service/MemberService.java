@@ -1,6 +1,8 @@
 package top.chen.train.member.service;
 
+import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.util.ObjectUtil;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -10,8 +12,10 @@ import top.chen.train.common.util.SnowUtil;
 import top.chen.train.member.domain.Member;
 import top.chen.train.member.domain.MemberExample;
 import top.chen.train.member.mapper.MemberMapper;
+import top.chen.train.member.req.MemberLoginReq;
 import top.chen.train.member.req.MemberRegisterReq;
 import top.chen.train.member.req.MemberSendCodeReq;
+import top.chen.train.member.resp.MemberLoginResp;
 
 import java.util.List;
 
@@ -25,6 +29,42 @@ import java.util.List;
 public class MemberService {
     @Resource
     private MemberMapper memberMapper;
+
+    /**
+     * 登录方法
+     * @param req
+     * @return
+     */
+    public MemberLoginResp login(MemberLoginReq req) {
+        String mobile = req.getMobile();
+        String code = req.getCode();
+        Member memberDB = selectByMobile(mobile);
+        // 如果手机号不存在，则插入一条记录
+        if (ObjectUtil.isNull(memberDB)) {
+            throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_NOT_EXIST);
+        }
+        // 校验短信验证码
+        if (!"8888".equals(code)) {
+            throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_CODE_ERROR);
+        }
+        return BeanUtil.copyProperties(memberDB, MemberLoginResp.class);
+    }
+
+    /**
+     * 根据手机号查询会员
+     * @param mobile
+     * @return
+     */
+    private Member selectByMobile(String mobile) {
+        MemberExample memberExample = new MemberExample();
+        memberExample.createCriteria().andMobileEqualTo(mobile);
+        List<Member> list = memberMapper.selectByExample(memberExample);
+        if (CollUtil.isEmpty(list)) {
+            return null;
+        } else {
+            return list.get(0);
+        }
+    }
 
     public void sendCode(MemberSendCodeReq req) {
         String mobile = req.getMobile();
