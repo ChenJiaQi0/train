@@ -43,3 +43,33 @@ Caused by: java.lang.ClassNotFoundException: com.alibaba.fastjson.serializer.Ser
 	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
 	... 28 common frames omitted
+2023-11-20 15:48:37.398 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'top.chen.train.member.mapper.MemberMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'top.chen.train.member.mapper.MemberMapper' in your configuration.
+
+2023-11-20 15:49:31.343 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'top.chen.train.member.mapper.MemberMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'top.chen.train.member.mapper.MemberMapper' in your configuration.
+
