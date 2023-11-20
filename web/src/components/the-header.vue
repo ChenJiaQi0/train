@@ -1,9 +1,10 @@
 <template>
   <a-layout-header class="header">
-    <div class="logo">
-      您好：{{ member.mobile }}
-      <router-link to="/login">退出登录</router-link>
-    </div>
+    <div class="logo" />
+      <div style="float: right; color: white">
+        您好：{{ member.mobile }}
+        <router-link to="/login">退出登录</router-link>
+      </div>
     <a-menu
       v-model:selectedKeys="selectedKeys1"
       theme="dark"
@@ -26,7 +27,4 @@ const selectedKeys1 = ref(['2'])
 </script>
 
 <style scoped>
-.logo {
-  color: #fff;
-}
 </style>
