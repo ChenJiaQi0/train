@@ -2704,3 +2704,17 @@ Caused by: java.lang.ClassNotFoundException: top.chen.train.member.service.Membe
 2023-11-20 19:37:49.983 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700480269977QOD  [0;39m <==      Total: 1
 2023-11-20 19:37:49.983 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700480269977QOD  [0;39m 返回结果: {"content":{"id":1726563917540495360,"mobile":"13000000000"},"success":true}
 2023-11-20 19:37:49.984 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700480269977QOD  [0;39m ------------- 结束 耗时：7 ms -------------
+2023-11-20 19:41:23.165 ERROR t.c.t.common.controller.ControllerExceptionHandler:31   [32m                  [0;39m 校验异常：{}【短信验证码】不能为空
+2023-11-20 19:41:23.168 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public top.chen.train.common.resp.CommonResp<top.chen.train.member.resp.MemberLoginResp> top.chen.train.member.controller.MemberController.login(top.chen.train.member.req.MemberLoginReq): [Field error in object 'memberLoginReq' on field 'code': rejected value []; codes [NotBlank.memberLoginReq.code,NotBlank.code,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberLoginReq.code,code]; arguments []; default message [code]]; default message [【短信验证码】不能为空]] ]
+2023-11-20 19:41:30.817 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700480490817c5P  [0;39m ------------- 开始 -------------
+2023-11-20 19:41:30.818 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700480490817c5P  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-11-20 19:41:30.818 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700480490817c5P  [0;39m 类名方法: top.chen.train.member.controller.MemberController.login
+2023-11-20 19:41:30.818 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700480490817c5P  [0;39m 远程地址: 127.0.0.1
+2023-11-20 19:41:30.818 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700480490817c5P  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
+2023-11-20 19:41:30.819 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700480490817c5P  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-20 19:41:30.820 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700480490817c5P  [0;39m ==> Parameters: 13000000000(String)
+2023-11-20 19:41:30.821 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1700480490817c5P  [0;39m <==    Columns: id, mobile
+2023-11-20 19:41:30.821 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1700480490817c5P  [0;39m <==        Row: 1726563917540495360, 13000000000
+2023-11-20 19:41:30.821 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700480490817c5P  [0;39m <==      Total: 1
+2023-11-20 19:41:30.821 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700480490817c5P  [0;39m 返回结果: {"content":{"id":1726563917540495360,"mobile":"13000000000"},"success":true}
+2023-11-20 19:41:30.821 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700480490817c5P  [0;39m ------------- 结束 耗时：4 ms -------------

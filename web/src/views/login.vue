@@ -57,7 +57,7 @@ const onFinishFailed = (errorInfo) => {
 
 const sendCode = () => {
   axios
-    .post('http://localhost:8000/member/member/send-code', {
+    .post('/member/member/send-code', {
       mobile: loginForm.mobile
     })
     .then((response) => {
@@ -73,7 +73,7 @@ const sendCode = () => {
 }
 
 const login = () => {
-  axios.post('http://localhost:8000/member/member/login', loginForm).then((response) => {
+  axios.post('/member/member/login', loginForm).then((response) => {
     const data = response.data
     if (data.success) {
       notification.success({ description: '登录成功!' })
