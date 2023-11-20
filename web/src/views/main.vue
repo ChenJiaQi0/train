@@ -23,12 +23,12 @@
 import TheHeaderView from '@/components/the-header'
 import TheSideView from '@/components/the-sider'
 import { ref } from 'vue'
-import axios from 'axios'
+// import axios from 'axios'
 
 const count = ref(0)
-axios.get('/member/member/count').then((response) => {
-  count.value = response.data
-})
+// axios.get('/member/member/count').then((response) => {
+//   count.value = response.data
+// })
 </script>
 
 <style scoped>
