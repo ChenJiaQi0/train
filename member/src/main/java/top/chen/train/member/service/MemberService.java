@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import top.chen.train.member.domain.Member;
 import top.chen.train.member.domain.MemberExample;
 import top.chen.train.member.mapper.MemberMapper;
+import top.chen.train.member.req.MemberRegisterReq;
 
 import java.util.List;
 
@@ -19,7 +20,8 @@ public class MemberService {
     @Resource
     private MemberMapper memberMapper;
 
-    public long register(String mobile) {
+    public long register(MemberRegisterReq req) {
+        String mobile = req.getMobile();
         MemberExample memberExample = new MemberExample();
         memberExample.createCriteria().andMobileEqualTo(mobile);
         List<Member> list = memberMapper.selectByExample(memberExample);
