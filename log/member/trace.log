@@ -2597,3 +2597,62 @@ Caused by: java.lang.ClassNotFoundException: top.chen.train.member.service.Membe
 2023-11-20 18:54:03.862 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m170047764382858Q  [0;39m ------------- 结束 耗时：34 ms -------------
 2023-11-20 19:29:57.381 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
 2023-11-20 19:29:57.384 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2023-11-20 19:30:01.856 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-11-20 19:30:01.884 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 24248 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-20 19:30:01.884 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-20 19:30:01.921 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-20 19:30:01.921 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-20 19:30:02.418 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6a98a533-e10f-3bbf-a0fe-c5f81fe42af7
+2023-11-20 19:30:02.838 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-20 19:30:02.845 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-20 19:30:02.846 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-20 19:30:02.846 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-20 19:30:02.883 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-20 19:30:02.883 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 961 ms
+2023-11-20 19:30:03.384 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-20 19:30:03.627 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-20 19:30:03.638 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-20 19:30:03.823 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.482 seconds (process running for 2.839)
+2023-11-20 19:30:03.825 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-20 19:30:03.826 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-20 19:30:56.237 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-20 19:30:56.237 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-20 19:30:56.238 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-11-20 19:30:56.332 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700479856328Fs4  [0;39m ------------- 开始 -------------
+2023-11-20 19:30:56.333 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700479856328Fs4  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
+2023-11-20 19:30:56.333 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700479856328Fs4  [0;39m 类名方法: top.chen.train.member.controller.MemberController.sendCode
+2023-11-20 19:30:56.333 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700479856328Fs4  [0;39m 远程地址: 127.0.0.1
+2023-11-20 19:30:56.374 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700479856328Fs4  [0;39m 请求参数: [{"mobile":"13951905171"}]
+2023-11-20 19:30:56.401 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1700479856328Fs4  [0;39m HikariPool-1 - Starting...
+2023-11-20 19:30:56.557 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1700479856328Fs4  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@654bee8d
+2023-11-20 19:30:56.558 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1700479856328Fs4  [0;39m HikariPool-1 - Start completed.
+2023-11-20 19:30:56.564 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700479856328Fs4  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-20 19:30:56.577 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700479856328Fs4  [0;39m ==> Parameters: 13951905171(String)
+2023-11-20 19:30:56.589 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1700479856328Fs4  [0;39m <==    Columns: id, mobile
+2023-11-20 19:30:56.590 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1700479856328Fs4  [0;39m <==        Row: 1, 13951905171
+2023-11-20 19:30:56.590 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700479856328Fs4  [0;39m <==      Total: 1
+2023-11-20 19:30:56.601 INFO  top.chen.train.member.service.MemberService       :82   [32m1700479856328Fs4  [0;39m 手机号存在，不插入记录
+2023-11-20 19:30:56.601 INFO  top.chen.train.member.service.MemberService       :86   [32m1700479856328Fs4  [0;39m 生成验证码：8888
+2023-11-20 19:30:56.601 INFO  top.chen.train.member.service.MemberService       :88   [32m1700479856328Fs4  [0;39m 保存短信记录表
+2023-11-20 19:30:56.601 INFO  top.chen.train.member.service.MemberService       :90   [32m1700479856328Fs4  [0;39m 对接短信通道
+2023-11-20 19:30:56.604 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700479856328Fs4  [0;39m 返回结果: {"success":true}
+2023-11-20 19:30:56.604 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700479856328Fs4  [0;39m ------------- 结束 耗时：276 ms -------------
+2023-11-20 19:31:30.584 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700479890584Tfo  [0;39m ------------- 开始 -------------
+2023-11-20 19:31:30.584 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700479890584Tfo  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
+2023-11-20 19:31:30.585 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700479890584Tfo  [0;39m 类名方法: top.chen.train.member.controller.MemberController.sendCode
+2023-11-20 19:31:30.585 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700479890584Tfo  [0;39m 远程地址: 127.0.0.1
+2023-11-20 19:31:30.585 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700479890584Tfo  [0;39m 请求参数: [{"mobile":"13000000000"}]
+2023-11-20 19:31:30.586 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700479890584Tfo  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-20 19:31:30.586 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700479890584Tfo  [0;39m ==> Parameters: 13000000000(String)
+2023-11-20 19:31:30.587 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700479890584Tfo  [0;39m <==      Total: 0
+2023-11-20 19:31:30.587 INFO  top.chen.train.member.service.MemberService       :76   [32m1700479890584Tfo  [0;39m 手机号不存在，插入一条记录
+2023-11-20 19:31:30.605 DEBUG top.chen.train.member.mapper.MemberMapper.insert  :137  [32m1700479890584Tfo  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
+2023-11-20 19:31:30.605 DEBUG top.chen.train.member.mapper.MemberMapper.insert  :137  [32m1700479890584Tfo  [0;39m ==> Parameters: 1726563917540495360(Long), 13000000000(String)
+2023-11-20 19:31:30.618 DEBUG top.chen.train.member.mapper.MemberMapper.insert  :137  [32m1700479890584Tfo  [0;39m <==    Updates: 1
+2023-11-20 19:31:30.618 INFO  top.chen.train.member.service.MemberService       :86   [32m1700479890584Tfo  [0;39m 生成验证码：8888
+2023-11-20 19:31:30.619 INFO  top.chen.train.member.service.MemberService       :88   [32m1700479890584Tfo  [0;39m 保存短信记录表
+2023-11-20 19:31:30.619 INFO  top.chen.train.member.service.MemberService       :90   [32m1700479890584Tfo  [0;39m 对接短信通道
+2023-11-20 19:31:30.619 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700479890584Tfo  [0;39m 返回结果: {"success":true}
+2023-11-20 19:31:30.619 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700479890584Tfo  [0;39m ------------- 结束 耗时：35 ms -------------
+2023-11-20 19:33:17.110 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-11-20 19:33:17.116 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
