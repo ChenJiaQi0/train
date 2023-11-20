@@ -2718,3 +2718,15 @@ Caused by: java.lang.ClassNotFoundException: top.chen.train.member.service.Membe
 2023-11-20 19:41:30.821 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700480490817c5P  [0;39m <==      Total: 1
 2023-11-20 19:41:30.821 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700480490817c5P  [0;39m 返回结果: {"content":{"id":1726563917540495360,"mobile":"13000000000"},"success":true}
 2023-11-20 19:41:30.821 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700480490817c5P  [0;39m ------------- 结束 耗时：4 ms -------------
+2023-11-20 19:45:49.737 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700480749737UYJ  [0;39m ------------- 开始 -------------
+2023-11-20 19:45:49.737 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700480749737UYJ  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-11-20 19:45:49.737 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700480749737UYJ  [0;39m 类名方法: top.chen.train.member.controller.MemberController.login
+2023-11-20 19:45:49.737 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700480749737UYJ  [0;39m 远程地址: 127.0.0.1
+2023-11-20 19:45:49.738 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700480749737UYJ  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
+2023-11-20 19:45:49.739 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700480749737UYJ  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-20 19:45:49.739 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700480749737UYJ  [0;39m ==> Parameters: 13000000000(String)
+2023-11-20 19:45:49.740 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1700480749737UYJ  [0;39m <==    Columns: id, mobile
+2023-11-20 19:45:49.740 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1700480749737UYJ  [0;39m <==        Row: 1726563917540495360, 13000000000
+2023-11-20 19:45:49.740 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700480749737UYJ  [0;39m <==      Total: 1
+2023-11-20 19:45:49.740 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700480749737UYJ  [0;39m 返回结果: {"content":{"id":1726563917540495360,"mobile":"13000000000"},"success":true}
+2023-11-20 19:45:49.740 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700480749737UYJ  [0;39m ------------- 结束 耗时：3 ms -------------
