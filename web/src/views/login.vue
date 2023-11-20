@@ -38,19 +38,19 @@
 </template>
 
 <script setup>
-import { reactive } from "vue";
+import { reactive } from 'vue'
 
 const loginForm = reactive({
-  mobile: "13000000000",
-  code: "",
-});
+  mobile: '13000000000',
+  code: ''
+})
 
 const onFinish = (values) => {
-  console.log("Success:", values);
+  console.log('Success:', values)
 }
 
 const onFinishFailed = (errorInfo) => {
-  console.log("Failed:" + errorInfo);
+  console.log('Failed:' + errorInfo)
 }
 </script>
 
