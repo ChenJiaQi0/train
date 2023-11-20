@@ -18,6 +18,12 @@
     </properties>
 
     <dependencies>
+        <!--集成校验框架 validation -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
         <!-- 集成 mybatis-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
