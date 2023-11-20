@@ -165,3 +165,4 @@ Caused by: java.lang.ClassNotFoundException: top.chen.train.member.service.Membe
 	... 28 common frames omitted
 2023-11-20 16:14:56.173 ERROR t.c.t.common.controller.ControllerExceptionHandler:24   [32m1700468095858ik6  [0;39m 系统异常：java.lang.RuntimeException: 手机号已注册
 2023-11-20 16:21:02.536 ERROR t.c.t.common.controller.ControllerExceptionHandler:30   [32m1700468462518DxL  [0;39m 业务异常：{}手机号已注册
+2023-11-20 16:27:38.832 ERROR t.c.t.common.controller.ControllerExceptionHandler:31   [32m                  [0;39m 校验异常：{}[手机号]不能为空
