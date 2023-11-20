@@ -2595,3 +2595,5 @@ Caused by: java.lang.ClassNotFoundException: top.chen.train.member.service.Membe
 2023-11-20 18:54:03.831 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m170047764382858Q  [0;39m <==      Total: 1
 2023-11-20 18:54:03.862 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m170047764382858Q  [0;39m 返回结果: {"content":{"id":1,"mobile":"13951905171"},"success":true}
 2023-11-20 18:54:03.862 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m170047764382858Q  [0;39m ------------- 结束 耗时：34 ms -------------
+2023-11-20 19:29:57.381 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2023-11-20 19:29:57.384 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
