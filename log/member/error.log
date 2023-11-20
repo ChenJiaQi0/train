@@ -163,3 +163,4 @@ Caused by: java.lang.ClassNotFoundException: top.chen.train.member.service.Membe
 	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
 	... 28 common frames omitted
+2023-11-20 16:14:56.173 ERROR t.c.t.common.controller.ControllerExceptionHandler:24   [32m1700468095858ik6  [0;39m 系统异常：java.lang.RuntimeException: 手机号已注册
