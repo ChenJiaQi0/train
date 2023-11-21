@@ -48,7 +48,7 @@ import store from '@/store'
 const router = useRouter()
 
 const loginForm = reactive({
-  mobile: '13000000000',
+  mobile: '13951905171',
   code: ''
 })
 
