@@ -1,20 +1,8 @@
 <template>
-  <a-button type="primary" @click="showModal" style="float: left"
-    >新增</a-button
-  >
-  <a-table :dataSource="passengers" :columns="columns" />
-  <a-modal
-    v-model:visible="visible"
-    title="乘客人"
-    @ok="handleOk"
-    ok-text="确认"
-    cancel-text="取消"
-  >
-    <a-form
-      :model="passenger"
-      :label-col="{ span: 4 }"
-      :wrapper-col="{ span: 20 }"
-    >
+  <a-button type="primary" @click="showModal" style="float: left">新增</a-button>
+  <a-table :dataSource="passengers" :columns="columns" :pagination="pagination" />
+  <a-modal v-model:visible="visible" title="乘客人" @ok="handleOk" ok-text="确认" cancel-text="取消">
+    <a-form :model="passenger" :label-col="{ span: 4 }" :wrapper-col="{ span: 20 }">
       <a-form-item label="姓名">
         <a-input v-model:value="passenger.name" />
       </a-form-item>
@@ -68,6 +56,11 @@ const passenger = reactive({
 const showModal = () => {
   visible.value = true
 }
+const pagination = reactive({
+  total: 0,
+  current: 1,
+  pageSize: 2
+})
 
 const handleOk = (e) => {
   axios.post('/member/passenger/save', passenger).then((resp) => {
@@ -93,6 +86,9 @@ const handleQuery = (param) => {
       const data = resp.data
       if (data.success) {
         passengers.value = data.content.list
+        // 设置分页控件的值
+        pagination.current = param.page
+        pagination.total = data.content.total
       } else {
         notification.error({ description: data.message })
       }
@@ -102,7 +98,7 @@ const handleQuery = (param) => {
 onMounted(() => {
   handleQuery({
     page: 1,
-    size: 2
+    size: pagination.pageSize
   })
 })
 </script>
