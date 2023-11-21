@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import top.chen.train.common.context.LoginMemberContext;
 import top.chen.train.common.resp.CommonResp;
 import top.chen.train.member.req.PassengerQueryReq;
-import top.chen.train.member.req.PassengerSaveReq;
+import top.chen.train.member.req.PassengerSaveReq1;
 import top.chen.train.member.resp.PageResp;
 import top.chen.train.member.resp.PassengerQueryResp;
 import top.chen.train.member.service.PassengerService1;
@@ -51,7 +51,7 @@ public class PassengerController1 {
      * @return
      */
     @PostMapping("/save")
-    public CommonResp<Object> save(@Valid @RequestBody PassengerSaveReq req) {
+    public CommonResp<Object> save(@Valid @RequestBody PassengerSaveReq1 req) {
         passengerService.save(req);
         return new CommonResp<>();
     }

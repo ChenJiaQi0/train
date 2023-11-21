@@ -14,7 +14,7 @@ import top.chen.train.member.domain.Passenger;
 import top.chen.train.member.domain.PassengerExample;
 import top.chen.train.member.mapper.PassengerMapper;
 import top.chen.train.member.req.PassengerQueryReq;
-import top.chen.train.member.req.PassengerSaveReq;
+import top.chen.train.member.req.PassengerSaveReq1;
 import top.chen.train.member.resp.PageResp;
 import top.chen.train.member.resp.PassengerQueryResp;
 
@@ -73,7 +73,7 @@ public class PassengerService1 {
      * 乘车人新增与编辑
      * @param req
      */
-    public void save(PassengerSaveReq req) {
+    public void save(PassengerSaveReq1 req) {
         DateTime now = DateTime.now();
         Passenger passenger = BeanUtil.copyProperties(req, Passenger.class);
         if (ObjectUtil.isNull(passenger.getId())) {
