@@ -1,6 +1,6 @@
 <template>
   <a-button type="primary" @click="showModal" style="float: left">新增</a-button>
-  <a-table :dataSource="passengers" :columns="columns" :pagination="pagination" />
+  <a-table :dataSource="passengers" :columns="columns" :pagination="pagination" @change="handleTableChange"/>
   <a-modal v-model:visible="visible" title="乘客人" @ok="handleOk" ok-text="确认" cancel-text="取消">
     <a-form :model="passenger" :label-col="{ span: 4 }" :wrapper-col="{ span: 20 }">
       <a-form-item label="姓名">
@@ -101,6 +101,13 @@ onMounted(() => {
     size: pagination.pageSize
   })
 })
+
+const handleTableChange = (pagination) => {
+  handleQuery({
+    page: pagination.current,
+    size: pagination.pageSize
+  })
+}
 </script>
 
 <style scoped></style>
