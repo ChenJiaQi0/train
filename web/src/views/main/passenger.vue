@@ -2,7 +2,7 @@
   <a-button type="primary" @click="showModal" style="float: left"
     >新增</a-button
   >
-  <a-table :dataSource="dataSource" :columns="columns" />
+  <a-table :dataSource="passengers" :columns="columns" />
   <a-modal
     v-model:visible="visible"
     title="乘客人"
@@ -32,24 +32,9 @@
   </a-modal>
 </template>
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, onMounted } from 'vue'
 import { notification } from 'ant-design-vue'
 import axios from 'axios'
-
-const dataSource = [
-  {
-    key: '1',
-    name: '胡彦斌',
-    age: 32,
-    address: '西湖区湖底公园1号'
-  },
-  {
-    key: '2',
-    name: '胡彦祖',
-    age: 42,
-    address: '西湖区湖底公园1号'
-  }
-]
 
 const columns = [
   {
@@ -58,17 +43,18 @@ const columns = [
     key: 'name'
   },
   {
-    title: '年龄',
-    dataIndex: 'age',
-    key: 'age'
+    title: '身份证',
+    dataIndex: 'idCard',
+    key: 'idCard'
   },
   {
-    title: '住址',
-    dataIndex: 'address',
-    key: 'address'
+    title: '类型',
+    dataIndex: 'type',
+    key: 'type'
   }
 ]
 const visible = ref(false)
+const passengers = ref([])
 const passenger = reactive({
   id: undefined,
   memeberId: undefined,
@@ -94,6 +80,31 @@ const handleOk = (e) => {
     }
   })
 }
+
+const handleQuery = (param) => {
+  axios
+    .get('/member/passenger/query-list', {
+      params: {
+        page: param.page,
+        size: param.size
+      }
+    })
+    .then((resp) => {
+      const data = resp.data
+      if (data.success) {
+        passengers.value = data.content.list
+      } else {
+        notification.error({ description: data.message })
+      }
+    })
+}
+
+onMounted(() => {
+  handleQuery({
+    page: 1,
+    size: 2
+  })
+})
 </script>
 
 <style scoped></style>
