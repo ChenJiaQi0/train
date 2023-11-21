@@ -18,6 +18,12 @@
     </properties>
 
     <dependencies>
+        <!--PageHelper 分页-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+        </dependency>
+
         <!--集成校验框架 validation -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
