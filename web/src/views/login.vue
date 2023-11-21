@@ -30,7 +30,9 @@
         </a-form-item>
 
         <a-form-item>
-          <a-button type="primary" block html-type="submit" @click="login">登录</a-button>
+          <a-button type="primary" block html-type="submit" @click="login"
+            >登录</a-button
+          >
         </a-form-item>
       </a-form>
     </a-col>
@@ -80,8 +82,8 @@ const login = () => {
     const data = response.data
     if (data.success) {
       notification.success({ description: '登录成功!' })
-      // 登录成功，跳转到控台主页
-      router.push('/')
+      // 登录成功，跳转到欢迎页面
+      router.push('/welcome')
       store.commit('setMember', data.content)
     } else {
       notification.error({ description: data.message })

@@ -1130,3 +1130,40 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: top.chen.train.m
 2023-11-21 14:39:31.385 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2023-11-21 14:39:31.386 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
 2023-11-21 14:39:31.386 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-21 14:39:35.453 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-11-21 14:39:35.481 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 12848 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-21 14:39:35.482 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-21 14:39:35.517 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-21 14:39:35.517 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-21 14:39:36.101 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=92cbdc80-6f50-3f6f-8f64-3fda9bffd8b8
+2023-11-21 14:39:36.551 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-21 14:39:36.558 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-21 14:39:36.559 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-21 14:39:36.559 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-21 14:39:36.599 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-21 14:39:36.600 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1082 ms
+2023-11-21 14:39:37.183 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-21 14:39:37.459 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-21 14:39:37.472 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-21 14:39:37.735 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.814 seconds (process running for 3.168)
+2023-11-21 14:39:37.737 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-21 14:39:37.737 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-21 14:39:54.081 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-21 14:39:54.081 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-21 14:39:54.082 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-11-21 14:39:54.097 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NDgxMjEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDYzNDUyMSwiaWF0IjoxNzAwNTQ4MTIxfQ.VF9dVkQ9NX3dWhEvrTk4KorW8Av_7X-nRfCAowLRGjU
+2023-11-21 14:39:54.495 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 14:39:54.497 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 14:39:54.606 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700548794604xPX  [0;39m ------------- 开始 -------------
+2023-11-21 14:39:54.606 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700548794604xPX  [0;39m 请求地址: http://localhost:8001/member/passenger/save POST
+2023-11-21 14:39:54.606 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700548794604xPX  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.save
+2023-11-21 14:39:54.606 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700548794604xPX  [0;39m 远程地址: 127.0.0.1
+2023-11-21 14:39:54.649 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700548794604xPX  [0;39m 请求参数: [{"idCard":"123123","name":"list","type":"2"}]
+2023-11-21 14:39:54.662 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1700548794604xPX  [0;39m HikariPool-1 - Starting...
+2023-11-21 14:39:54.823 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1700548794604xPX  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c87590a
+2023-11-21 14:39:54.825 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1700548794604xPX  [0;39m HikariPool-1 - Start completed.
+2023-11-21 14:39:54.829 DEBUG t.chen.train.member.mapper.PassengerMapper.insert :137  [32m1700548794604xPX  [0;39m ==>  Preparing: insert into passenger (id, member_id, `name`, id_card, `type`, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?)
+2023-11-21 14:39:54.845 DEBUG t.chen.train.member.mapper.PassengerMapper.insert :137  [32m1700548794604xPX  [0;39m ==> Parameters: 1726852922064637952(Long), 1(Long), list(String), 123123(String), 2(String), 2023-11-21 14:39:54.65(Timestamp), 2023-11-21 14:39:54.65(Timestamp)
+2023-11-21 14:39:54.854 DEBUG t.chen.train.member.mapper.PassengerMapper.insert :137  [32m1700548794604xPX  [0;39m <==    Updates: 1
+2023-11-21 14:39:54.857 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700548794604xPX  [0;39m 返回结果: {"success":true}
+2023-11-21 14:39:54.857 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700548794604xPX  [0;39m ------------- 结束 耗时：253 ms -------------
