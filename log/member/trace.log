@@ -4441,3 +4441,22 @@ Consider defining a bean of type 'top.chen.train.member.service.PassengerService
 2023-11-21 16:34:31.210 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2023-11-21 16:34:31.210 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
 2023-11-21 16:34:31.211 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-21 16:35:12.120 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-21 16:35:12.120 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-21 16:35:12.120 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-11-21 16:35:12.120 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NDgxMjEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDYzNDUyMSwiaWF0IjoxNzAwNTQ4MTIxfQ.VF9dVkQ9NX3dWhEvrTk4KorW8Av_7X-nRfCAowLRGjU
+2023-11-21 16:35:12.124 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 16:35:12.124 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 16:35:12.128 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700555712127PTV  [0;39m ------------- 开始 -------------
+2023-11-21 16:35:12.128 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700555712127PTV  [0;39m 请求地址: http://localhost:8001/member/passenger/delete/1726876424247316480 DELETE
+2023-11-21 16:35:12.128 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700555712127PTV  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.delete
+2023-11-21 16:35:12.128 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700555712127PTV  [0;39m 远程地址: 127.0.0.1
+2023-11-21 16:35:12.128 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700555712127PTV  [0;39m 请求参数: [1726876424247316480]
+2023-11-21 16:35:12.128 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1700555712127PTV  [0;39m HikariPool-4 - Starting...
+2023-11-21 16:35:12.137 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1700555712127PTV  [0;39m HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@313514e1
+2023-11-21 16:35:12.138 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1700555712127PTV  [0;39m HikariPool-4 - Start completed.
+2023-11-21 16:35:12.138 DEBUG t.c.t.m.mapper.PassengerMapper.deleteByPrimaryKey :137  [32m1700555712127PTV  [0;39m ==>  Preparing: delete from passenger where id = ?
+2023-11-21 16:35:12.138 DEBUG t.c.t.m.mapper.PassengerMapper.deleteByPrimaryKey :137  [32m1700555712127PTV  [0;39m ==> Parameters: 1726876424247316480(Long)
+2023-11-21 16:35:12.145 DEBUG t.c.t.m.mapper.PassengerMapper.deleteByPrimaryKey :137  [32m1700555712127PTV  [0;39m <==    Updates: 1
+2023-11-21 16:35:12.146 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700555712127PTV  [0;39m 返回结果: {"success":true}
+2023-11-21 16:35:12.146 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700555712127PTV  [0;39m ------------- 结束 耗时：19 ms -------------
