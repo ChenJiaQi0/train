@@ -6695,3 +6695,123 @@ Caused by: java.lang.ClassNotFoundException: top.chen.train.member.req.Passenger
 2023-11-21 19:31:34.519 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2023-11-21 19:31:34.519 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
 2023-11-21 19:31:34.519 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-21 19:36:43.236 INFO  o.a.c.c.C.[Tomcat-11].[localhost].[/member]       :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-21 19:36:43.236 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-21 19:36:43.237 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-11-21 19:36:43.347 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m17005666033454Xw  [0;39m ------------- 开始 -------------
+2023-11-21 19:36:43.348 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m17005666033454Xw  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
+2023-11-21 19:36:43.348 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m17005666033454Xw  [0;39m 类名方法: top.chen.train.member.controller.MemberController.sendCode
+2023-11-21 19:36:43.348 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m17005666033454Xw  [0;39m 远程地址: 127.0.0.1
+2023-11-21 19:36:43.404 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m17005666033454Xw  [0;39m 请求参数: [{"mobile":"13951905171"}]
+2023-11-21 19:36:43.441 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m17005666033454Xw  [0;39m HikariPool-1 - Starting...
+2023-11-21 19:36:43.649 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m17005666033454Xw  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51497025
+2023-11-21 19:36:43.650 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m17005666033454Xw  [0;39m HikariPool-1 - Start completed.
+2023-11-21 19:36:43.658 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m17005666033454Xw  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-21 19:36:43.676 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m17005666033454Xw  [0;39m ==> Parameters: 13951905171(String)
+2023-11-21 19:36:43.705 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m17005666033454Xw  [0;39m <==    Columns: id, mobile
+2023-11-21 19:36:43.705 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m17005666033454Xw  [0;39m <==        Row: 1, 13951905171
+2023-11-21 19:36:43.707 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m17005666033454Xw  [0;39m <==      Total: 1
+2023-11-21 19:36:43.714 INFO  top.chen.train.member.service.MemberService       :87   [32m17005666033454Xw  [0;39m 手机号存在，不插入记录
+2023-11-21 19:36:43.714 INFO  top.chen.train.member.service.MemberService       :91   [32m17005666033454Xw  [0;39m 生成验证码：8888
+2023-11-21 19:36:43.714 INFO  top.chen.train.member.service.MemberService       :93   [32m17005666033454Xw  [0;39m 保存短信记录表
+2023-11-21 19:36:43.715 INFO  top.chen.train.member.service.MemberService       :95   [32m17005666033454Xw  [0;39m 对接短信通道
+2023-11-21 19:36:43.717 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m17005666033454Xw  [0;39m 返回结果: {"success":true}
+2023-11-21 19:36:43.717 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m17005666033454Xw  [0;39m ------------- 结束 耗时：372 ms -------------
+2023-11-21 19:36:44.418 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700566604418IvI  [0;39m ------------- 开始 -------------
+2023-11-21 19:36:44.418 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700566604418IvI  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-11-21 19:36:44.418 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700566604418IvI  [0;39m 类名方法: top.chen.train.member.controller.MemberController.login
+2023-11-21 19:36:44.418 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700566604418IvI  [0;39m 远程地址: 127.0.0.1
+2023-11-21 19:36:44.419 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700566604418IvI  [0;39m 请求参数: [{"code":"8888","mobile":"13951905171"}]
+2023-11-21 19:36:44.420 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700566604418IvI  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-21 19:36:44.420 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700566604418IvI  [0;39m ==> Parameters: 13951905171(String)
+2023-11-21 19:36:44.421 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1700566604418IvI  [0;39m <==    Columns: id, mobile
+2023-11-21 19:36:44.421 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1700566604418IvI  [0;39m <==        Row: 1, 13951905171
+2023-11-21 19:36:44.421 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1700566604418IvI  [0;39m <==      Total: 1
+2023-11-21 19:36:44.919 INFO  top.chen.train.common.util.JwtUtil                :40   [32m1700566604418IvI  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NjY2MDQsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDY1MzAwNCwiaWF0IjoxNzAwNTY2NjA0fQ.oxsLVfDjNMBI9ZkJpQ0oFpRpqN4RD7AwK282ARaII5A
+2023-11-21 19:36:44.921 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700566604418IvI  [0;39m 返回结果: {"content":{"id":1,"mobile":"13951905171","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NjY2MDQsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDY1MzAwNCwiaWF0IjoxNzAwNTY2NjA0fQ.oxsLVfDjNMBI9ZkJpQ0oFpRpqN4RD7AwK282ARaII5A"},"success":true}
+2023-11-21 19:36:44.921 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700566604418IvI  [0;39m ------------- 结束 耗时：504 ms -------------
+2023-11-21 19:36:46.751 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NjY2MDQsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDY1MzAwNCwiaWF0IjoxNzAwNTY2NjA0fQ.oxsLVfDjNMBI9ZkJpQ0oFpRpqN4RD7AwK282ARaII5A
+2023-11-21 19:36:46.757 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 19:36:46.757 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 19:36:46.767 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NjY2MDQsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDY1MzAwNCwiaWF0IjoxNzAwNTY2NjA0fQ.oxsLVfDjNMBI9ZkJpQ0oFpRpqN4RD7AwK282ARaII5A
+2023-11-21 19:36:46.768 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 19:36:46.768 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 19:37:10.190 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NjY2MDQsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDY1MzAwNCwiaWF0IjoxNzAwNTY2NjA0fQ.oxsLVfDjNMBI9ZkJpQ0oFpRpqN4RD7AwK282ARaII5A
+2023-11-21 19:37:10.190 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 19:37:10.191 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 19:37:10.196 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NjY2MDQsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDY1MzAwNCwiaWF0IjoxNzAwNTY2NjA0fQ.oxsLVfDjNMBI9ZkJpQ0oFpRpqN4RD7AwK282ARaII5A
+2023-11-21 19:37:10.196 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 19:37:10.196 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 19:39:16.116 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NjY2MDQsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDY1MzAwNCwiaWF0IjoxNzAwNTY2NjA0fQ.oxsLVfDjNMBI9ZkJpQ0oFpRpqN4RD7AwK282ARaII5A
+2023-11-21 19:39:16.117 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 19:39:16.117 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 19:39:16.119 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NjY2MDQsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDY1MzAwNCwiaWF0IjoxNzAwNTY2NjA0fQ.oxsLVfDjNMBI9ZkJpQ0oFpRpqN4RD7AwK282ARaII5A
+2023-11-21 19:39:16.120 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 19:39:16.120 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 19:40:12.443 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 8 class path changes (8 additions, 0 deletions, 0 modifications)
+2023-11-21 19:40:12.464 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-21 19:40:12.464 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-21 19:40:12.465 INFO  o.a.c.c.C.[Tomcat-11].[localhost].[/member]       :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-21 19:40:12.469 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-11-21 19:40:12.469 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-21 19:40:12.471 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-21 19:40:12.472 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-11-21 19:40:12.481 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-11-21 19:40:12.938 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 21964 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-21 19:40:12.938 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-21 19:40:13.215 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=968925cb-4370-3014-bc06-07a7c24952f3
+2023-11-21 19:40:13.304 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-21 19:40:13.305 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-21 19:40:13.305 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-21 19:40:13.305 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-21 19:40:13.321 INFO  o.a.c.c.C.[Tomcat-11].[localhost].[/member]       :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-21 19:40:13.321 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 381 ms
+2023-11-21 19:40:13.381 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'passengerController1': Injection of resource dependencies failed
+2023-11-21 19:40:13.381 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-21 19:40:13.386 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-21 19:40:13.387 ERROR org.springframework.boot.SpringApplication        :820  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'passengerController1': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:303)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at top.chen.train.member.config.MemberApplication.main(MemberApplication.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'passengerService' is expected to be of type 'top.chen.train.member.service.PassengerService1' but was actually of type 'top.chen.train.member.service.PassengerService'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.adaptBeanInstance(AbstractBeanFactory.java:408)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:389)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:467)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:242)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:300)
+	... 20 common frames omitted

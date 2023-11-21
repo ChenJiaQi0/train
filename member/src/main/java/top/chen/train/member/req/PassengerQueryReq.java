@@ -1,7 +1,5 @@
 package top.chen.train.member.req;
 
-import top.chen.train.common.req.*;
-
 public class PassengerQueryReq extends PageReq {
     private Long memberId;
 

@@ -2,9 +2,10 @@ package top.chen.train.member.controller;
 
 import top.chen.train.common.context.LoginMemberContext;
 import top.chen.train.common.resp.CommonResp;
-import top.chen.train.common.resp.PageResp;
+import top.chen.train.common.resp.*;
 import top.chen.train.member.req.PassengerQueryReq;
 import top.chen.train.member.req.PassengerSaveReq;
+import top.chen.train.member.resp.PageResp;
 import top.chen.train.member.resp.PassengerQueryResp1;
 import top.chen.train.member.service.PassengerService;
 import jakarta.annotation.Resource;
