@@ -109,3 +109,4 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: top.chen.train.m
 	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
 	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
 	... 78 common frames omitted
+2023-11-21 14:25:10.889 ERROR t.c.t.common.controller.ControllerExceptionHandler:31   [32m                  [0;39m 校验异常：{}【名字】不能为空
