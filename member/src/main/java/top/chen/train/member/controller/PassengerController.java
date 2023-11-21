@@ -2,13 +2,15 @@ package top.chen.train.member.controller;
 
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import top.chen.train.common.context.LoginMemberContext;
 import top.chen.train.common.resp.CommonResp;
+import top.chen.train.member.req.PassengerQueryReq;
 import top.chen.train.member.req.PassengerSaveReq;
+import top.chen.train.member.resp.PassengerQueryResp;
 import top.chen.train.member.service.PassengerService;
+
+import java.util.List;
 
 /**
  * @author ChenQi
@@ -20,6 +22,18 @@ import top.chen.train.member.service.PassengerService;
 public class PassengerController {
     @Resource
     private PassengerService passengerService;
+
+    /**
+     * 查询 乘车人列表查询接口，只能查看当前成员自己添加的乘客
+     * @param req
+     * @return
+     */
+    @GetMapping("/query-list")
+    public CommonResp<List<PassengerQueryResp>> queryList(@Valid PassengerQueryReq req) {
+        req.setMemberId(LoginMemberContext.getId());
+        List<PassengerQueryResp> list = passengerService.queryList(req);
+        return new CommonResp<>(list);
+    }
 
     /**
      * 乘车人新增
