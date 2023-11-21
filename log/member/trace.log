@@ -3291,3 +3291,240 @@ Caused by: java.lang.ClassNotFoundException: top.chen.train.member.service.Passe
 2023-11-21 16:11:42.340 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2023-11-21 16:11:42.340 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
 2023-11-21 16:11:42.341 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-21 16:12:52.628 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-21 16:12:52.628 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-21 16:12:52.628 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-11-21 16:12:52.633 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NTE1MDgsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDYzNzkwOCwiaWF0IjoxNzAwNTUxNTA4fQ.5YnfyTeZ9r-8CXeimYEo_k6IDJOh7Z-4Q10EM5yoR2s
+2023-11-21 16:12:52.634 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 16:12:52.634 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 16:12:52.642 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700554372641FIP  [0;39m ------------- 开始 -------------
+2023-11-21 16:12:52.642 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700554372641FIP  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-11-21 16:12:52.642 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700554372641FIP  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryList
+2023-11-21 16:12:52.642 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700554372641FIP  [0;39m 远程地址: 127.0.0.1
+2023-11-21 16:12:52.643 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700554372641FIP  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-11-21 16:12:52.644 INFO  top.chen.train.member.service.PassengerService    :47   [32m1700554372641FIP  [0;39m 查询页码：1
+2023-11-21 16:12:52.644 INFO  top.chen.train.member.service.PassengerService    :48   [32m1700554372641FIP  [0;39m 每页条数：2
+2023-11-21 16:12:52.649 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1700554372641FIP  [0;39m HikariPool-3 - Starting...
+2023-11-21 16:12:52.659 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1700554372641FIP  [0;39m HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5717de4e
+2023-11-21 16:12:52.659 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1700554372641FIP  [0;39m HikariPool-3 - Start completed.
+2023-11-21 16:12:52.660 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554372641FIP  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-11-21 16:12:52.660 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554372641FIP  [0;39m ==> Parameters: 1(Long)
+2023-11-21 16:12:52.660 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1700554372641FIP  [0;39m <==    Columns: count(0)
+2023-11-21 16:12:52.661 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1700554372641FIP  [0;39m <==        Row: 3
+2023-11-21 16:12:52.661 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554372641FIP  [0;39m <==      Total: 1
+2023-11-21 16:12:52.661 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554372641FIP  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-21 16:12:52.662 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554372641FIP  [0;39m ==> Parameters: 1(Long), 2(Integer)
+2023-11-21 16:12:52.662 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554372641FIP  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-21 16:12:52.663 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554372641FIP  [0;39m <==        Row: 1726864080037351424, 1, 张三, 123, 1, 2023-11-21 15:24:14.921, 2023-11-21 15:24:14.921
+2023-11-21 16:12:52.663 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554372641FIP  [0;39m <==        Row: 1726852922064637952, 1, list, 123123, 2, 2023-11-21 14:39:54.650, 2023-11-21 14:39:54.650
+2023-11-21 16:12:52.663 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554372641FIP  [0;39m <==      Total: 2
+2023-11-21 16:12:52.663 INFO  top.chen.train.member.service.PassengerService    :53   [32m1700554372641FIP  [0;39m 总行数：3
+2023-11-21 16:12:52.664 INFO  top.chen.train.member.service.PassengerService    :54   [32m1700554372641FIP  [0;39m 总页数：2
+2023-11-21 16:12:52.665 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700554372641FIP  [0;39m 返回结果: {"content":{"list":[{"createTime":1700551454921,"id":1726864080037351424,"idCard":"123","memberId":1,"name":"张三","type":"1","updateTime":1700551454921},{"createTime":1700548794650,"id":1726852922064637952,"idCard":"123123","memberId":1,"name":"list","type":"2","updateTime":1700548794650}],"total":3},"success":true}
+2023-11-21 16:12:52.665 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700554372641FIP  [0;39m ------------- 结束 耗时：24 ms -------------
+2023-11-21 16:12:52.674 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NTE1MDgsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDYzNzkwOCwiaWF0IjoxNzAwNTUxNTA4fQ.5YnfyTeZ9r-8CXeimYEo_k6IDJOh7Z-4Q10EM5yoR2s
+2023-11-21 16:12:52.674 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 16:12:52.674 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 16:12:52.675 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700554372675Qip  [0;39m ------------- 开始 -------------
+2023-11-21 16:12:52.675 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700554372675Qip  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-11-21 16:12:52.675 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700554372675Qip  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryList
+2023-11-21 16:12:52.675 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700554372675Qip  [0;39m 远程地址: 127.0.0.1
+2023-11-21 16:12:52.675 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700554372675Qip  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-11-21 16:12:52.675 INFO  top.chen.train.member.service.PassengerService    :47   [32m1700554372675Qip  [0;39m 查询页码：1
+2023-11-21 16:12:52.675 INFO  top.chen.train.member.service.PassengerService    :48   [32m1700554372675Qip  [0;39m 每页条数：2
+2023-11-21 16:12:52.676 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554372675Qip  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-11-21 16:12:52.677 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554372675Qip  [0;39m ==> Parameters: 1(Long)
+2023-11-21 16:12:52.677 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1700554372675Qip  [0;39m <==    Columns: count(0)
+2023-11-21 16:12:52.677 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1700554372675Qip  [0;39m <==        Row: 3
+2023-11-21 16:12:52.677 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554372675Qip  [0;39m <==      Total: 1
+2023-11-21 16:12:52.678 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554372675Qip  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-21 16:12:52.678 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554372675Qip  [0;39m ==> Parameters: 1(Long), 2(Integer)
+2023-11-21 16:12:52.678 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554372675Qip  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-21 16:12:52.679 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554372675Qip  [0;39m <==        Row: 1726864080037351424, 1, 张三, 123, 1, 2023-11-21 15:24:14.921, 2023-11-21 15:24:14.921
+2023-11-21 16:12:52.679 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554372675Qip  [0;39m <==        Row: 1726852922064637952, 1, list, 123123, 2, 2023-11-21 14:39:54.650, 2023-11-21 14:39:54.650
+2023-11-21 16:12:52.679 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554372675Qip  [0;39m <==      Total: 2
+2023-11-21 16:12:52.679 INFO  top.chen.train.member.service.PassengerService    :53   [32m1700554372675Qip  [0;39m 总行数：3
+2023-11-21 16:12:52.679 INFO  top.chen.train.member.service.PassengerService    :54   [32m1700554372675Qip  [0;39m 总页数：2
+2023-11-21 16:12:52.679 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700554372675Qip  [0;39m 返回结果: {"content":{"list":[{"createTime":1700551454921,"id":1726864080037351424,"idCard":"123","memberId":1,"name":"张三","type":"1","updateTime":1700551454921},{"createTime":1700548794650,"id":1726852922064637952,"idCard":"123123","memberId":1,"name":"list","type":"2","updateTime":1700548794650}],"total":3},"success":true}
+2023-11-21 16:12:52.679 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700554372675Qip  [0;39m ------------- 结束 耗时：5 ms -------------
+2023-11-21 16:12:52.692 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NTE1MDgsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDYzNzkwOCwiaWF0IjoxNzAwNTUxNTA4fQ.5YnfyTeZ9r-8CXeimYEo_k6IDJOh7Z-4Q10EM5yoR2s
+2023-11-21 16:12:52.692 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 16:12:52.692 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 16:12:52.693 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700554372693ssk  [0;39m ------------- 开始 -------------
+2023-11-21 16:12:52.693 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700554372693ssk  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-11-21 16:12:52.693 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700554372693ssk  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryList
+2023-11-21 16:12:52.693 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700554372693ssk  [0;39m 远程地址: 127.0.0.1
+2023-11-21 16:12:52.693 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700554372693ssk  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-11-21 16:12:52.693 INFO  top.chen.train.member.service.PassengerService    :47   [32m1700554372693ssk  [0;39m 查询页码：1
+2023-11-21 16:12:52.693 INFO  top.chen.train.member.service.PassengerService    :48   [32m1700554372693ssk  [0;39m 每页条数：2
+2023-11-21 16:12:52.694 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554372693ssk  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-11-21 16:12:52.695 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554372693ssk  [0;39m ==> Parameters: 1(Long)
+2023-11-21 16:12:52.695 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1700554372693ssk  [0;39m <==    Columns: count(0)
+2023-11-21 16:12:52.695 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1700554372693ssk  [0;39m <==        Row: 3
+2023-11-21 16:12:52.695 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554372693ssk  [0;39m <==      Total: 1
+2023-11-21 16:12:52.696 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554372693ssk  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-21 16:12:52.696 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554372693ssk  [0;39m ==> Parameters: 1(Long), 2(Integer)
+2023-11-21 16:12:52.696 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554372693ssk  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-21 16:12:52.696 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554372693ssk  [0;39m <==        Row: 1726864080037351424, 1, 张三, 123, 1, 2023-11-21 15:24:14.921, 2023-11-21 15:24:14.921
+2023-11-21 16:12:52.698 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554372693ssk  [0;39m <==        Row: 1726852922064637952, 1, list, 123123, 2, 2023-11-21 14:39:54.650, 2023-11-21 14:39:54.650
+2023-11-21 16:12:52.698 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554372693ssk  [0;39m <==      Total: 2
+2023-11-21 16:12:52.698 INFO  top.chen.train.member.service.PassengerService    :53   [32m1700554372693ssk  [0;39m 总行数：3
+2023-11-21 16:12:52.698 INFO  top.chen.train.member.service.PassengerService    :54   [32m1700554372693ssk  [0;39m 总页数：2
+2023-11-21 16:12:52.698 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700554372693ssk  [0;39m 返回结果: {"content":{"list":[{"createTime":1700551454921,"id":1726864080037351424,"idCard":"123","memberId":1,"name":"张三","type":"1","updateTime":1700551454921},{"createTime":1700548794650,"id":1726852922064637952,"idCard":"123123","memberId":1,"name":"list","type":"2","updateTime":1700548794650}],"total":3},"success":true}
+2023-11-21 16:12:52.698 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700554372693ssk  [0;39m ------------- 结束 耗时：5 ms -------------
+2023-11-21 16:12:52.730 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NTE1MDgsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDYzNzkwOCwiaWF0IjoxNzAwNTUxNTA4fQ.5YnfyTeZ9r-8CXeimYEo_k6IDJOh7Z-4Q10EM5yoR2s
+2023-11-21 16:12:52.730 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 16:12:52.730 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 16:12:52.730 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700554372730xVW  [0;39m ------------- 开始 -------------
+2023-11-21 16:12:52.730 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700554372730xVW  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-11-21 16:12:52.730 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700554372730xVW  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryList
+2023-11-21 16:12:52.730 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700554372730xVW  [0;39m 远程地址: 127.0.0.1
+2023-11-21 16:12:52.730 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700554372730xVW  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-11-21 16:12:52.730 INFO  top.chen.train.member.service.PassengerService    :47   [32m1700554372730xVW  [0;39m 查询页码：1
+2023-11-21 16:12:52.731 INFO  top.chen.train.member.service.PassengerService    :48   [32m1700554372730xVW  [0;39m 每页条数：2
+2023-11-21 16:12:52.732 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554372730xVW  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-11-21 16:12:52.732 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554372730xVW  [0;39m ==> Parameters: 1(Long)
+2023-11-21 16:12:52.732 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1700554372730xVW  [0;39m <==    Columns: count(0)
+2023-11-21 16:12:52.733 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1700554372730xVW  [0;39m <==        Row: 3
+2023-11-21 16:12:52.733 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554372730xVW  [0;39m <==      Total: 1
+2023-11-21 16:12:52.733 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554372730xVW  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-21 16:12:52.733 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554372730xVW  [0;39m ==> Parameters: 1(Long), 2(Integer)
+2023-11-21 16:12:52.734 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554372730xVW  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-21 16:12:52.734 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554372730xVW  [0;39m <==        Row: 1726864080037351424, 1, 张三, 123, 1, 2023-11-21 15:24:14.921, 2023-11-21 15:24:14.921
+2023-11-21 16:12:52.734 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554372730xVW  [0;39m <==        Row: 1726852922064637952, 1, list, 123123, 2, 2023-11-21 14:39:54.650, 2023-11-21 14:39:54.650
+2023-11-21 16:12:52.734 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554372730xVW  [0;39m <==      Total: 2
+2023-11-21 16:12:52.735 INFO  top.chen.train.member.service.PassengerService    :53   [32m1700554372730xVW  [0;39m 总行数：3
+2023-11-21 16:12:52.735 INFO  top.chen.train.member.service.PassengerService    :54   [32m1700554372730xVW  [0;39m 总页数：2
+2023-11-21 16:12:52.735 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700554372730xVW  [0;39m 返回结果: {"content":{"list":[{"createTime":1700551454921,"id":1726864080037351424,"idCard":"123","memberId":1,"name":"张三","type":"1","updateTime":1700551454921},{"createTime":1700548794650,"id":1726852922064637952,"idCard":"123123","memberId":1,"name":"list","type":"2","updateTime":1700548794650}],"total":3},"success":true}
+2023-11-21 16:12:52.735 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700554372730xVW  [0;39m ------------- 结束 耗时：5 ms -------------
+2023-11-21 16:13:05.157 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NTE1MDgsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDYzNzkwOCwiaWF0IjoxNzAwNTUxNTA4fQ.5YnfyTeZ9r-8CXeimYEo_k6IDJOh7Z-4Q10EM5yoR2s
+2023-11-21 16:13:05.157 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 16:13:05.157 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 16:13:05.158 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m17005543851584dV  [0;39m ------------- 开始 -------------
+2023-11-21 16:13:05.158 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m17005543851584dV  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-11-21 16:13:05.158 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m17005543851584dV  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryList
+2023-11-21 16:13:05.158 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m17005543851584dV  [0;39m 远程地址: 127.0.0.1
+2023-11-21 16:13:05.158 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m17005543851584dV  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-11-21 16:13:05.158 INFO  top.chen.train.member.service.PassengerService    :47   [32m17005543851584dV  [0;39m 查询页码：1
+2023-11-21 16:13:05.158 INFO  top.chen.train.member.service.PassengerService    :48   [32m17005543851584dV  [0;39m 每页条数：2
+2023-11-21 16:13:05.160 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m17005543851584dV  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-11-21 16:13:05.160 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m17005543851584dV  [0;39m ==> Parameters: 1(Long)
+2023-11-21 16:13:05.161 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m17005543851584dV  [0;39m <==    Columns: count(0)
+2023-11-21 16:13:05.162 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m17005543851584dV  [0;39m <==        Row: 3
+2023-11-21 16:13:05.162 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m17005543851584dV  [0;39m <==      Total: 1
+2023-11-21 16:13:05.162 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m17005543851584dV  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-21 16:13:05.162 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m17005543851584dV  [0;39m ==> Parameters: 1(Long), 2(Integer)
+2023-11-21 16:13:05.163 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m17005543851584dV  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-21 16:13:05.163 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m17005543851584dV  [0;39m <==        Row: 1726864080037351424, 1, 张三, 123, 1, 2023-11-21 15:24:14.921, 2023-11-21 15:24:14.921
+2023-11-21 16:13:05.163 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m17005543851584dV  [0;39m <==        Row: 1726852922064637952, 1, list, 123123, 2, 2023-11-21 14:39:54.650, 2023-11-21 14:39:54.650
+2023-11-21 16:13:05.163 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m17005543851584dV  [0;39m <==      Total: 2
+2023-11-21 16:13:05.164 INFO  top.chen.train.member.service.PassengerService    :53   [32m17005543851584dV  [0;39m 总行数：3
+2023-11-21 16:13:05.164 INFO  top.chen.train.member.service.PassengerService    :54   [32m17005543851584dV  [0;39m 总页数：2
+2023-11-21 16:13:05.164 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m17005543851584dV  [0;39m 返回结果: {"content":{"list":[{"createTime":1700551454921,"id":1726864080037351424,"idCard":"123","memberId":1,"name":"张三","type":"1","updateTime":1700551454921},{"createTime":1700548794650,"id":1726852922064637952,"idCard":"123123","memberId":1,"name":"list","type":"2","updateTime":1700548794650}],"total":3},"success":true}
+2023-11-21 16:13:05.164 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m17005543851584dV  [0;39m ------------- 结束 耗时：6 ms -------------
+2023-11-21 16:13:17.978 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NTE1MDgsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDYzNzkwOCwiaWF0IjoxNzAwNTUxNTA4fQ.5YnfyTeZ9r-8CXeimYEo_k6IDJOh7Z-4Q10EM5yoR2s
+2023-11-21 16:13:17.978 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 16:13:17.979 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 16:13:18.005 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700554398005SPy  [0;39m ------------- 开始 -------------
+2023-11-21 16:13:18.005 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700554398005SPy  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/save POST
+2023-11-21 16:13:18.005 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700554398005SPy  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.save
+2023-11-21 16:13:18.005 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700554398005SPy  [0;39m 远程地址: 127.0.0.1
+2023-11-21 16:13:18.006 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700554398005SPy  [0;39m 请求参数: [{"idCard":"456","name":"王五","type":"3"}]
+2023-11-21 16:13:18.011 DEBUG t.chen.train.member.mapper.PassengerMapper.insert :137  [32m1700554398005SPy  [0;39m ==>  Preparing: insert into passenger (id, member_id, `name`, id_card, `type`, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?)
+2023-11-21 16:13:18.011 DEBUG t.chen.train.member.mapper.PassengerMapper.insert :137  [32m1700554398005SPy  [0;39m ==> Parameters: 1726876424247316480(Long), 1(Long), 王五(String), 456(String), 3(String), 2023-11-21 16:13:18.007(Timestamp), 2023-11-21 16:13:18.007(Timestamp)
+2023-11-21 16:13:18.019 DEBUG t.chen.train.member.mapper.PassengerMapper.insert :137  [32m1700554398005SPy  [0;39m <==    Updates: 1
+2023-11-21 16:13:18.020 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700554398005SPy  [0;39m 返回结果: {"success":true}
+2023-11-21 16:13:18.020 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700554398005SPy  [0;39m ------------- 结束 耗时：15 ms -------------
+2023-11-21 16:13:18.036 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NTE1MDgsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDYzNzkwOCwiaWF0IjoxNzAwNTUxNTA4fQ.5YnfyTeZ9r-8CXeimYEo_k6IDJOh7Z-4Q10EM5yoR2s
+2023-11-21 16:13:18.038 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 16:13:18.038 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 16:13:18.039 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m17005543980394Qd  [0;39m ------------- 开始 -------------
+2023-11-21 16:13:18.039 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m17005543980394Qd  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-11-21 16:13:18.039 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m17005543980394Qd  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryList
+2023-11-21 16:13:18.039 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m17005543980394Qd  [0;39m 远程地址: 127.0.0.1
+2023-11-21 16:13:18.039 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m17005543980394Qd  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-11-21 16:13:18.039 INFO  top.chen.train.member.service.PassengerService    :47   [32m17005543980394Qd  [0;39m 查询页码：1
+2023-11-21 16:13:18.039 INFO  top.chen.train.member.service.PassengerService    :48   [32m17005543980394Qd  [0;39m 每页条数：2
+2023-11-21 16:13:18.041 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m17005543980394Qd  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-11-21 16:13:18.041 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m17005543980394Qd  [0;39m ==> Parameters: 1(Long)
+2023-11-21 16:13:18.042 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m17005543980394Qd  [0;39m <==    Columns: count(0)
+2023-11-21 16:13:18.042 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m17005543980394Qd  [0;39m <==        Row: 4
+2023-11-21 16:13:18.043 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m17005543980394Qd  [0;39m <==      Total: 1
+2023-11-21 16:13:18.043 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m17005543980394Qd  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-21 16:13:18.043 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m17005543980394Qd  [0;39m ==> Parameters: 1(Long), 2(Integer)
+2023-11-21 16:13:18.043 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m17005543980394Qd  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-21 16:13:18.044 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m17005543980394Qd  [0;39m <==        Row: 1726876424247316480, 1, 王五, 456, 3, 2023-11-21 16:13:18.007, 2023-11-21 16:13:18.007
+2023-11-21 16:13:18.044 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m17005543980394Qd  [0;39m <==        Row: 1726864080037351424, 1, 张三, 123, 1, 2023-11-21 15:24:14.921, 2023-11-21 15:24:14.921
+2023-11-21 16:13:18.044 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m17005543980394Qd  [0;39m <==      Total: 2
+2023-11-21 16:13:18.044 INFO  top.chen.train.member.service.PassengerService    :53   [32m17005543980394Qd  [0;39m 总行数：4
+2023-11-21 16:13:18.045 INFO  top.chen.train.member.service.PassengerService    :54   [32m17005543980394Qd  [0;39m 总页数：2
+2023-11-21 16:13:18.045 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m17005543980394Qd  [0;39m 返回结果: {"content":{"list":[{"createTime":1700554398007,"id":1726876424247316480,"idCard":"456","memberId":1,"name":"王五","type":"3","updateTime":1700554398007},{"createTime":1700551454921,"id":1726864080037351424,"idCard":"123","memberId":1,"name":"张三","type":"1","updateTime":1700551454921}],"total":4},"success":true}
+2023-11-21 16:13:18.045 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m17005543980394Qd  [0;39m ------------- 结束 耗时：6 ms -------------
+2023-11-21 16:13:25.660 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NTE1MDgsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDYzNzkwOCwiaWF0IjoxNzAwNTUxNTA4fQ.5YnfyTeZ9r-8CXeimYEo_k6IDJOh7Z-4Q10EM5yoR2s
+2023-11-21 16:13:25.660 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 16:13:25.660 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 16:13:25.660 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1700554405660zLx  [0;39m ------------- 开始 -------------
+2023-11-21 16:13:25.660 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1700554405660zLx  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-11-21 16:13:25.660 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1700554405660zLx  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryList
+2023-11-21 16:13:25.660 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1700554405660zLx  [0;39m 远程地址: 127.0.0.1
+2023-11-21 16:13:25.661 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1700554405660zLx  [0;39m 请求参数: [{"page":2,"size":2}]
+2023-11-21 16:13:25.661 INFO  top.chen.train.member.service.PassengerService    :47   [32m1700554405660zLx  [0;39m 查询页码：2
+2023-11-21 16:13:25.661 INFO  top.chen.train.member.service.PassengerService    :48   [32m1700554405660zLx  [0;39m 每页条数：2
+2023-11-21 16:13:25.662 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554405660zLx  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-11-21 16:13:25.662 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554405660zLx  [0;39m ==> Parameters: 1(Long)
+2023-11-21 16:13:25.663 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1700554405660zLx  [0;39m <==    Columns: count(0)
+2023-11-21 16:13:25.663 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1700554405660zLx  [0;39m <==        Row: 4
+2023-11-21 16:13:25.663 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1700554405660zLx  [0;39m <==      Total: 1
+2023-11-21 16:13:25.663 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554405660zLx  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by id desc LIMIT ?, ?
+2023-11-21 16:13:25.664 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554405660zLx  [0;39m ==> Parameters: 1(Long), 2(Long), 2(Integer)
+2023-11-21 16:13:25.664 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554405660zLx  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-21 16:13:25.664 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554405660zLx  [0;39m <==        Row: 1726852922064637952, 1, list, 123123, 2, 2023-11-21 14:39:54.650, 2023-11-21 14:39:54.650
+2023-11-21 16:13:25.664 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1700554405660zLx  [0;39m <==        Row: 1726848580230189056, 1, cjq, 123456789, 1, 2023-11-21 14:22:39.447, 2023-11-21 14:22:39.447
+2023-11-21 16:13:25.664 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1700554405660zLx  [0;39m <==      Total: 2
+2023-11-21 16:13:25.664 INFO  top.chen.train.member.service.PassengerService    :53   [32m1700554405660zLx  [0;39m 总行数：4
+2023-11-21 16:13:25.665 INFO  top.chen.train.member.service.PassengerService    :54   [32m1700554405660zLx  [0;39m 总页数：2
+2023-11-21 16:13:25.665 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1700554405660zLx  [0;39m 返回结果: {"content":{"list":[{"createTime":1700548794650,"id":1726852922064637952,"idCard":"123123","memberId":1,"name":"list","type":"2","updateTime":1700548794650},{"createTime":1700547759447,"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"cjq","type":"1","updateTime":1700547759447}],"total":4},"success":true}
+2023-11-21 16:13:25.665 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1700554405660zLx  [0;39m ------------- 结束 耗时：5 ms -------------
+2023-11-21 16:13:29.194 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDA1NTE1MDgsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMDYzNzkwOCwiaWF0IjoxNzAwNTUxNTA4fQ.5YnfyTeZ9r-8CXeimYEo_k6IDJOh7Z-4Q10EM5yoR2s
+2023-11-21 16:13:29.195 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-21 16:13:29.195 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-21 16:13:29.195 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m17005544091957OZ  [0;39m ------------- 开始 -------------
+2023-11-21 16:13:29.195 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m17005544091957OZ  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-11-21 16:13:29.195 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m17005544091957OZ  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryList
+2023-11-21 16:13:29.195 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m17005544091957OZ  [0;39m 远程地址: 127.0.0.1
+2023-11-21 16:13:29.196 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m17005544091957OZ  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-11-21 16:13:29.196 INFO  top.chen.train.member.service.PassengerService    :47   [32m17005544091957OZ  [0;39m 查询页码：1
+2023-11-21 16:13:29.196 INFO  top.chen.train.member.service.PassengerService    :48   [32m17005544091957OZ  [0;39m 每页条数：2
+2023-11-21 16:13:29.197 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m17005544091957OZ  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-11-21 16:13:29.198 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m17005544091957OZ  [0;39m ==> Parameters: 1(Long)
+2023-11-21 16:13:29.198 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m17005544091957OZ  [0;39m <==    Columns: count(0)
+2023-11-21 16:13:29.198 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m17005544091957OZ  [0;39m <==        Row: 4
+2023-11-21 16:13:29.199 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m17005544091957OZ  [0;39m <==      Total: 1
+2023-11-21 16:13:29.199 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m17005544091957OZ  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-21 16:13:29.199 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m17005544091957OZ  [0;39m ==> Parameters: 1(Long), 2(Integer)
+2023-11-21 16:13:29.200 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m17005544091957OZ  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-21 16:13:29.200 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m17005544091957OZ  [0;39m <==        Row: 1726876424247316480, 1, 王五, 456, 3, 2023-11-21 16:13:18.007, 2023-11-21 16:13:18.007
+2023-11-21 16:13:29.200 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m17005544091957OZ  [0;39m <==        Row: 1726864080037351424, 1, 张三, 123, 1, 2023-11-21 15:24:14.921, 2023-11-21 15:24:14.921
+2023-11-21 16:13:29.201 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m17005544091957OZ  [0;39m <==      Total: 2
+2023-11-21 16:13:29.201 INFO  top.chen.train.member.service.PassengerService    :53   [32m17005544091957OZ  [0;39m 总行数：4
+2023-11-21 16:13:29.201 INFO  top.chen.train.member.service.PassengerService    :54   [32m17005544091957OZ  [0;39m 总页数：2
+2023-11-21 16:13:29.202 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m17005544091957OZ  [0;39m 返回结果: {"content":{"list":[{"createTime":1700554398007,"id":1726876424247316480,"idCard":"456","memberId":1,"name":"王五","type":"3","updateTime":1700554398007},{"createTime":1700551454921,"id":1726864080037351424,"idCard":"123","memberId":1,"name":"张三","type":"1","updateTime":1700551454921}],"total":4},"success":true}
+2023-11-21 16:13:29.202 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m17005544091957OZ  [0;39m ------------- 结束 耗时：7 ms -------------
+2023-11-21 16:19:42.936 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-21 16:19:42.949 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-21 16:19:42.949 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-21 16:19:42.950 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-21 16:19:42.951 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-11-21 16:19:42.951 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-21 16:19:42.952 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-21 16:19:42.953 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2023-11-21 16:19:42.956 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
