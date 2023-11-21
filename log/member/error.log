@@ -340,3 +340,18 @@ Caused by: java.lang.ClassNotFoundException: top.chen.train.member.service.Passe
 2023-11-21 16:09:53.734 ERROR t.c.t.common.controller.ControllerExceptionHandler:31   [32m1700554103838PW3  [0;39m 校验异常：{}【每页条数】不能为空
 2023-11-21 16:09:57.965 ERROR t.c.t.common.controller.ControllerExceptionHandler:31   [32m1700553881783PoQ  [0;39m 校验异常：{}【每页条数】不能为空
 2023-11-21 16:10:11.145 ERROR t.c.t.common.controller.ControllerExceptionHandler:31   [32m1700554173130Y1W  [0;39m 校验异常：{}【每页条数】不能为空
+2023-11-21 16:21:58.449 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'top.chen.train.member.service.PassengerService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'top.chen.train.member.service.PassengerService' in your configuration.
+

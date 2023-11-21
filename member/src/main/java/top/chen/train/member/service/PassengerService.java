@@ -62,16 +62,21 @@ public class PassengerService {
     }
 
     /**
-     * 乘车人新增
+     * 乘车人新增与编辑
      * @param req
      */
     public void save(PassengerSaveReq req) {
         DateTime now = DateTime.now();
         Passenger passenger = BeanUtil.copyProperties(req, Passenger.class);
-        passenger.setMemberId(LoginMemberContext.getId());
-        passenger.setId(SnowUtil.getSnowflakeNextId());
-        passenger.setCreateTime(now);
-        passenger.setUpdateTime(now);
-        passengerMapper.insert(passenger);
+        if (ObjectUtil.isNull(passenger.getId())) {
+            passenger.setMemberId(LoginMemberContext.getId());
+            passenger.setId(SnowUtil.getSnowflakeNextId());
+            passenger.setCreateTime(now);
+            passenger.setUpdateTime(now);
+            passengerMapper.insert(passenger);
+        } else {
+         passenger.setUpdateTime(now);
+         passengerMapper.updateByPrimaryKey(passenger);
+        }
     }
 }
