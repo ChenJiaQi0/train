@@ -1,13 +1,37 @@
 <template>
-  <p style="float: left">
+  <p>
     <a-space>
       <a-button type="primary" @click="handleQuery()">刷新</a-button>
-      <a-button type="primary" @click="showModal">新增</a-button>
+      <a-button type="primary" @click="onAdd">新增</a-button>
     </a-space>
   </p>
-  <a-table :dataSource="passengers" :columns="columns" :pagination="pagination" @change="handleTableChange" />
-  <a-modal v-model:visible="visible" title="乘客人" @ok="handleOk" ok-text="确认" cancel-text="取消">
-    <a-form :model="passenger" :label-col="{ span: 4 }" :wrapper-col="{ span: 20 }">
+  <a-table
+    :dataSource="passengers"
+    :columns="columns"
+    :pagination="pagination"
+    @change="handleTableChange"
+  >
+    <template #bodyCell="{ column, record }">
+      <template v-if="column.dataIndex === 'operation'">
+        <a-space>
+          <a @click="onEdit(record)">编辑</a>
+        </a-space>
+      </template>
+    </template>
+  </a-table>
+
+  <a-modal
+    v-model:visible="visible"
+    title="乘车人"
+    @ok="handleOk"
+    ok-text="确认"
+    cancel-text="取消"
+  >
+    <a-form
+      :model="passenger"
+      :label-col="{ span: 4 }"
+      :wrapper-col="{ span: 20 }"
+    >
       <a-form-item label="姓名">
         <a-input v-model:value="passenger.name" />
       </a-form-item>
@@ -24,10 +48,58 @@
     </a-form>
   </a-modal>
 </template>
+
 <script setup>
-import { ref, reactive, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { notification } from 'ant-design-vue'
 import axios from 'axios'
+
+const visible = ref(false)
+
+const passenger = ref({
+  id: undefined,
+  memberId: undefined,
+  name: undefined,
+  idCard: undefined,
+  type: undefined,
+  createTime: undefined,
+  updateTime: undefined
+})
+
+const onAdd = () => {
+  visible.value = true
+}
+
+const onEdit = (record) => {
+  // passenger.value = record
+  passenger.value = window.Tool.copy(record)
+  visible.value = true
+}
+
+const handleOk = () => {
+  axios.post('/member/passenger/save', passenger.value).then((response) => {
+    const data = response.data
+    if (data.success) {
+      notification.success({ description: '保存成功！' })
+      visible.value = false
+      handleQuery({
+        page: pagination.value.current,
+        size: pagination.value.pageSize
+      })
+    } else {
+      notification.error({ description: data.message })
+    }
+  })
+}
+
+const passengers = ref([])
+
+// 分页的三个属性名是固定的
+const pagination = ref({
+  total: 0,
+  current: 1,
+  pageSize: 3
+})
 
 const columns = [
   {
@@ -44,42 +116,17 @@ const columns = [
     title: '类型',
     dataIndex: 'type',
     key: 'type'
+  },
+  {
+    title: '操作',
+    dataIndex: 'operation'
   }
 ]
-const visible = ref(false)
-const passengers = ref([])
-const passenger = reactive({
-  id: undefined,
-  memeberId: undefined,
-  name: undefined,
-  idCard: undefined,
-  type: undefined,
-  createTime: undefined,
-  updateTime: undefined
-})
 
-const showModal = () => {
-  visible.value = true
-}
-const pagination = reactive({
-  total: 0,
-  current: 1,
-  pageSize: 2
-})
-
-const handleOk = (e) => {
-  axios.post('/member/passenger/save', passenger).then((resp) => {
-    const data = resp.data
-    if (data.success) {
-      notification.success({ description: '保存成功!' })
-      visible.value = false
-      handleQuery({
-        page: pagination.current,
-        size: pagination.pageSize
-      })
-    } else {
-      notification.error({ description: data.message })
-    }
+const handleTableChange = (pagination) => {
+  handleQuery({
+    page: pagination.current,
+    size: pagination.pageSize
   })
 }
 
@@ -87,9 +134,10 @@ const handleQuery = (param) => {
   if (!param) {
     param = {
       page: 1,
-      size: pagination.pageSize
+      size: pagination.value.pageSize
     }
   }
+
   axios
     .get('/member/passenger/query-list', {
       params: {
@@ -97,13 +145,13 @@ const handleQuery = (param) => {
         size: param.size
       }
     })
-    .then((resp) => {
-      const data = resp.data
+    .then((response) => {
+      const data = response.data
       if (data.success) {
         passengers.value = data.content.list
         // 设置分页控件的值
-        pagination.current = param.page
-        pagination.total = data.content.total
+        pagination.value.current = param.page
+        pagination.value.total = data.content.total
       } else {
         notification.error({ description: data.message })
       }
@@ -113,16 +161,9 @@ const handleQuery = (param) => {
 onMounted(() => {
   handleQuery({
     page: 1,
-    size: pagination.pageSize
+    size: pagination.value.pageSize
   })
 })
-
-const handleTableChange = (pagination) => {
-  handleQuery({
-    page: pagination.current,
-    size: pagination.pageSize
-  })
-}
 </script>
 
 <style scoped></style>
