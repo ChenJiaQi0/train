@@ -1,6 +1,7 @@
 package top.chen.train.member.req;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * @author ChenQi
@@ -8,6 +9,7 @@ import lombok.Data;
  * @description: PassengerQueryReq
  */
 @Data
-public class PassengerQueryReq {
+@EqualsAndHashCode(callSuper = true)
+public class PassengerQueryReq extends PageReq{
     private Long memberId;
 }
