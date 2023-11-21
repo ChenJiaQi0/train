@@ -336,3 +336,7 @@ Caused by: java.lang.ClassNotFoundException: top.chen.train.member.service.Passe
 	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
 	... 28 common frames omitted
+2023-11-21 16:08:42.747 ERROR t.c.t.common.controller.ControllerExceptionHandler:31   [32m1700553881783PoQ  [0;39m 校验异常：{}【每页条数】不能为空
+2023-11-21 16:09:53.734 ERROR t.c.t.common.controller.ControllerExceptionHandler:31   [32m1700554103838PW3  [0;39m 校验异常：{}【每页条数】不能为空
+2023-11-21 16:09:57.965 ERROR t.c.t.common.controller.ControllerExceptionHandler:31   [32m1700553881783PoQ  [0;39m 校验异常：{}【每页条数】不能为空
+2023-11-21 16:10:11.145 ERROR t.c.t.common.controller.ControllerExceptionHandler:31   [32m1700554173130Y1W  [0;39m 校验异常：{}【每页条数】不能为空
