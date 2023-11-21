@@ -1,6 +1,6 @@
 <template>
   <p>
-    <a-space>
+    <a-space style="float: left">
       <a-button type="primary" @click="handleQuery()">刷新</a-button>
       <a-button type="primary" @click="onAdd">新增</a-button>
     </a-space>
@@ -28,9 +28,7 @@
       </a-form-item>
       <a-form-item label="类型">
         <a-select v-model:value="passenger.type">
-          <a-select-option value="1">成人</a-select-option>
-          <a-select-option value="2">儿童</a-select-option>
-          <a-select-option value="3">学生</a-select-option>
+          <a-select-option v-for="item in PASSENGER_TYPE_ARRAY" :value="item.key" :key="item.key">{{item.value}}</a-select-option>
         </a-select>
       </a-form-item>
     </a-form>
@@ -43,6 +41,7 @@ import { notification } from 'ant-design-vue'
 import axios from 'axios'
 
 const visible = ref(false)
+const PASSENGER_TYPE_ARRAY = window.PASSENGER_TYPE_ARRAY
 
 const passenger = ref({
   id: undefined,
