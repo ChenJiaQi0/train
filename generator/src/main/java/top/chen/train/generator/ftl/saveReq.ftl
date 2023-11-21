@@ -1,4 +1,4 @@
-package top.chen.train.member.req;
+package top.chen.train.${module}.req;
 
 <#list typeSet as type>
     <#if type=='Date'>
