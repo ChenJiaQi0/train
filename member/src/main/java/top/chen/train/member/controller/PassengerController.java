@@ -7,6 +7,7 @@ import top.chen.train.common.context.LoginMemberContext;
 import top.chen.train.common.resp.CommonResp;
 import top.chen.train.member.req.PassengerQueryReq;
 import top.chen.train.member.req.PassengerSaveReq;
+import top.chen.train.member.resp.PageResp;
 import top.chen.train.member.resp.PassengerQueryResp;
 import top.chen.train.member.service.PassengerService;
 
@@ -29,9 +30,9 @@ public class PassengerController {
      * @return
      */
     @GetMapping("/query-list")
-    public CommonResp<List<PassengerQueryResp>> queryList(@Valid PassengerQueryReq req) {
+    public CommonResp<PageResp<PassengerQueryResp>> queryList(@Valid PassengerQueryReq req) {
         req.setMemberId(LoginMemberContext.getId());
-        List<PassengerQueryResp> list = passengerService.queryList(req);
+        PageResp<PassengerQueryResp> list = passengerService.queryList(req);
         return new CommonResp<>(list);
     }
 
