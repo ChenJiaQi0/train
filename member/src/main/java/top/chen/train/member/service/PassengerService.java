@@ -32,6 +32,14 @@ public class PassengerService {
     private PassengerMapper passengerMapper;
 
     /**
+     * 乘车人删除
+     * @param id
+     */
+    public void delete(Long id) {
+        passengerMapper.deleteByPrimaryKey(id);
+    }
+
+    /**
      * 查询 乘车人列表查询接口，只能查看当前成员自己添加的乘客
      * @param req
      * @return

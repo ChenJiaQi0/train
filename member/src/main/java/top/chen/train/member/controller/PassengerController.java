@@ -25,6 +25,17 @@ public class PassengerController {
     private PassengerService passengerService;
 
     /**
+     * 乘车人删除
+     * @param id
+     * @return
+     */
+    @DeleteMapping("/delete/{id}")
+    public CommonResp<Object> delete(@PathVariable Long id) {
+        passengerService.delete(id);
+        return new CommonResp<>();
+    }
+
+    /**
      * 查询 乘车人列表查询接口，只能查看当前成员自己添加的乘客
      * @param req
      * @return
