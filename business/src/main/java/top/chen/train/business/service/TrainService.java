@@ -5,6 +5,7 @@ import cn.hutool.core.date.DateTime;
 import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.springframework.context.annotation.Bean;
 import top.chen.train.common.resp.PageResp;
 import top.chen.train.common.util.SnowUtil;
 import top.chen.train.business.domain.Train;
@@ -27,6 +28,17 @@ public class TrainService {
 
     @Resource
     private TrainMapper trainMapper;
+
+    /**
+     * 查询所有车次
+     * @return
+     */
+    public List<TrainQueryResp> queryAll(){
+        TrainExample trainExample = new TrainExample();
+        trainExample.setOrderByClause("code desc");
+        List<Train> trainList = trainMapper.selectByExample(trainExample);
+        return BeanUtil.copyToList(trainList, TrainQueryResp.class);
+    }
 
     public void save(TrainSaveReq req) {
         DateTime now = DateTime.now();
