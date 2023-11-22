@@ -1,20 +1,22 @@
 <template>
   <a-layout-sider width="200" style="background: #fff">
-    <a-menu
-        v-model:selectedKeys="selectedKeys"
-        mode="inline"
-        :style="{ height: '100%', borderRight: 0 }"
-    >
+    <a-menu v-model:selectedKeys="selectedKeys" mode="inline" :style="{ height: '100%', borderRight: 0 }">
       <a-menu-item key="/welcome">
         <router-link to="/welcome">
-          <coffee-outlined/>
+          <coffee-outlined />
           欢迎
         </router-link>
       </a-menu-item>
       <a-menu-item key="/about">
         <router-link to="/about">
-          <user-outlined/>
+          <user-outlined />
           关于
+        </router-link>
+      </a-menu-item>
+      <a-menu-item key="/station">
+        <router-link to="/station">
+          <home-outlined />
+          车站管理
         </router-link>
       </a-menu-item>
     </a-menu>
@@ -35,5 +37,4 @@ watch(() => router.currentRoute.value.path, (newValue) => {
 </script>
 
 <style scoped>
-
 </style>
