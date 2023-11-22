@@ -28,6 +28,19 @@ public class TrainCarriageService {
     @Resource
     private TrainCarriageMapper trainCarriageMapper;
 
+    /**
+     * 按车次查询所有车厢
+     * @param trainCode
+     * @return
+     */
+    public List<TrainCarriage> selectByTrainCode(String trainCode){
+        TrainCarriageExample trainCarriageExample = new TrainCarriageExample();
+        trainCarriageExample.setOrderByClause("`index` asc");
+        TrainCarriageExample.Criteria criteria = trainCarriageExample.createCriteria();
+        criteria.andTrainCodeEqualTo(trainCode);
+        return trainCarriageMapper.selectByExample(trainCarriageExample);
+    }
+
     public void save(TrainCarriageSaveReq req) {
         DateTime now = DateTime.now();
         TrainCarriage trainCarriage = BeanUtil.copyProperties(req, TrainCarriage.class);

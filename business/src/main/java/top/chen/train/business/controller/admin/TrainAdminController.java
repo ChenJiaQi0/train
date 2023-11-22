@@ -1,5 +1,6 @@
 package top.chen.train.business.controller.admin;
 
+import top.chen.train.business.service.TrainSeatService;
 import top.chen.train.common.context.LoginMemberContext;
 import top.chen.train.common.resp.CommonResp;
 import top.chen.train.common.resp.PageResp;
@@ -19,6 +20,19 @@ public class TrainAdminController {
 
     @Resource
     private TrainService trainService;
+    @Resource
+    private TrainSeatService trainSeatService;
+
+    /**
+     * 获取座位——按车次生成车座
+     * @param trainCode
+     * @return
+     */
+    @GetMapping("/gen-seat/{trainCode}")
+    public CommonResp<Object> genSeat(@PathVariable String trainCode){
+        trainSeatService.genTrainSeat(trainCode);
+        return new CommonResp<>();
+    }
 
     @GetMapping("/query-all")
     public CommonResp<List<TrainQueryResp>> queryList(){
