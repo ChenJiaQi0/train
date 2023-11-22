@@ -16,3 +16,15 @@ SEAT_TYPE_ARRAY = [
   { code: '3', desc: '软卧' },
   { code: '4', desc: '硬卧' }
 ]
+
+SEAT_COL_ARRAY = [
+  { code: 'A', desc: 'A' },
+  { code: 'C', desc: 'C' },
+  { code: 'D', desc: 'D' },
+  { code: 'F', desc: 'F' },
+  { code: 'A', desc: 'A' },
+  { code: 'B', desc: 'B' },
+  { code: 'C', desc: 'C' },
+  { code: 'D', desc: 'D' },
+  { code: 'F', desc: 'F' }
+]
