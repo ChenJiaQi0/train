@@ -1,49 +1,42 @@
 <template>
-    <p>
-        <a-space style="float: left;">
-            <a-button type="primary" @click="handleQuery()">刷新</a-button>
-            <a-button type="primary" @click="onAdd">新增</a-button>
+  <p>
+    <a-space style="float: left;">
+      <a-button type="primary" @click="handleQuery()">刷新</a-button>
+      <a-button type="primary" @click="onAdd">新增</a-button>
+    </a-space>
+  </p>
+  <a-table :dataSource="stations" :columns="columns" :pagination="pagination" @change="handleTableChange" :loading="loading">
+    <template #bodyCell="{ column, record }">
+      <template v-if="column.dataIndex === 'operation'">
+        <a-space>
+          <a-popconfirm title="删除后不可恢复，确认删除?" @confirm="onDelete(record)" ok-text="确认" cancel-text="取消">
+            <a style="color: red">删除</a>
+          </a-popconfirm>
+          <a @click="onEdit(record)">编辑</a>
         </a-space>
-    </p>
-    <a-table :dataSource="stations"
-             :columns="columns"
-             :pagination="pagination"
-             @change="handleTableChange"
-             :loading="loading">
-        <template #bodyCell="{ column, record }">
-            <template v-if="column.dataIndex === 'operation'">
-                    <a-space>
-                        <a-popconfirm
-                                title="删除后不可恢复，确认删除?"
-                                @confirm="onDelete(record)"
-                                ok-text="确认" cancel-text="取消">
-                            <a style="color: red">删除</a>
-                        </a-popconfirm>
-                        <a @click="onEdit(record)">编辑</a>
-                    </a-space>
-            </template>
-        </template>
-    </a-table>
-        <a-modal v-model:visible="visible" title="车站" @ok="handleOk"
-                 ok-text="确认" cancel-text="取消">
-            <a-form :model="station" :label-col="{span: 4}" :wrapper-col="{ span: 20 }">
-                        <a-form-item label="站名">
-                                <a-input v-model:value="station.name"/>
-                        </a-form-item>
-                        <a-form-item label="站名拼音">
-                                <a-input v-model:value="station.namePinyin"/>
-                        </a-form-item>
-                        <a-form-item label="站名拼音首字母">
-                                <a-input v-model:value="station.namePy"/>
-                        </a-form-item>
-            </a-form>
-        </a-modal>
+      </template>
+    </template>
+  </a-table>
+  <a-modal v-model:visible="visible" title="车站" @ok="handleOk" ok-text="确认" cancel-text="取消">
+    <a-form :model="station" :label-col="{span: 4}" :wrapper-col="{ span: 20 }">
+      <a-form-item label="站名">
+        <a-input v-model:value="station.name" />
+      </a-form-item>
+      <a-form-item label="站名拼音">
+        <a-input v-model:value="station.namePinyin" disabled />
+      </a-form-item>
+      <a-form-item label="站名拼音首字母">
+        <a-input v-model:value="station.namePy" disabled />
+      </a-form-item>
+    </a-form>
+  </a-modal>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import { notification } from 'ant-design-vue'
 import axios from 'axios'
+import { pinyin } from 'pinyin-pro'
 
 const visible = ref(false)
 const station = ref({
@@ -165,4 +158,24 @@ onMounted(() => {
     size: pagination.value.pageSize
   })
 })
+
+// http://pinyin-pro.cn/
+watch(
+  () => station.value.name,
+  () => {
+    if (Tool.isNotEmpty(station.value.name)) {
+      station.value.namePinyin = pinyin(station.value.name, {
+        toneType: 'none'
+      }).replaceAll(' ', '')
+      station.value.namePy = pinyin(station.value.name, {
+        pattern: 'first',
+        toneType: 'none'
+      }).replaceAll(' ', '')
+    } else {
+      station.value.namePinyin = ''
+      station.value.namePy = ''
+    }
+  },
+  { immediate: true }
+)
 </script>
