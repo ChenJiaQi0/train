@@ -1,7 +1,8 @@
 <template>
   <p>
     <a-space style="float: left;">
-      <a-button type="primary" @click="handleQuery()">刷新</a-button>
+      <train-select-view v-model="params.trainCode" width='200px'></train-select-view>
+      <a-button type="primary" @click="handleQuery()">查找</a-button>
       <a-button type="primary" @click="onAdd">新增</a-button>
     </a-space>
   </p>
@@ -127,6 +128,9 @@ const columns = [
     dataIndex: 'operation'
   }
 ]
+const params = ref({
+  trainCode: null
+})
 
 const onAdd = () => {
   trainSeat.value = {}
@@ -180,7 +184,8 @@ const handleQuery = (param) => {
   axios.get('/business/admin/train-seat/query-list', {
     params: {
       page: param.page,
-      size: param.size
+      size: param.size,
+      trainCode: params.value.trainCode
     }
   }).then((response) => {
     loading.value = false
