@@ -28,6 +28,18 @@ public class StationService {
     @Resource
     private StationMapper stationMapper;
 
+    /**
+     * 查询所有车站
+     * @return
+     */
+    public List<StationQueryResp> queryAll(){
+        StationExample stationExample = new StationExample();
+        // 根据站名拼音升序排列
+        stationExample.setOrderByClause("name_pinyin asc");
+        List<Station> stationList = stationMapper.selectByExample(stationExample);
+        return BeanUtil.copyToList(stationList, StationQueryResp.class);
+    }
+
     public void save(StationSaveReq req) {
         DateTime now = DateTime.now();
         Station station = BeanUtil.copyProperties(req, Station.class);
