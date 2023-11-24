@@ -39,6 +39,12 @@
             每日座位
           </router-link>
         </a-menu-item>
+        <a-menu-item key="/business/programmers">
+          <router-link to="/business/programmers">
+            <user-outlined />
+            程序员管理
+          </router-link>
+        </a-menu-item>
       </a-sub-menu>
 
       <a-sub-menu key="batch">

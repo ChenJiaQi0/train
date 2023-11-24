@@ -41,6 +41,6 @@
                              targetPackage="top.chen.train.business.mapper"
                              type="XMLMAPPER"/>
 
-        <table tableName="daily_train_seat" domainObjectName="DailyTrainSeat" />
+        <table tableName="programmers" domainObjectName="programmers" />
     </context>
 </generatorConfiguration>
