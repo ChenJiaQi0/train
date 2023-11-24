@@ -147,30 +147,30 @@ const columns = [
   // }
 ]
 
-const onAdd = () => {
-  dailyTrainSeat.value = {}
-  visible.value = true
-}
+// const onAdd = () => {
+//   dailyTrainSeat.value = {}
+//   visible.value = true
+// }
 
-const onEdit = (record) => {
-  dailyTrainSeat.value = window.Tool.copy(record)
-  visible.value = true
-}
+// const onEdit = (record) => {
+//   dailyTrainSeat.value = window.Tool.copy(record)
+//   visible.value = true
+// }
 
-const onDelete = (record) => {
-  axios.delete('/business/admin/daily-train-seat/delete/' + record.id).then((response) => {
-    const data = response.data
-    if (data.success) {
-      notification.success({ description: '删除成功！' })
-      handleQuery({
-        page: pagination.value.current,
-        size: pagination.value.pageSize
-      })
-    } else {
-      notification.error({ description: data.message })
-    }
-  })
-}
+// const onDelete = (record) => {
+//   axios.delete('/business/admin/daily-train-seat/delete/' + record.id).then((response) => {
+//     const data = response.data
+//     if (data.success) {
+//       notification.success({ description: '删除成功！' })
+//       handleQuery({
+//         page: pagination.value.current,
+//         size: pagination.value.pageSize
+//       })
+//     } else {
+//       notification.error({ description: data.message })
+//     }
+//   })
+// }
 
 const handleOk = () => {
   axios.post('/business/admin/daily-train-seat/save', dailyTrainSeat.value).then((response) => {
