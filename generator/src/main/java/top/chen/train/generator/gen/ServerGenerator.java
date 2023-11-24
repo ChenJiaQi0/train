@@ -21,7 +21,7 @@ import java.util.*;
 public class ServerGenerator {
     static String servicePath = "[module]/src/main/java/top/chen/train/[module]/service/";
     static String serverPath = "[module]/src/main/java/top/chen/train/[module]/";
-    static String vuePath = "admin/src/views/main/";
+    static String vuePath = "admin/src/views/main/business/";
     static boolean readOnly = false;
     static String pomPath = "generator/pom.xml";
     static {
