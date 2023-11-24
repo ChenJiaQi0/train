@@ -1,10 +1,12 @@
 package top.chen.train.business.service;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import top.chen.train.business.domain.Train;
 import top.chen.train.common.resp.PageResp;
 import top.chen.train.common.util.SnowUtil;
 import top.chen.train.business.domain.DailyTrainSeat;
@@ -18,11 +20,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
 public class DailyTrainSeatService {
-
     private static final Logger LOG = LoggerFactory.getLogger(DailyTrainSeatService.class);
 
     @Resource

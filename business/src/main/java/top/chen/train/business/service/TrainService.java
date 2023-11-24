@@ -7,14 +7,11 @@ import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.context.annotation.Bean;
-import top.chen.train.business.domain.Station;
-import top.chen.train.business.domain.StationExample;
+import top.chen.train.business.domain.*;
 import top.chen.train.common.exception.BusinessException;
 import top.chen.train.common.exception.BusinessExceptionEnum;
 import top.chen.train.common.resp.PageResp;
 import top.chen.train.common.util.SnowUtil;
-import top.chen.train.business.domain.Train;
-import top.chen.train.business.domain.TrainExample;
 import top.chen.train.business.mapper.TrainMapper;
 import top.chen.train.business.req.TrainQueryReq;
 import top.chen.train.business.req.TrainSaveReq;
@@ -24,6 +21,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -33,6 +31,12 @@ public class TrainService {
 
     @Resource
     private TrainMapper trainMapper;
+
+    public List<Train> selectAll(){
+        TrainExample trainExample = new TrainExample();
+        trainExample.setOrderByClause("code asc");
+        return trainMapper.selectByExample(trainExample);
+    }
 
     /**
      * 查询所有车次
@@ -100,4 +104,6 @@ public class TrainService {
         public void delete(Long id) {
             trainMapper.deleteByPrimaryKey(id);
         }
+
+
 }
