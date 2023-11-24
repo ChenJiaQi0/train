@@ -1,11 +1,6 @@
 <template>
   <a-layout-sider width="200" style="background: #fff">
-    <a-menu
-      v-model:selectedKeys="selectedKeys"
-      :openKeys="['batch', 'base', 'business']"
-      mode="inline"
-      :style="{ height: '100%', borderRight: 0 }"
-    >
+    <a-menu v-model:selectedKeys="selectedKeys" :openKeys="['batch', 'base', 'business']" mode="inline" :style="{ height: '100%', borderRight: 0 }">
       <a-menu-item key="/welcome">
         <router-link to="/welcome"> <coffee-outlined /> 欢迎 </router-link>
       </a-menu-item>
@@ -16,26 +11,32 @@
       <a-sub-menu key="business">
         <template #title>
           <span>
-            <UnorderedListOutlined/>
-              业务管理
+            <UnorderedListOutlined />
+            业务管理
           </span>
         </template>
         <a-menu-item key="/business/daily-train">
           <router-link to="/business/daily-train">
-            <user-outlined/>
+            <user-outlined />
             每日车次
           </router-link>
         </a-menu-item>
         <a-menu-item key="/business/daily-train-station">
           <router-link to="/business/daily-train-station">
-            <user-outlined/>
+            <user-outlined />
             每日车站
           </router-link>
         </a-menu-item>
         <a-menu-item key="/business/daily-train-carriage">
           <router-link to="/business/daily-train-carriage">
-            <user-outlined/>
+            <user-outlined />
             每日车厢
+          </router-link>
+        </a-menu-item>
+        <a-menu-item key="/business/daily-train-seat">
+          <router-link to="/business/daily-train-seat">
+            <user-outlined />
+            每日座位
           </router-link>
         </a-menu-item>
       </a-sub-menu>
