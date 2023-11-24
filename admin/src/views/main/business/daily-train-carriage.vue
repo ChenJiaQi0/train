@@ -1,7 +1,9 @@
 <template>
   <p>
     <a-space style="float: left;">
-      <a-button type="primary" @click="handleQuery()">刷新</a-button>
+      <a-date-picker v-model:value="params.date" valueFormat="YYYY-MM-DD" placeholder="请选择日期" />
+      <train-select-view v-model="params.trainCode" width='200px' />
+      <a-button type="primary" @click="handleQuery()">查找</a-button>
       <a-button type="primary" @click="onAdd">新增</a-button>
     </a-space>
   </p>
@@ -30,7 +32,7 @@
         <a-date-picker v-model:value="dailyTrainCarriage.date" valueFormat="YYYY-MM-DD" placeholder="请选择日期" />
       </a-form-item>
       <a-form-item label="车次编号">
-        <a-input v-model:value="dailyTrainCarriage.trainCode" />
+        <train-select-view v-model:value="dailyTrainCarriage.trainCode" />
       </a-form-item>
       <a-form-item label="厢序">
         <a-input v-model:value="dailyTrainCarriage.index" />
@@ -42,15 +44,15 @@
           </a-select-option>
         </a-select>
       </a-form-item>
-      <a-form-item label="座位数">
+      <!-- <a-form-item label="座位数">
         <a-input v-model:value="dailyTrainCarriage.seatCount" />
-      </a-form-item>
+      </a-form-item> -->
       <a-form-item label="排数">
         <a-input v-model:value="dailyTrainCarriage.rowCount" />
       </a-form-item>
-      <a-form-item label="列数">
+      <!-- <a-form-item label="列数">
         <a-input v-model:value="dailyTrainCarriage.colCount" />
-      </a-form-item>
+      </a-form-item> -->
     </a-form>
   </a-modal>
 </template>
@@ -59,6 +61,7 @@
 import { ref, onMounted } from 'vue'
 import { notification } from 'ant-design-vue'
 import axios from 'axios'
+import TrainSelectView from '@/components/train-select.vue'
 
 const SEAT_TYPE_ARRAY = window.SEAT_TYPE_ARRAY
 const visible = ref(false)
@@ -165,6 +168,10 @@ const handleOk = () => {
   })
 }
 
+const params = ref({
+  date: null,
+  trainCode: null
+})
 const handleQuery = (param) => {
   if (!param) {
     param = {
@@ -176,7 +183,9 @@ const handleQuery = (param) => {
   axios.get('/business/admin/daily-train-carriage/query-list', {
     params: {
       page: param.page,
-      size: param.size
+      size: param.size,
+      date: params.value.date,
+      trainCode: params.value.trainCode
     }
   }).then((response) => {
     loading.value = false
