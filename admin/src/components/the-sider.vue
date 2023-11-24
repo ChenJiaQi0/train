@@ -15,15 +15,21 @@
 
       <a-sub-menu key="business">
         <template #title>
-    <span>
-      <UnorderedListOutlined/>
-        业务管理
-    </span>
+          <span>
+            <UnorderedListOutlined/>
+              业务管理
+          </span>
         </template>
         <a-menu-item key="/business/daily-train">
           <router-link to="/business/daily-train">
             <user-outlined/>
             每日车次
+          </router-link>
+        </a-menu-item>
+        <a-menu-item key="/business/daily-train-station">
+          <router-link to="/business/daily-train-station">
+            <user-outlined/>
+            每日车站
           </router-link>
         </a-menu-item>
       </a-sub-menu>
