@@ -1,10 +1,13 @@
 package top.chen.train.business.service;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.DateTime;
+import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import top.chen.train.business.domain.TrainStation;
 import top.chen.train.common.resp.PageResp;
 import top.chen.train.common.util.SnowUtil;
 import top.chen.train.business.domain.DailyTrainStation;
@@ -18,12 +21,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
 public class DailyTrainStationService {
 
     private static final Logger LOG = LoggerFactory.getLogger(DailyTrainStationService.class);
+    @Resource
+    private TrainStationService trainStationService;
 
     @Resource
     private DailyTrainStationMapper dailyTrainStationMapper;
@@ -70,7 +76,41 @@ public class DailyTrainStationService {
         return pageResp;
     }
 
-        public void delete(Long id) {
-            dailyTrainStationMapper.deleteByPrimaryKey(id);
+    public void delete(Long id) {
+        dailyTrainStationMapper.deleteByPrimaryKey(id);
+    }
+
+    /**
+     * 生成每日车次经过的车站数据
+     * @param date
+     * @param trainCode
+     */
+    public void genDaily(Date date, String trainCode) {
+        LOG.info("生成日期：【{}】车次【{}】的车站信息开始", DateUtil.formatDate(date), trainCode);
+
+        // 删除某日车次的车站信息
+        DailyTrainStationExample dailyTrainStationExample = new DailyTrainStationExample();
+        dailyTrainStationExample.createCriteria()
+                .andDateEqualTo(date)
+                .andTrainCodeEqualTo(trainCode);
+        dailyTrainStationMapper.deleteByExample(dailyTrainStationExample);
+
+        // 查出某车次的所有车站信息
+        List<TrainStation> stationList = trainStationService.selectByTrainCode(trainCode);
+        if (CollUtil.isEmpty(stationList)) {
+            LOG.info("该车次没有车站基础数据，生成该车次的车站信息结束");
+            return;
         }
+
+        for (TrainStation trainStation : stationList) {
+            DateTime now = DateTime.now();
+            DailyTrainStation dailyTrainStation = BeanUtil.copyProperties(trainStation, DailyTrainStation.class);
+            dailyTrainStation.setId(SnowUtil.getSnowflakeNextId());
+            dailyTrainStation.setCreateTime(now);
+            dailyTrainStation.setUpdateTime(now);
+            dailyTrainStation.setDate(date);
+            dailyTrainStationMapper.insert(dailyTrainStation);
+        }
+        LOG.info("生成日期：【{}】车次【{}】的车站信息结束", DateUtil.formatDate(date), trainCode);
+    }
 }
