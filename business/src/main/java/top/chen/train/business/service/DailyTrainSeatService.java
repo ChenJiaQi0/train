@@ -3,14 +3,14 @@ package top.chen.train.business.service;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.DateTime;
+import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.ObjectUtil;
+import cn.hutool.core.util.StrUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import top.chen.train.business.domain.Train;
+import top.chen.train.business.domain.*;
 import top.chen.train.common.resp.PageResp;
 import top.chen.train.common.util.SnowUtil;
-import top.chen.train.business.domain.DailyTrainSeat;
-import top.chen.train.business.domain.DailyTrainSeatExample;
 import top.chen.train.business.mapper.DailyTrainSeatMapper;
 import top.chen.train.business.req.DailyTrainSeatQueryReq;
 import top.chen.train.business.req.DailyTrainSeatSaveReq;
@@ -26,7 +26,10 @@ import java.util.List;
 @Service
 public class DailyTrainSeatService {
     private static final Logger LOG = LoggerFactory.getLogger(DailyTrainSeatService.class);
-
+    @Resource
+    private TrainStationService trainStationService;
+    @Resource
+    private TrainSeatService trainSeatService;
     @Resource
     private DailyTrainSeatMapper dailyTrainSeatMapper;
 
@@ -72,4 +75,42 @@ public class DailyTrainSeatService {
         public void delete(Long id) {
             dailyTrainSeatMapper.deleteByPrimaryKey(id);
         }
+
+    /**
+     * 生成某日某车次的所有座位
+     * @param date
+     * @param trainCode
+     */
+    public void genDaily(Date date, String trainCode) {
+        LOG.info("生成日期：【{}】车次【{}】的座位信息开始", DateUtil.formatDate(date), trainCode);
+
+        // 删除某日车次的座位信息
+        DailyTrainSeatExample dailyTrainSeatExample = new DailyTrainSeatExample();
+        dailyTrainSeatExample.createCriteria()
+                .andDateEqualTo(date)
+                .andTrainCodeEqualTo(trainCode);
+        dailyTrainSeatMapper.deleteByExample(dailyTrainSeatExample);
+
+        //
+        List<TrainStation> stationList = trainStationService.selectByTrainCode(trainCode);
+        String sell = StrUtil.fillBefore("", '0', stationList.size() - 1);
+
+        // 查出某车次的所有座位信息
+        List<TrainSeat> seatList = trainSeatService.selectByTrainCode(trainCode);
+        if (CollUtil.isEmpty(seatList)) {
+            LOG.info("该车次没有座位基础数据，生成该车次的座位信息结束");
+        }
+
+        for (TrainSeat trainSeat : seatList) {
+            DateTime now = DateTime.now();
+            DailyTrainSeat dailyTrainSeat = BeanUtil.copyProperties(trainSeat, DailyTrainSeat.class);
+            dailyTrainSeat.setId(SnowUtil.getSnowflakeNextId());
+            dailyTrainSeat.setCreateTime(now);
+            dailyTrainSeat.setUpdateTime(now);
+            dailyTrainSeat.setDate(date);
+            dailyTrainSeat.setSell(sell);
+            dailyTrainSeatMapper.insert(dailyTrainSeat);
+        }
+        LOG.info("生成日期：【{}】车次【{}】的座位信息结束", DateUtil.formatDate(date), trainCode);
+    }
 }
