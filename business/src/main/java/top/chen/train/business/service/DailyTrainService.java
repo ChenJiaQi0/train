@@ -40,6 +40,8 @@ public class DailyTrainService {
     private DailyTrainCarriageService dailyTrainCarriageService;
     @Resource
     private DailyTrainSeatService dailyTrainSeatService;
+    @Resource
+    private DailyTrainTicketService dailyTrainTicketService;
 
     public void save(DailyTrainSaveReq req) {
         DateTime now = DateTime.now();
@@ -131,5 +133,9 @@ public class DailyTrainService {
         // 生成每日座位数据
         dailyTrainSeatService.genDaily(date, train.getCode());
         LOG.info("生成日期：【{}】车次【{}】的座位信息结束", DateUtil.formatDate(date), train.getCode());
+
+        // 生成每日该车次余票信息
+        dailyTrainTicketService.genDaily(date, train.getCode());
+        LOG.info("生成日期：【{}】车次【{}】的余票信息结束", DateUtil.formatDate(date), train.getCode());
     }
 }
