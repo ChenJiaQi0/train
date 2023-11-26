@@ -20,7 +20,11 @@ const routes = [
       },
       {
         path: 'passenger',
-        component: () => import('../views/main/passenger1.vue')
+        component: () => import('../views/main/passenger.vue')
+      },
+      {
+        path: 'ticket',
+        component: () => import('../views/main/ticket.vue')
       }
     ]
   },
