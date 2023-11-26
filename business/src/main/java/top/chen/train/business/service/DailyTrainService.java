@@ -135,7 +135,7 @@ public class DailyTrainService {
         LOG.info("生成日期：【{}】车次【{}】的座位信息结束", DateUtil.formatDate(date), train.getCode());
 
         // 生成每日该车次余票信息
-        dailyTrainTicketService.genDaily(date, train.getCode());
+        dailyTrainTicketService.genDaily(dailyTrain, date, train.getCode());
         LOG.info("生成日期：【{}】车次【{}】的余票信息结束", DateUtil.formatDate(date), train.getCode());
     }
 }

@@ -1,5 +1,7 @@
 package top.chen.train.business.enums;
 
+import lombok.Getter;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.EnumSet;
@@ -11,6 +13,7 @@ import java.util.List;
  * @date 2023/11/22
  * @description: SeatTypeEnum 火车车厢枚举类
  */
+@Getter
 public enum SeatTypeEnum {
     YDZ("1", "一等座", new BigDecimal("0.4")),
     EDZ("2", "二等座", new BigDecimal("0.")),

@@ -1,5 +1,7 @@
 package top.chen.train.business.enums;
 
+import lombok.Getter;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.EnumSet;
@@ -11,6 +13,7 @@ import java.util.List;
  * @date 2023/11/22
  * @description: TrainTypeEnum 火车类型枚举类
  */
+@Getter
 public enum TrainTypeEnum {
     G("G", "高铁", new BigDecimal("1.2")),
     D("D", "动车", new BigDecimal("1")),
