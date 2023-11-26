@@ -11,6 +11,8 @@ import top.chen.train.member.resp.PageResp;
 import top.chen.train.member.resp.PassengerQueryResp;
 import top.chen.train.member.service.PassengerService;
 
+import java.util.List;
+
 /**
  * @author ChenQi
  * @date 2023/11/21
@@ -21,6 +23,12 @@ import top.chen.train.member.service.PassengerService;
 public class PassengerController {
     @Resource
     private PassengerService passengerService;
+
+    @GetMapping("/query-mine")
+    public CommonResp<List<PassengerQueryResp>> queryMine() {
+        List<PassengerQueryResp> list = passengerService.queryMine();
+        return new CommonResp<>(list);
+    }
 
     /**
      * 乘车人删除

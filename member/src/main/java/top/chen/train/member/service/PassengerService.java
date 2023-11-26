@@ -32,6 +32,19 @@ public class PassengerService {
     private PassengerMapper passengerMapper;
 
     /**
+     * 查询【我的所有乘客】
+     * @return
+     */
+    public List<PassengerQueryResp> queryMine() {
+        PassengerExample passengerExample = new PassengerExample();
+        passengerExample.setOrderByClause("name asc");
+        passengerExample.createCriteria()
+                .andMemberIdEqualTo(LoginMemberContext.getId());
+        List<Passenger> list = passengerMapper.selectByExample(passengerExample);
+        return BeanUtil.copyToList(list, PassengerQueryResp.class);
+    }
+
+    /**
      * 乘车人删除
      * @param id
      */
