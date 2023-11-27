@@ -11,7 +11,7 @@ import top.chen.train.business.domain.ConfirmOrder;
 import top.chen.train.business.domain.ConfirmOrderExample;
 import top.chen.train.business.mapper.ConfirmOrderMapper;
 import top.chen.train.business.req.ConfirmOrderQueryReq;
-import top.chen.train.business.req.ConfirmOrderSaveReq;
+import top.chen.train.business.req.ConfirmOrderDoReq;
 import top.chen.train.business.resp.ConfirmOrderQueryResp;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
@@ -28,7 +28,11 @@ public class ConfirmOrderService {
     @Resource
     private ConfirmOrderMapper confirmOrderMapper;
 
-    public void save(ConfirmOrderSaveReq req) {
+    public void doConfirm(ConfirmOrderDoReq req) {
+
+    }
+
+    public void save(ConfirmOrderDoReq req) {
         DateTime now = DateTime.now();
         ConfirmOrder confirmOrder = BeanUtil.copyProperties(req, ConfirmOrder.class);
         if (ObjectUtil.isNull(confirmOrder.getId())) {
