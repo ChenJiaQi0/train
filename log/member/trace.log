@@ -16,3 +16,539 @@
 2023-11-27 14:24:33.068 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 3.453 seconds (process running for 3.966)
 2023-11-27 14:24:33.079 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
 2023-11-27 14:24:33.080 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 14:39:43.362 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-27 14:39:43.362 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-27 14:39:43.364 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 2 ms
+2023-11-27 14:39:43.495 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m17010671834919Ix  [0;39m ------------- 开始 -------------
+2023-11-27 14:39:43.497 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m17010671834919Ix  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
+2023-11-27 14:39:43.498 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m17010671834919Ix  [0;39m 类名方法: top.chen.train.member.controller.MemberController.sendCode
+2023-11-27 14:39:43.499 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m17010671834919Ix  [0;39m 远程地址: 127.0.0.1
+2023-11-27 14:39:43.575 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m17010671834919Ix  [0;39m 请求参数: [{"mobile":"13951905171"}]
+2023-11-27 14:39:43.633 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m17010671834919Ix  [0;39m HikariPool-1 - Starting...
+2023-11-27 14:39:43.937 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m17010671834919Ix  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79b28ace
+2023-11-27 14:39:43.939 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m17010671834919Ix  [0;39m HikariPool-1 - Start completed.
+2023-11-27 14:39:43.946 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m17010671834919Ix  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-27 14:39:43.969 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m17010671834919Ix  [0;39m ==> Parameters: 13951905171(String)
+2023-11-27 14:39:43.997 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m17010671834919Ix  [0;39m <==    Columns: id, mobile
+2023-11-27 14:39:43.998 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m17010671834919Ix  [0;39m <==        Row: 1, 13951905171
+2023-11-27 14:39:43.998 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m17010671834919Ix  [0;39m <==      Total: 1
+2023-11-27 14:39:44.007 INFO  top.chen.train.member.service.MemberService       :87   [32m17010671834919Ix  [0;39m 手机号存在，不插入记录
+2023-11-27 14:39:44.009 INFO  top.chen.train.member.service.MemberService       :91   [32m17010671834919Ix  [0;39m 生成验证码：8888
+2023-11-27 14:39:44.009 INFO  top.chen.train.member.service.MemberService       :93   [32m17010671834919Ix  [0;39m 保存短信记录表
+2023-11-27 14:39:44.009 INFO  top.chen.train.member.service.MemberService       :95   [32m17010671834919Ix  [0;39m 对接短信通道
+2023-11-27 14:39:44.013 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m17010671834919Ix  [0;39m 返回结果: {"success":true}
+2023-11-27 14:39:44.013 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m17010671834919Ix  [0;39m ------------- 结束 耗时：522 ms -------------
+2023-11-27 14:39:44.878 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701067184878OxT  [0;39m ------------- 开始 -------------
+2023-11-27 14:39:44.878 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701067184878OxT  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-11-27 14:39:44.878 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701067184878OxT  [0;39m 类名方法: top.chen.train.member.controller.MemberController.login
+2023-11-27 14:39:44.878 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701067184878OxT  [0;39m 远程地址: 127.0.0.1
+2023-11-27 14:39:44.880 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701067184878OxT  [0;39m 请求参数: [{"code":"8888","mobile":"13951905171"}]
+2023-11-27 14:39:44.882 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701067184878OxT  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-27 14:39:44.882 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701067184878OxT  [0;39m ==> Parameters: 13951905171(String)
+2023-11-27 14:39:44.883 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1701067184878OxT  [0;39m <==    Columns: id, mobile
+2023-11-27 14:39:44.883 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1701067184878OxT  [0;39m <==        Row: 1, 13951905171
+2023-11-27 14:39:44.884 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701067184878OxT  [0;39m <==      Total: 1
+2023-11-27 14:39:45.559 INFO  top.chen.train.common.util.JwtUtil                :40   [32m1701067184878OxT  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjcxODQsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1MzU4NCwiaWF0IjoxNzAxMDY3MTg0fQ.16odTc60ipS268v5fkX8qdM6MqAOPHiX4HAyrD3cly8
+2023-11-27 14:39:45.560 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701067184878OxT  [0;39m 返回结果: {"content":{"id":1,"mobile":"13951905171","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjcxODQsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1MzU4NCwiaWF0IjoxNzAxMDY3MTg0fQ.16odTc60ipS268v5fkX8qdM6MqAOPHiX4HAyrD3cly8"},"success":true}
+2023-11-27 14:39:45.561 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701067184878OxT  [0;39m ------------- 结束 耗时：683 ms -------------
+2023-11-27 14:39:51.033 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjcxODQsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1MzU4NCwiaWF0IjoxNzAxMDY3MTg0fQ.16odTc60ipS268v5fkX8qdM6MqAOPHiX4HAyrD3cly8
+2023-11-27 14:39:51.042 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 14:39:51.043 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 14:39:51.048 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701067191048bCa  [0;39m ------------- 开始 -------------
+2023-11-27 14:39:51.049 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701067191048bCa  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 14:39:51.049 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701067191048bCa  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 14:39:51.049 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701067191048bCa  [0;39m 远程地址: 127.0.0.1
+2023-11-27 14:39:51.049 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701067191048bCa  [0;39m 请求参数: []
+2023-11-27 14:39:51.054 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701067191048bCa  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 14:39:51.055 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701067191048bCa  [0;39m ==> Parameters: 1(Long)
+2023-11-27 14:39:51.060 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701067191048bCa  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 14:39:51.064 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701067191048bCa  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 14:39:51.067 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701067191048bCa  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 14:39:51.068 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701067191048bCa  [0;39m <==      Total: 2
+2023-11-27 14:39:51.075 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701067191048bCa  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 14:39:51.076 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701067191048bCa  [0;39m ------------- 结束 耗时：28 ms -------------
+2023-11-27 14:55:20.888 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-11-27 14:55:20.900 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-11-27 14:55:22.641 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-11-27 14:55:22.672 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 9956 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 14:55:22.673 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 14:55:22.707 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-27 14:55:22.707 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-27 14:55:23.355 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=a0ba99c0-16cf-3da2-8da4-6d376c54a235
+2023-11-27 14:55:23.903 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 14:55:23.913 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:55:23.913 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 14:55:23.913 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 14:55:23.954 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 14:55:23.954 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1247 ms
+2023-11-27 14:55:24.643 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-27 14:55:24.910 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:55:24.926 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 14:55:25.178 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 3.133 seconds (process running for 3.614)
+2023-11-27 14:55:25.181 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 14:55:25.182 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 14:58:01.296 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-11-27 14:58:01.311 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:58:01.311 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 14:58:01.314 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:58:01.316 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:58:01.583 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 9956 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 14:58:01.583 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 14:58:01.724 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6bfd6ba2-2073-3eab-a453-657a6ce27694
+2023-11-27 14:58:01.783 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 14:58:01.784 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:58:01.784 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 14:58:01.785 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 14:58:01.794 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 14:58:01.794 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 209 ms
+2023-11-27 14:58:02.023 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-27 14:58:02.320 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:58:02.322 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 14:58:02.533 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.191 seconds (process running for 160.969)
+2023-11-27 14:58:02.534 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 14:58:02.534 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 14:58:02.536 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 14:58:03.443 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-27 14:58:03.457 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:58:03.457 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 14:58:03.458 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:58:03.459 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:58:03.718 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 9956 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 14:58:03.719 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 14:58:03.853 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6bfd6ba2-2073-3eab-a453-657a6ce27694
+2023-11-27 14:58:03.918 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 14:58:03.918 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:58:03.918 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 14:58:03.918 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 14:58:03.927 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 14:58:03.928 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 208 ms
+2023-11-27 14:58:04.156 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-27 14:58:04.423 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:58:04.427 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 14:58:04.688 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.202 seconds (process running for 163.123)
+2023-11-27 14:58:04.689 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 14:58:04.689 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 14:58:04.689 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 14:58:19.048 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-27 14:58:19.049 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-27 14:58:19.050 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-11-27 14:58:19.083 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701068299077xwq  [0;39m ------------- 开始 -------------
+2023-11-27 14:58:19.084 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701068299077xwq  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 14:58:19.084 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701068299077xwq  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 14:58:19.084 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701068299077xwq  [0;39m 远程地址: 127.0.0.1
+2023-11-27 14:58:19.138 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701068299077xwq  [0;39m 请求参数: []
+2023-11-27 14:58:19.141 ERROR top.chen.train.common.context.LoginMemberContext  :27   [32m1701068299077xwq  [0;39m 获取登录会员信息异常
+java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+	at top.chen.train.common.context.LoginMemberContext.getId(LoginMemberContext.java:25)
+	at top.chen.train.member.service.PassengerService.queryMine(PassengerService.java:42)
+	at top.chen.train.member.controller.PassengerController.queryMine(PassengerController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at top.chen.train.common.aspect.LogAspect.doAround(LogAspect.java:86)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at top.chen.train.member.controller.PassengerController$$SpringCGLIB$$0.queryMine(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-27 14:58:19.149 ERROR t.c.t.common.controller.ControllerExceptionHandler:62   [32m1701068299077xwq  [0;39m 系统异常：java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+2023-11-27 14:58:19.196 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m1701068299077xwq  [0;39m Resolved [java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null]
+2023-11-27 14:58:19.955 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701068299954CBI  [0;39m ------------- 开始 -------------
+2023-11-27 14:58:19.955 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701068299954CBI  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
+2023-11-27 14:58:19.955 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701068299954CBI  [0;39m 类名方法: top.chen.train.member.controller.MemberController.sendCode
+2023-11-27 14:58:19.955 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701068299954CBI  [0;39m 远程地址: 127.0.0.1
+2023-11-27 14:58:19.981 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701068299954CBI  [0;39m 请求参数: [{"mobile":"13951905171"}]
+2023-11-27 14:58:20.025 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1701068299954CBI  [0;39m HikariPool-1 - Starting...
+2023-11-27 14:58:20.315 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1701068299954CBI  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b07edee
+2023-11-27 14:58:20.317 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1701068299954CBI  [0;39m HikariPool-1 - Start completed.
+2023-11-27 14:58:20.327 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701068299954CBI  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-27 14:58:20.350 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701068299954CBI  [0;39m ==> Parameters: 13951905171(String)
+2023-11-27 14:58:20.364 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1701068299954CBI  [0;39m <==    Columns: id, mobile
+2023-11-27 14:58:20.364 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1701068299954CBI  [0;39m <==        Row: 1, 13951905171
+2023-11-27 14:58:20.365 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701068299954CBI  [0;39m <==      Total: 1
+2023-11-27 14:58:20.373 INFO  top.chen.train.member.service.MemberService       :87   [32m1701068299954CBI  [0;39m 手机号存在，不插入记录
+2023-11-27 14:58:20.373 INFO  top.chen.train.member.service.MemberService       :91   [32m1701068299954CBI  [0;39m 生成验证码：8888
+2023-11-27 14:58:20.374 INFO  top.chen.train.member.service.MemberService       :93   [32m1701068299954CBI  [0;39m 保存短信记录表
+2023-11-27 14:58:20.375 INFO  top.chen.train.member.service.MemberService       :95   [32m1701068299954CBI  [0;39m 对接短信通道
+2023-11-27 14:58:20.378 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701068299954CBI  [0;39m 返回结果: {"success":true}
+2023-11-27 14:58:20.378 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701068299954CBI  [0;39m ------------- 结束 耗时：424 ms -------------
+2023-11-27 14:58:22.782 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701068302782g7J  [0;39m ------------- 开始 -------------
+2023-11-27 14:58:22.783 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701068302782g7J  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-11-27 14:58:22.783 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701068302782g7J  [0;39m 类名方法: top.chen.train.member.controller.MemberController.login
+2023-11-27 14:58:22.783 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701068302782g7J  [0;39m 远程地址: 127.0.0.1
+2023-11-27 14:58:22.784 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701068302782g7J  [0;39m 请求参数: [{"code":"8888","mobile":"13951905171"}]
+2023-11-27 14:58:22.787 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701068302782g7J  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-27 14:58:22.787 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701068302782g7J  [0;39m ==> Parameters: 13951905171(String)
+2023-11-27 14:58:22.788 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1701068302782g7J  [0;39m <==    Columns: id, mobile
+2023-11-27 14:58:22.788 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1701068302782g7J  [0;39m <==        Row: 1, 13951905171
+2023-11-27 14:58:22.789 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701068302782g7J  [0;39m <==      Total: 1
+2023-11-27 14:58:23.486 INFO  top.chen.train.common.util.JwtUtil                :40   [32m1701068302782g7J  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjgzMDIsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NDcwMiwiaWF0IjoxNzAxMDY4MzAyfQ.MiLNpZenBpMiDDTtDw4jtMPjUZfRsyfnsNijpczIYJA
+2023-11-27 14:58:23.488 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701068302782g7J  [0;39m 返回结果: {"content":{"id":1,"mobile":"13951905171","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjgzMDIsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NDcwMiwiaWF0IjoxNzAxMDY4MzAyfQ.MiLNpZenBpMiDDTtDw4jtMPjUZfRsyfnsNijpczIYJA"},"success":true}
+2023-11-27 14:58:23.489 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701068302782g7J  [0;39m ------------- 结束 耗时：707 ms -------------
+2023-11-27 14:58:27.952 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701068307952Faq  [0;39m ------------- 开始 -------------
+2023-11-27 14:58:27.953 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701068307952Faq  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-11-27 14:58:27.953 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701068307952Faq  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryList
+2023-11-27 14:58:27.953 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701068307952Faq  [0;39m 远程地址: 127.0.0.1
+2023-11-27 14:58:27.955 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701068307952Faq  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 14:58:27.955 ERROR top.chen.train.common.context.LoginMemberContext  :27   [32m1701068307952Faq  [0;39m 获取登录会员信息异常
+java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+	at top.chen.train.common.context.LoginMemberContext.getId(LoginMemberContext.java:25)
+	at top.chen.train.member.controller.PassengerController.queryList(PassengerController.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at top.chen.train.common.aspect.LogAspect.doAround(LogAspect.java:86)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at top.chen.train.member.controller.PassengerController$$SpringCGLIB$$0.queryList(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-27 14:58:27.957 ERROR t.c.t.common.controller.ControllerExceptionHandler:62   [32m1701068307952Faq  [0;39m 系统异常：java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+2023-11-27 14:58:27.958 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m1701068307952Faq  [0;39m Resolved [java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null]
+2023-11-27 14:58:31.833 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701068311833w0N  [0;39m ------------- 开始 -------------
+2023-11-27 14:58:31.833 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701068311833w0N  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-11-27 14:58:31.833 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701068311833w0N  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryList
+2023-11-27 14:58:31.834 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701068311833w0N  [0;39m 远程地址: 127.0.0.1
+2023-11-27 14:58:31.834 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701068311833w0N  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 14:58:31.835 ERROR top.chen.train.common.context.LoginMemberContext  :27   [32m1701068311833w0N  [0;39m 获取登录会员信息异常
+java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+	at top.chen.train.common.context.LoginMemberContext.getId(LoginMemberContext.java:25)
+	at top.chen.train.member.controller.PassengerController.queryList(PassengerController.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at top.chen.train.common.aspect.LogAspect.doAround(LogAspect.java:86)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at top.chen.train.member.controller.PassengerController$$SpringCGLIB$$0.queryList(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-27 14:58:31.835 ERROR t.c.t.common.controller.ControllerExceptionHandler:62   [32m1701068311833w0N  [0;39m 系统异常：java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+2023-11-27 14:58:31.836 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m1701068311833w0N  [0;39m Resolved [java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null]
+2023-11-27 14:58:48.016 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701068328016t2j  [0;39m ------------- 开始 -------------
+2023-11-27 14:58:48.016 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701068328016t2j  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 14:58:48.016 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701068328016t2j  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 14:58:48.017 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701068328016t2j  [0;39m 远程地址: 127.0.0.1
+2023-11-27 14:58:48.017 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701068328016t2j  [0;39m 请求参数: []
+2023-11-27 14:58:48.017 ERROR top.chen.train.common.context.LoginMemberContext  :27   [32m1701068328016t2j  [0;39m 获取登录会员信息异常
+java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+	at top.chen.train.common.context.LoginMemberContext.getId(LoginMemberContext.java:25)
+	at top.chen.train.member.service.PassengerService.queryMine(PassengerService.java:42)
+	at top.chen.train.member.controller.PassengerController.queryMine(PassengerController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at top.chen.train.common.aspect.LogAspect.doAround(LogAspect.java:86)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at top.chen.train.member.controller.PassengerController$$SpringCGLIB$$0.queryMine(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-27 14:58:48.018 ERROR t.c.t.common.controller.ControllerExceptionHandler:62   [32m1701068328016t2j  [0;39m 系统异常：java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+2023-11-27 14:58:48.020 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m1701068328016t2j  [0;39m Resolved [java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null]
+2023-11-27 14:59:18.116 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-27 14:59:18.130 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:59:18.130 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 14:59:18.130 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-27 14:59:18.132 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-11-27 14:59:18.132 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:59:18.133 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:59:18.134 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-11-27 14:59:18.141 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-11-27 14:59:18.387 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 9956 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 14:59:18.387 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 14:59:18.478 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=a0ba99c0-16cf-3da2-8da4-6d376c54a235
+2023-11-27 14:59:18.523 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 14:59:18.523 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:59:18.524 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 14:59:18.524 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 14:59:18.558 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 14:59:18.558 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 170 ms
+2023-11-27 14:59:18.776 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-27 14:59:19.004 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 14:59:19.006 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 14:59:19.282 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.114 seconds (process running for 237.717)
+2023-11-27 14:59:19.283 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 14:59:19.283 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 14:59:19.283 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello

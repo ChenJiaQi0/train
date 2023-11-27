@@ -1,4 +1,4 @@
-package top.chen.train.common.config;
+package top.chen.train.business.config;
 
 import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +8,7 @@ import top.chen.train.common.interceptor.MemberInterceptor;
 
 /**
  * @author ChenQi
- * @date 2023/11/21
+ * @date 2023/11/27
  * @description: SpringMvcConfig
  */
 @Configuration
@@ -21,10 +21,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
         registry.addInterceptor(memberInterceptor)
                 .addPathPatterns("/**")
                 .excludePathPatterns(
-                        "/member/hello",
-                        "/member/member/send-code",
-                        "/member/member/register",
-                        "/member/member/login"
+                        "/business/hello"
                 );
     }
 }
