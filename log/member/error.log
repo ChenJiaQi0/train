@@ -1590,3 +1590,18 @@ Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected,
 	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:143)
 	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75)
 	... 28 common frames omitted
+2023-11-27 18:39:20.687 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'top.chen.train.common.interceptor.MemberInterceptor' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'top.chen.train.common.interceptor.MemberInterceptor' in your configuration.
+

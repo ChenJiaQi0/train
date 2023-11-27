@@ -18,6 +18,12 @@
     </properties>
 
     <dependencies>
+        <!--spring内置缓存-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+
         <!--SpringBoot 2.4版本之后 SpringCloud 2020，需要引入该依赖，才能读取bootstrap文件-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
