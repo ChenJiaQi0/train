@@ -702,3 +702,57 @@ java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.Member
 2023-11-27 15:05:56.879 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2023-11-27 15:05:56.879 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
 2023-11-27 15:05:56.879 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 15:09:43.024 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-27 15:09:43.024 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-27 15:09:43.025 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-11-27 15:09:43.025 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 15:09:43.027 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 15:09:43.027 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 15:09:43.030 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701068983030GeR  [0;39m ------------- 开始 -------------
+2023-11-27 15:09:43.031 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701068983030GeR  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 15:09:43.031 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701068983030GeR  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 15:09:43.031 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701068983030GeR  [0;39m 远程地址: 127.0.0.1
+2023-11-27 15:09:43.031 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701068983030GeR  [0;39m 请求参数: []
+2023-11-27 15:09:43.034 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1701068983030GeR  [0;39m HikariPool-2 - Starting...
+2023-11-27 15:09:43.047 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1701068983030GeR  [0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ea87a4a
+2023-11-27 15:09:43.048 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1701068983030GeR  [0;39m HikariPool-2 - Start completed.
+2023-11-27 15:09:43.048 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701068983030GeR  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 15:09:43.048 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701068983030GeR  [0;39m ==> Parameters: 1(Long)
+2023-11-27 15:09:43.050 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701068983030GeR  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 15:09:43.051 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701068983030GeR  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 15:09:43.052 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701068983030GeR  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 15:09:43.052 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701068983030GeR  [0;39m <==      Total: 2
+2023-11-27 15:09:43.055 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701068983030GeR  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 15:09:43.055 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701068983030GeR  [0;39m ------------- 结束 耗时：25 ms -------------
+2023-11-27 15:11:21.385 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 15:11:21.386 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 15:11:21.386 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 15:11:21.387 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701069081386WXT  [0;39m ------------- 开始 -------------
+2023-11-27 15:11:21.387 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701069081386WXT  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 15:11:21.387 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701069081386WXT  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 15:11:21.387 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701069081386WXT  [0;39m 远程地址: 127.0.0.1
+2023-11-27 15:11:21.387 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701069081386WXT  [0;39m 请求参数: []
+2023-11-27 15:11:21.388 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701069081386WXT  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 15:11:21.388 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701069081386WXT  [0;39m ==> Parameters: 1(Long)
+2023-11-27 15:11:21.389 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701069081386WXT  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 15:11:21.389 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701069081386WXT  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 15:11:21.390 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701069081386WXT  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 15:11:21.390 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701069081386WXT  [0;39m <==      Total: 2
+2023-11-27 15:11:21.390 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701069081386WXT  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 15:11:21.391 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701069081386WXT  [0;39m ------------- 结束 耗时：5 ms -------------
+2023-11-27 15:11:30.923 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 15:11:30.925 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 15:11:30.925 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 15:11:30.925 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m17010690909253WX  [0;39m ------------- 开始 -------------
+2023-11-27 15:11:30.925 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m17010690909253WX  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 15:11:30.926 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m17010690909253WX  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 15:11:30.926 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m17010690909253WX  [0;39m 远程地址: 127.0.0.1
+2023-11-27 15:11:30.926 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m17010690909253WX  [0;39m 请求参数: []
+2023-11-27 15:11:30.928 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m17010690909253WX  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 15:11:30.928 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m17010690909253WX  [0;39m ==> Parameters: 1(Long)
+2023-11-27 15:11:30.929 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m17010690909253WX  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 15:11:30.930 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m17010690909253WX  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 15:11:30.930 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m17010690909253WX  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 15:11:30.931 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m17010690909253WX  [0;39m <==      Total: 2
+2023-11-27 15:11:30.932 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m17010690909253WX  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 15:11:30.932 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m17010690909253WX  [0;39m ------------- 结束 耗时：7 ms -------------
