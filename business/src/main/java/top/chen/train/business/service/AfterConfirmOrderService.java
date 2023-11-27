@@ -5,9 +5,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import top.chen.train.business.domain.ConfirmOrder;
 import top.chen.train.business.domain.DailyTrainSeat;
 import top.chen.train.business.domain.DailyTrainTicket;
+import top.chen.train.business.enums.ConfirmOrderStatusEnum;
 import top.chen.train.business.feign.MemberFeign;
+import top.chen.train.business.mapper.ConfirmOrderMapper;
 import top.chen.train.business.mapper.DailyTrainSeatMapper;
 import top.chen.train.business.mapper.DailyTrainTicketMapperCust;
 import top.chen.train.business.req.ConfirmOrderTicketReq;
@@ -36,6 +39,8 @@ public class AfterConfirmOrderService {
 
     @Resource
     private MemberFeign memberFeign;
+    @Resource
+    private ConfirmOrderMapper confirmOrderMapper;
 
     /**
      * 选中座位后事务处理：
@@ -45,7 +50,7 @@ public class AfterConfirmOrderService {
      * 更新确认订单为成功
      */
     @Transactional
-    public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList, List<ConfirmOrderTicketReq> tickets) {
+    public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList, List<ConfirmOrderTicketReq> tickets, ConfirmOrder confirmOrder) {
         for (int j = 0; j < finalSeatList.size(); j++) {
             DailyTrainSeat dailyTrainSeat = finalSeatList.get(j);
             DailyTrainSeat seatForUpdate = new DailyTrainSeat();
@@ -120,6 +125,12 @@ public class AfterConfirmOrderService {
             CommonResp<Object> commonResp = memberFeign.save(memberTicketReq);
             LOG.info("调用member接口，返回：{}", commonResp);
 
+            // 更新订单状态为成功
+            ConfirmOrder confirmOrderForUpdate = new ConfirmOrder();
+            confirmOrderForUpdate.setId(confirmOrder.getId());
+            confirmOrderForUpdate.setUpdateTime(new Date());
+            confirmOrderForUpdate.setStatus(ConfirmOrderStatusEnum.SUCCESS.getCode());
+            confirmOrderMapper.updateByPrimaryKeySelective(confirmOrderForUpdate);
         }
     }
 }
