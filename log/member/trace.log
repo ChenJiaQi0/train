@@ -1869,3 +1869,753 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: top.chen.train.m
 2023-11-27 16:28:34.551 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701073714532gMG  [0;39m ------------- 结束 耗时：19 ms -------------
 2023-11-27 16:33:13.719 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
 2023-11-27 16:33:13.729 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-11-27 16:38:08.970 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-11-27 16:38:09.001 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22016 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:38:09.001 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:38:09.040 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-27 16:38:09.040 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-27 16:38:09.555 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2c529e05-dcff-37a1-9e75-023a3446a33e
+2023-11-27 16:38:10.000 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:38:10.010 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:38:10.010 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:38:10.010 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:38:10.050 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:38:10.050 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1010 ms
+2023-11-27 16:38:10.630 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:38:10.870 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:38:10.881 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:38:11.094 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.707 seconds (process running for 3.115)
+2023-11-27 16:38:11.095 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:38:11.095 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:38:29.026 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-27 16:38:29.026 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-27 16:38:29.026 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-11-27 16:38:29.130 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m170107430912977E  [0;39m ------------- 开始 -------------
+2023-11-27 16:38:29.130 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m170107430912977E  [0;39m 请求地址: http://127.0.0.1:8001/member/admin/ticket/query-list GET
+2023-11-27 16:38:29.130 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m170107430912977E  [0;39m 类名方法: top.chen.train.member.controller.admin.TicketAdminController.queryList
+2023-11-27 16:38:29.130 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m170107430912977E  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:38:29.202 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m170107430912977E  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:38:29.208 INFO  top.chen.train.member.service.TicketService       :49   [32m170107430912977E  [0;39m 查询页码：1
+2023-11-27 16:38:29.211 INFO  top.chen.train.member.service.TicketService       :50   [32m170107430912977E  [0;39m 每页条数：10
+2023-11-27 16:38:29.307 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m170107430912977E  [0;39m HikariPool-1 - Starting...
+2023-11-27 16:38:29.584 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m170107430912977E  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3bf7737f
+2023-11-27 16:38:29.590 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m170107430912977E  [0;39m HikariPool-1 - Start completed.
+2023-11-27 16:38:29.596 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m170107430912977E  [0;39m ==>  Preparing: SELECT count(0) FROM ticket
+2023-11-27 16:38:29.638 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m170107430912977E  [0;39m ==> Parameters: 
+2023-11-27 16:38:29.657 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m170107430912977E  [0;39m <==    Columns: count(0)
+2023-11-27 16:38:29.657 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m170107430912977E  [0;39m <==        Row: 1
+2023-11-27 16:38:29.657 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m170107430912977E  [0;39m <==      Total: 1
+2023-11-27 16:38:29.663 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m170107430912977E  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket order by id desc LIMIT ?
+2023-11-27 16:38:29.663 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m170107430912977E  [0;39m ==> Parameters: 10(Integer)
+2023-11-27 16:38:29.663 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m170107430912977E  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:38:29.669 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m170107430912977E  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:38:29.671 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m170107430912977E  [0;39m <==      Total: 1
+2023-11-27 16:38:29.671 INFO  top.chen.train.member.service.TicketService       :55   [32m170107430912977E  [0;39m 总行数：1
+2023-11-27 16:38:29.671 INFO  top.chen.train.member.service.TicketService       :56   [32m170107430912977E  [0;39m 总页数：1
+2023-11-27 16:38:29.730 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m170107430912977E  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":1},"success":true}
+2023-11-27 16:38:29.730 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m170107430912977E  [0;39m ------------- 结束 耗时：601 ms -------------
+2023-11-27 16:38:41.726 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 16:38:42.370 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 16:38:42.370 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 16:38:42.418 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m170107432241889A  [0;39m ------------- 开始 -------------
+2023-11-27 16:38:42.419 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m170107432241889A  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
+2023-11-27 16:38:42.420 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m170107432241889A  [0;39m 类名方法: top.chen.train.member.controller.MemberController.sendCode
+2023-11-27 16:38:42.420 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m170107432241889A  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:38:42.421 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m170107432241889A  [0;39m 请求参数: [{"mobile":"13951905171"}]
+2023-11-27 16:38:42.426 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m170107432241889A  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-27 16:38:42.426 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m170107432241889A  [0;39m ==> Parameters: 13951905171(String)
+2023-11-27 16:38:42.433 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m170107432241889A  [0;39m <==    Columns: id, mobile
+2023-11-27 16:38:42.433 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m170107432241889A  [0;39m <==        Row: 1, 13951905171
+2023-11-27 16:38:42.434 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m170107432241889A  [0;39m <==      Total: 1
+2023-11-27 16:38:42.434 INFO  top.chen.train.member.service.MemberService       :87   [32m170107432241889A  [0;39m 手机号存在，不插入记录
+2023-11-27 16:38:42.434 INFO  top.chen.train.member.service.MemberService       :91   [32m170107432241889A  [0;39m 生成验证码：8888
+2023-11-27 16:38:42.434 INFO  top.chen.train.member.service.MemberService       :93   [32m170107432241889A  [0;39m 保存短信记录表
+2023-11-27 16:38:42.434 INFO  top.chen.train.member.service.MemberService       :95   [32m170107432241889A  [0;39m 对接短信通道
+2023-11-27 16:38:42.434 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m170107432241889A  [0;39m 返回结果: {"success":true}
+2023-11-27 16:38:42.435 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m170107432241889A  [0;39m ------------- 结束 耗时：17 ms -------------
+2023-11-27 16:38:43.105 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 16:38:43.105 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 16:38:43.106 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 16:38:43.111 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701074323111VqI  [0;39m ------------- 开始 -------------
+2023-11-27 16:38:43.111 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701074323111VqI  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-11-27 16:38:43.112 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701074323111VqI  [0;39m 类名方法: top.chen.train.member.controller.MemberController.login
+2023-11-27 16:38:43.112 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701074323111VqI  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:38:43.113 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701074323111VqI  [0;39m 请求参数: [{"code":"8888","mobile":"13951905171"}]
+2023-11-27 16:38:43.115 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701074323111VqI  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-27 16:38:43.116 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701074323111VqI  [0;39m ==> Parameters: 13951905171(String)
+2023-11-27 16:38:43.118 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1701074323111VqI  [0;39m <==    Columns: id, mobile
+2023-11-27 16:38:43.118 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1701074323111VqI  [0;39m <==        Row: 1, 13951905171
+2023-11-27 16:38:43.118 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701074323111VqI  [0;39m <==      Total: 1
+2023-11-27 16:38:43.123 INFO  top.chen.train.common.util.JwtUtil                :40   [32m1701074323111VqI  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNzQzMjMsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE2MDcyMywiaWF0IjoxNzAxMDc0MzIzfQ.orha5seplG-nyKms-eRf5PqMtMTEmrbBP2Dyy66S8Cc
+2023-11-27 16:38:43.129 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701074323111VqI  [0;39m 返回结果: {"content":{"id":1,"mobile":"13951905171","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNzQzMjMsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE2MDcyMywiaWF0IjoxNzAxMDc0MzIzfQ.orha5seplG-nyKms-eRf5PqMtMTEmrbBP2Dyy66S8Cc"},"success":true}
+2023-11-27 16:38:43.131 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701074323111VqI  [0;39m ------------- 结束 耗时：20 ms -------------
+2023-11-27 16:38:45.056 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNzQzMjMsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE2MDcyMywiaWF0IjoxNzAxMDc0MzIzfQ.orha5seplG-nyKms-eRf5PqMtMTEmrbBP2Dyy66S8Cc
+2023-11-27 16:38:45.056 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 16:38:45.056 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 16:38:45.056 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701074325056VYU  [0;39m ------------- 开始 -------------
+2023-11-27 16:38:45.056 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701074325056VYU  [0;39m 请求地址: http://127.0.0.1:8001/member/ticket/query-list GET
+2023-11-27 16:38:45.060 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701074325056VYU  [0;39m 类名方法: top.chen.train.member.controller.TicketController.query
+2023-11-27 16:38:45.062 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701074325056VYU  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:38:45.062 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701074325056VYU  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:38:45.062 INFO  top.chen.train.member.service.TicketService       :49   [32m1701074325056VYU  [0;39m 查询页码：1
+2023-11-27 16:38:45.062 INFO  top.chen.train.member.service.TicketService       :50   [32m1701074325056VYU  [0;39m 每页条数：10
+2023-11-27 16:38:45.081 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074325056VYU  [0;39m ==>  Preparing: SELECT count(0) FROM ticket WHERE (member_id = ?)
+2023-11-27 16:38:45.081 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074325056VYU  [0;39m ==> Parameters: 1(Long)
+2023-11-27 16:38:45.081 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701074325056VYU  [0;39m <==    Columns: count(0)
+2023-11-27 16:38:45.081 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701074325056VYU  [0;39m <==        Row: 1
+2023-11-27 16:38:45.081 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074325056VYU  [0;39m <==      Total: 1
+2023-11-27 16:38:45.081 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074325056VYU  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-27 16:38:45.081 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074325056VYU  [0;39m ==> Parameters: 1(Long), 10(Integer)
+2023-11-27 16:38:45.081 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074325056VYU  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:38:45.086 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074325056VYU  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:38:45.087 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074325056VYU  [0;39m <==      Total: 1
+2023-11-27 16:38:45.087 INFO  top.chen.train.member.service.TicketService       :55   [32m1701074325056VYU  [0;39m 总行数：1
+2023-11-27 16:38:45.087 INFO  top.chen.train.member.service.TicketService       :56   [32m1701074325056VYU  [0;39m 总页数：1
+2023-11-27 16:38:45.087 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701074325056VYU  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":1},"success":true}
+2023-11-27 16:38:45.087 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701074325056VYU  [0;39m ------------- 结束 耗时：31 ms -------------
+2023-11-27 16:38:49.922 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNzQzMjMsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE2MDcyMywiaWF0IjoxNzAxMDc0MzIzfQ.orha5seplG-nyKms-eRf5PqMtMTEmrbBP2Dyy66S8Cc
+2023-11-27 16:38:49.923 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 16:38:49.923 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 16:38:49.924 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m170107432992476o  [0;39m ------------- 开始 -------------
+2023-11-27 16:38:49.924 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m170107432992476o  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 16:38:49.924 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m170107432992476o  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 16:38:49.924 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m170107432992476o  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:38:49.925 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m170107432992476o  [0;39m 请求参数: []
+2023-11-27 16:38:49.929 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m170107432992476o  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 16:38:49.929 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m170107432992476o  [0;39m ==> Parameters: 1(Long)
+2023-11-27 16:38:49.931 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m170107432992476o  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 16:38:49.931 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m170107432992476o  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 16:38:49.931 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m170107432992476o  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 16:38:49.931 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m170107432992476o  [0;39m <==      Total: 2
+2023-11-27 16:38:49.935 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m170107432992476o  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 16:38:49.935 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m170107432992476o  [0;39m ------------- 结束 耗时：11 ms -------------
+2023-11-27 16:38:58.487 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701074338487SJ8  [0;39m ------------- 开始 -------------
+2023-11-27 16:38:58.487 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701074338487SJ8  [0;39m 请求地址: http://127.0.0.1:8001/member/feign/ticket/save POST
+2023-11-27 16:38:58.487 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701074338487SJ8  [0;39m 类名方法: top.chen.train.member.controller.feign.FeignTicketController.save
+2023-11-27 16:38:58.487 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701074338487SJ8  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:38:58.493 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701074338487SJ8  [0;39m 请求参数: [{"carriageIndex":1,"col":"A","date":1701100800000,"end":"徐州站","endTime":21600000,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"1","start":"上海站","startTime":15600000,"trainCode":"G1"}]
+2023-11-27 16:38:58.499 DEBUG top.chen.train.member.mapper.TicketMapper.insert  :137  [32m1701074338487SJ8  [0;39m ==>  Preparing: insert into ticket (id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-11-27 16:38:58.499 DEBUG top.chen.train.member.mapper.TicketMapper.insert  :137  [32m1701074338487SJ8  [0;39m ==> Parameters: 1729057212694925312(Long), 1(Long), 1726848580230189056(Long), ccen(String), 2023-11-28(Date), G1(String), 1(Integer), 01(String), A(String), 上海站(String), 12:20:00(Time), 徐州站(String), 14:00:00(Time), 1(String), 2023-11-27 16:38:58.493(Timestamp), 2023-11-27 16:38:58.493(Timestamp)
+2023-11-27 16:38:58.505 DEBUG top.chen.train.member.mapper.TicketMapper.insert  :137  [32m1701074338487SJ8  [0;39m <==    Updates: 1
+2023-11-27 16:38:58.505 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701074338487SJ8  [0;39m 返回结果: {"success":true}
+2023-11-27 16:38:58.505 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701074338487SJ8  [0;39m ------------- 结束 耗时：18 ms -------------
+2023-11-27 16:42:32.265 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNzQzMjMsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE2MDcyMywiaWF0IjoxNzAxMDc0MzIzfQ.orha5seplG-nyKms-eRf5PqMtMTEmrbBP2Dyy66S8Cc
+2023-11-27 16:42:32.265 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 16:42:32.265 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 16:42:32.266 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701074552266JQI  [0;39m ------------- 开始 -------------
+2023-11-27 16:42:32.267 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701074552266JQI  [0;39m 请求地址: http://127.0.0.1:8001/member/ticket/query-list GET
+2023-11-27 16:42:32.267 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701074552266JQI  [0;39m 类名方法: top.chen.train.member.controller.TicketController.query
+2023-11-27 16:42:32.267 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701074552266JQI  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:42:32.267 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701074552266JQI  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:42:32.268 INFO  top.chen.train.member.service.TicketService       :49   [32m1701074552266JQI  [0;39m 查询页码：1
+2023-11-27 16:42:32.268 INFO  top.chen.train.member.service.TicketService       :50   [32m1701074552266JQI  [0;39m 每页条数：10
+2023-11-27 16:42:32.272 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074552266JQI  [0;39m ==>  Preparing: SELECT count(0) FROM ticket WHERE (member_id = ?)
+2023-11-27 16:42:32.273 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074552266JQI  [0;39m ==> Parameters: 1(Long)
+2023-11-27 16:42:32.275 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701074552266JQI  [0;39m <==    Columns: count(0)
+2023-11-27 16:42:32.276 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701074552266JQI  [0;39m <==        Row: 2
+2023-11-27 16:42:32.276 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074552266JQI  [0;39m <==      Total: 1
+2023-11-27 16:42:32.277 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074552266JQI  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-27 16:42:32.277 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074552266JQI  [0;39m ==> Parameters: 1(Long), 10(Integer)
+2023-11-27 16:42:32.278 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074552266JQI  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:42:32.279 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074552266JQI  [0;39m <==        Row: 1729057212694925312, 1, 1726848580230189056, ccen, 2023-11-28, G1, 1, 01, A, 上海站, 12:20:00, 徐州站, 14:00:00, 1, 2023-11-27 16:38:58.493, 2023-11-27 16:38:58.493
+2023-11-27 16:42:32.282 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074552266JQI  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:42:32.283 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074552266JQI  [0;39m <==      Total: 2
+2023-11-27 16:42:32.283 INFO  top.chen.train.member.service.TicketService       :55   [32m1701074552266JQI  [0;39m 总行数：2
+2023-11-27 16:42:32.283 INFO  top.chen.train.member.service.TicketService       :56   [32m1701074552266JQI  [0;39m 总页数：1
+2023-11-27 16:42:32.284 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701074552266JQI  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":1,"col":"A","createTime":1701074338493,"date":1701100800000,"end":"徐州站","endTime":21600000,"id":1729057212694925312,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"1","start":"上海站","startTime":15600000,"trainCode":"G1","updateTime":1701074338493},{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":2},"success":true}
+2023-11-27 16:42:32.284 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701074552266JQI  [0;39m ------------- 结束 耗时：18 ms -------------
+2023-11-27 16:42:36.797 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701074556796SFN  [0;39m ------------- 开始 -------------
+2023-11-27 16:42:36.797 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701074556796SFN  [0;39m 请求地址: http://127.0.0.1:8001/member/admin/ticket/query-list GET
+2023-11-27 16:42:36.797 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701074556796SFN  [0;39m 类名方法: top.chen.train.member.controller.admin.TicketAdminController.queryList
+2023-11-27 16:42:36.797 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701074556796SFN  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:42:36.797 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701074556796SFN  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:42:36.797 INFO  top.chen.train.member.service.TicketService       :49   [32m1701074556796SFN  [0;39m 查询页码：1
+2023-11-27 16:42:36.797 INFO  top.chen.train.member.service.TicketService       :50   [32m1701074556796SFN  [0;39m 每页条数：10
+2023-11-27 16:42:36.802 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074556796SFN  [0;39m ==>  Preparing: SELECT count(0) FROM ticket
+2023-11-27 16:42:36.803 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074556796SFN  [0;39m ==> Parameters: 
+2023-11-27 16:42:36.806 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701074556796SFN  [0;39m <==    Columns: count(0)
+2023-11-27 16:42:36.806 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701074556796SFN  [0;39m <==        Row: 2
+2023-11-27 16:42:36.807 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074556796SFN  [0;39m <==      Total: 1
+2023-11-27 16:42:36.807 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074556796SFN  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket order by id desc LIMIT ?
+2023-11-27 16:42:36.807 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074556796SFN  [0;39m ==> Parameters: 10(Integer)
+2023-11-27 16:42:36.808 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074556796SFN  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:42:36.809 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074556796SFN  [0;39m <==        Row: 1729057212694925312, 1, 1726848580230189056, ccen, 2023-11-28, G1, 1, 01, A, 上海站, 12:20:00, 徐州站, 14:00:00, 1, 2023-11-27 16:38:58.493, 2023-11-27 16:38:58.493
+2023-11-27 16:42:36.811 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074556796SFN  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:42:36.812 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074556796SFN  [0;39m <==      Total: 2
+2023-11-27 16:42:36.812 INFO  top.chen.train.member.service.TicketService       :55   [32m1701074556796SFN  [0;39m 总行数：2
+2023-11-27 16:42:36.812 INFO  top.chen.train.member.service.TicketService       :56   [32m1701074556796SFN  [0;39m 总页数：1
+2023-11-27 16:42:36.813 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701074556796SFN  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":1,"col":"A","createTime":1701074338493,"date":1701100800000,"end":"徐州站","endTime":21600000,"id":1729057212694925312,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"1","start":"上海站","startTime":15600000,"trainCode":"G1","updateTime":1701074338493},{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":2},"success":true}
+2023-11-27 16:42:36.814 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701074556796SFN  [0;39m ------------- 结束 耗时：18 ms -------------
+2023-11-27 16:42:54.651 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m170107430912977E  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNzQzMjMsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE2MDcyMywiaWF0IjoxNzAxMDc0MzIzfQ.orha5seplG-nyKms-eRf5PqMtMTEmrbBP2Dyy66S8Cc
+2023-11-27 16:42:54.652 INFO  top.chen.train.common.util.JwtUtil                :58   [32m170107430912977E  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 16:42:54.652 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m170107430912977E  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 16:42:54.652 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701074574652WQQ  [0;39m ------------- 开始 -------------
+2023-11-27 16:42:54.653 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701074574652WQQ  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 16:42:54.653 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701074574652WQQ  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 16:42:54.653 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701074574652WQQ  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:42:54.653 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701074574652WQQ  [0;39m 请求参数: []
+2023-11-27 16:42:54.654 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701074574652WQQ  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 16:42:54.655 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701074574652WQQ  [0;39m ==> Parameters: 1(Long)
+2023-11-27 16:42:54.656 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701074574652WQQ  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 16:42:54.656 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701074574652WQQ  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 16:42:54.657 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701074574652WQQ  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 16:42:54.658 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701074574652WQQ  [0;39m <==      Total: 2
+2023-11-27 16:42:54.658 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701074574652WQQ  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 16:42:54.658 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701074574652WQQ  [0;39m ------------- 结束 耗时：6 ms -------------
+2023-11-27 16:43:01.655 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701074581655Fjf  [0;39m ------------- 开始 -------------
+2023-11-27 16:43:01.656 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701074581655Fjf  [0;39m 请求地址: http://127.0.0.1:8001/member/feign/ticket/save POST
+2023-11-27 16:43:01.656 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701074581655Fjf  [0;39m 类名方法: top.chen.train.member.controller.feign.FeignTicketController.save
+2023-11-27 16:43:01.656 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701074581655Fjf  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:43:01.656 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701074581655Fjf  [0;39m 请求参数: [{"carriageIndex":1,"col":"F","date":1701100800000,"end":"杭州站","endTime":32400000,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"1","start":"宜兴站","startTime":29400000,"trainCode":"D2"}]
+2023-11-27 16:43:01.657 DEBUG top.chen.train.member.mapper.TicketMapper.insert  :137  [32m1701074581655Fjf  [0;39m ==>  Preparing: insert into ticket (id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-11-27 16:43:01.659 DEBUG top.chen.train.member.mapper.TicketMapper.insert  :137  [32m1701074581655Fjf  [0;39m ==> Parameters: 1729058232598663168(Long), 1(Long), 1726848580230189056(Long), ccen(String), 2023-11-28(Date), D2(String), 1(Integer), 01(String), F(String), 宜兴站(String), 16:10:00(Time), 杭州站(String), 17:00:00(Time), 1(String), 2023-11-27 16:43:01.656(Timestamp), 2023-11-27 16:43:01.656(Timestamp)
+2023-11-27 16:43:01.662 DEBUG top.chen.train.member.mapper.TicketMapper.insert  :137  [32m1701074581655Fjf  [0;39m <==    Updates: 1
+2023-11-27 16:43:01.663 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701074581655Fjf  [0;39m 返回结果: {"success":true}
+2023-11-27 16:43:01.663 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701074581655Fjf  [0;39m ------------- 结束 耗时：8 ms -------------
+2023-11-27 16:43:09.731 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m1701074323111VqI  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNzQzMjMsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE2MDcyMywiaWF0IjoxNzAxMDc0MzIzfQ.orha5seplG-nyKms-eRf5PqMtMTEmrbBP2Dyy66S8Cc
+2023-11-27 16:43:09.732 INFO  top.chen.train.common.util.JwtUtil                :58   [32m1701074323111VqI  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 16:43:09.732 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m1701074323111VqI  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 16:43:09.732 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701074589732tQ3  [0;39m ------------- 开始 -------------
+2023-11-27 16:43:09.732 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701074589732tQ3  [0;39m 请求地址: http://127.0.0.1:8001/member/ticket/query-list GET
+2023-11-27 16:43:09.733 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701074589732tQ3  [0;39m 类名方法: top.chen.train.member.controller.TicketController.query
+2023-11-27 16:43:09.733 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701074589732tQ3  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:43:09.733 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701074589732tQ3  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:43:09.733 INFO  top.chen.train.member.service.TicketService       :49   [32m1701074589732tQ3  [0;39m 查询页码：1
+2023-11-27 16:43:09.733 INFO  top.chen.train.member.service.TicketService       :50   [32m1701074589732tQ3  [0;39m 每页条数：10
+2023-11-27 16:43:09.736 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074589732tQ3  [0;39m ==>  Preparing: SELECT count(0) FROM ticket WHERE (member_id = ?)
+2023-11-27 16:43:09.738 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074589732tQ3  [0;39m ==> Parameters: 1(Long)
+2023-11-27 16:43:09.739 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701074589732tQ3  [0;39m <==    Columns: count(0)
+2023-11-27 16:43:09.739 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701074589732tQ3  [0;39m <==        Row: 3
+2023-11-27 16:43:09.739 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074589732tQ3  [0;39m <==      Total: 1
+2023-11-27 16:43:09.739 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074589732tQ3  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-27 16:43:09.741 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074589732tQ3  [0;39m ==> Parameters: 1(Long), 10(Integer)
+2023-11-27 16:43:09.743 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074589732tQ3  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:43:09.743 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074589732tQ3  [0;39m <==        Row: 1729058232598663168, 1, 1726848580230189056, ccen, 2023-11-28, D2, 1, 01, F, 宜兴站, 16:10:00, 杭州站, 17:00:00, 1, 2023-11-27 16:43:01.656, 2023-11-27 16:43:01.656
+2023-11-27 16:43:09.744 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074589732tQ3  [0;39m <==        Row: 1729057212694925312, 1, 1726848580230189056, ccen, 2023-11-28, G1, 1, 01, A, 上海站, 12:20:00, 徐州站, 14:00:00, 1, 2023-11-27 16:38:58.493, 2023-11-27 16:38:58.493
+2023-11-27 16:43:09.746 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074589732tQ3  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:43:09.746 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074589732tQ3  [0;39m <==      Total: 3
+2023-11-27 16:43:09.747 INFO  top.chen.train.member.service.TicketService       :55   [32m1701074589732tQ3  [0;39m 总行数：3
+2023-11-27 16:43:09.747 INFO  top.chen.train.member.service.TicketService       :56   [32m1701074589732tQ3  [0;39m 总页数：1
+2023-11-27 16:43:09.748 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701074589732tQ3  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":1,"col":"F","createTime":1701074581656,"date":1701100800000,"end":"杭州站","endTime":32400000,"id":1729058232598663168,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"1","start":"宜兴站","startTime":29400000,"trainCode":"D2","updateTime":1701074581656},{"carriageIndex":1,"col":"A","createTime":1701074338493,"date":1701100800000,"end":"徐州站","endTime":21600000,"id":1729057212694925312,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"1","start":"上海站","startTime":15600000,"trainCode":"G1","updateTime":1701074338493},{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":3},"success":true}
+2023-11-27 16:43:09.748 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701074589732tQ3  [0;39m ------------- 结束 耗时：16 ms -------------
+2023-11-27 16:43:22.024 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701074602024aNv  [0;39m ------------- 开始 -------------
+2023-11-27 16:43:22.024 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701074602024aNv  [0;39m 请求地址: http://127.0.0.1:8001/member/admin/ticket/query-list GET
+2023-11-27 16:43:22.025 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701074602024aNv  [0;39m 类名方法: top.chen.train.member.controller.admin.TicketAdminController.queryList
+2023-11-27 16:43:22.025 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701074602024aNv  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:43:22.025 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701074602024aNv  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:43:22.025 INFO  top.chen.train.member.service.TicketService       :49   [32m1701074602024aNv  [0;39m 查询页码：1
+2023-11-27 16:43:22.025 INFO  top.chen.train.member.service.TicketService       :50   [32m1701074602024aNv  [0;39m 每页条数：10
+2023-11-27 16:43:22.030 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074602024aNv  [0;39m ==>  Preparing: SELECT count(0) FROM ticket
+2023-11-27 16:43:22.031 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074602024aNv  [0;39m ==> Parameters: 
+2023-11-27 16:43:22.039 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701074602024aNv  [0;39m <==    Columns: count(0)
+2023-11-27 16:43:22.039 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701074602024aNv  [0;39m <==        Row: 3
+2023-11-27 16:43:22.039 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701074602024aNv  [0;39m <==      Total: 1
+2023-11-27 16:43:22.039 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074602024aNv  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket order by id desc LIMIT ?
+2023-11-27 16:43:22.039 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074602024aNv  [0;39m ==> Parameters: 10(Integer)
+2023-11-27 16:43:22.041 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074602024aNv  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:43:22.042 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074602024aNv  [0;39m <==        Row: 1729058232598663168, 1, 1726848580230189056, ccen, 2023-11-28, D2, 1, 01, F, 宜兴站, 16:10:00, 杭州站, 17:00:00, 1, 2023-11-27 16:43:01.656, 2023-11-27 16:43:01.656
+2023-11-27 16:43:22.043 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074602024aNv  [0;39m <==        Row: 1729057212694925312, 1, 1726848580230189056, ccen, 2023-11-28, G1, 1, 01, A, 上海站, 12:20:00, 徐州站, 14:00:00, 1, 2023-11-27 16:38:58.493, 2023-11-27 16:38:58.493
+2023-11-27 16:43:22.044 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701074602024aNv  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:43:22.045 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701074602024aNv  [0;39m <==      Total: 3
+2023-11-27 16:43:22.048 INFO  top.chen.train.member.service.TicketService       :55   [32m1701074602024aNv  [0;39m 总行数：3
+2023-11-27 16:43:22.052 INFO  top.chen.train.member.service.TicketService       :56   [32m1701074602024aNv  [0;39m 总页数：1
+2023-11-27 16:43:22.062 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701074602024aNv  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":1,"col":"F","createTime":1701074581656,"date":1701100800000,"end":"杭州站","endTime":32400000,"id":1729058232598663168,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"1","start":"宜兴站","startTime":29400000,"trainCode":"D2","updateTime":1701074581656},{"carriageIndex":1,"col":"A","createTime":1701074338493,"date":1701100800000,"end":"徐州站","endTime":21600000,"id":1729057212694925312,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"1","start":"上海站","startTime":15600000,"trainCode":"G1","updateTime":1701074338493},{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":3},"success":true}
+2023-11-27 16:43:22.062 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701074602024aNv  [0;39m ------------- 结束 耗时：38 ms -------------
+2023-11-27 16:45:00.672 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNzQzMjMsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE2MDcyMywiaWF0IjoxNzAxMDc0MzIzfQ.orha5seplG-nyKms-eRf5PqMtMTEmrbBP2Dyy66S8Cc
+2023-11-27 16:45:00.672 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 16:45:00.672 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 16:45:00.674 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701074700674pH6  [0;39m ------------- 开始 -------------
+2023-11-27 16:45:00.674 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701074700674pH6  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 16:45:00.674 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701074700674pH6  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 16:45:00.674 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701074700674pH6  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:45:00.674 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701074700674pH6  [0;39m 请求参数: []
+2023-11-27 16:45:00.676 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701074700674pH6  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 16:45:00.677 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701074700674pH6  [0;39m ==> Parameters: 1(Long)
+2023-11-27 16:45:00.677 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701074700674pH6  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 16:45:00.678 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701074700674pH6  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 16:45:00.678 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701074700674pH6  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 16:45:00.678 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701074700674pH6  [0;39m <==      Total: 2
+2023-11-27 16:45:00.680 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701074700674pH6  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 16:45:00.681 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701074700674pH6  [0;39m ------------- 结束 耗时：7 ms -------------
+2023-11-27 16:51:50.077 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 16 class path changes (0 additions, 16 deletions, 0 modifications)
+2023-11-27 16:51:50.105 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:51:50.105 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:51:50.107 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-27 16:51:50.109 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-11-27 16:51:50.110 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:51:50.111 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:51:50.115 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-11-27 16:51:50.123 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-11-27 16:51:50.581 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22016 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:51:50.581 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:51:50.887 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[top.chen.train.*.mapper]' package. Please check your configuration.
+2023-11-27 16:51:50.897 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=c5c95c4e-fbd3-3671-b6e7-1484df381413
+2023-11-27 16:51:50.900 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [top.chen.train.member.service.MemberService] for bean with name 'memberService' defined in file [D:\program\train\member\target\classes\top\chen\train\member\service\MemberService.class]
+2023-11-27 16:51:50.910 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-27 16:51:50.931 ERROR org.springframework.boot.SpringApplication        :820  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [top.chen.train.member.service.MemberService] for bean with name 'memberService' defined in file [D:\program\train\member\target\classes\top\chen\train\member\service\MemberService.class]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1505)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:684)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:652)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getType(AbstractBeanFactory.java:692)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAnnotationOnBean(DefaultListableBeanFactory.java:732)
+	at org.springframework.boot.sql.init.dependency.AnnotationDependsOnDatabaseInitializationDetector.detect(AnnotationDependsOnDatabaseInitializationDetector.java:36)
+	at org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor.detectDependsOnInitializationBeanNames(DatabaseInitializationDependencyConfigurer.java:152)
+	at org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor.postProcessBeanFactory(DatabaseInitializationDependencyConfigurer.java:115)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:358)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at top.chen.train.member.config.MemberApplication.main(MemberApplication.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.ClassNotFoundException: top.chen.train.member.service.MemberService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:283)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1569)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1502)
+	... 21 common frames omitted
+2023-11-27 16:51:53.162 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22016 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:51:53.162 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:51:53.663 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2c529e05-dcff-37a1-9e75-023a3446a33e
+2023-11-27 16:51:53.768 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:51:53.769 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:51:53.769 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:51:53.769 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:51:53.783 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:51:53.783 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 621 ms
+2023-11-27 16:51:54.231 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:51:54.657 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:51:54.657 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:51:55.007 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.211 seconds (process running for 827.03)
+2023-11-27 16:51:55.007 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:51:55.007 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:51:55.007 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:52:26.100 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-27 16:52:26.114 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:52:26.115 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:52:26.116 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:52:26.117 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:52:26.393 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22016 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:52:26.393 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:52:26.502 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2c529e05-dcff-37a1-9e75-023a3446a33e
+2023-11-27 16:52:26.547 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:52:26.547 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:52:26.547 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:52:26.547 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:52:26.558 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:52:26.558 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 164 ms
+2023-11-27 16:52:26.818 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:52:27.071 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:52:27.073 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:52:27.305 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.156 seconds (process running for 859.327)
+2023-11-27 16:52:27.305 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:52:27.307 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:52:27.307 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:54:53.451 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 17 class path changes (0 additions, 16 deletions, 1 modification)
+2023-11-27 16:54:53.465 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:54:53.466 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:54:53.467 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:54:53.468 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:54:53.726 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22016 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:54:53.726 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:54:53.830 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5a4403bc-5f74-3a42-b124-4920a28b87ca
+2023-11-27 16:54:53.858 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:54:53.858 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:54:53.858 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:54:53.858 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:54:53.867 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:54:53.868 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 139 ms
+2023-11-27 16:54:53.873 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springMvcConfig' defined in file [D:\program\train\member\target\classes\top\chen\train\member\config\SpringMvcConfig.class]: Post-processing of merged bean definition failed
+2023-11-27 16:54:53.873 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:54:53.876 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-27 16:54:53.877 ERROR org.springframework.boot.SpringApplication        :820  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springMvcConfig' defined in file [D:\program\train\member\target\classes\top\chen\train\member\config\SpringMvcConfig.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at top.chen.train.member.config.MemberApplication.main(MemberApplication.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [top.chen.train.member.config.SpringMvcConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5b3e9287]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:740)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:672)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:340)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:277)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1082)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: top/chen/train/common/interceptor/MemberInterceptor
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:735)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: top.chen.train.common.interceptor.MemberInterceptor
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 28 common frames omitted
+2023-11-27 16:54:56.800 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22016 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:54:56.800 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:54:57.061 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2c529e05-dcff-37a1-9e75-023a3446a33e
+2023-11-27 16:54:57.107 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:54:57.108 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:54:57.108 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:54:57.108 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:54:57.117 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:54:57.117 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 316 ms
+2023-11-27 16:54:57.321 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:54:57.552 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:54:57.553 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:54:57.760 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.207 seconds (process running for 1009.781)
+2023-11-27 16:54:57.761 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:54:57.761 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:54:57.761 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:55:29.697 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:55:29.710 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-11-27 16:55:29.749 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:55:29.773 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-27 16:55:29.938 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:55:29.940 INFO  com.alibaba.nacos.client.utils.ParamUtil          :87   [32m                  [0;39m [settings] [req-serv] nacos-server port:8848
+2023-11-27 16:55:29.940 INFO  com.alibaba.nacos.client.utils.ParamUtil          :98   [32m                  [0;39m [settings] [http-client] connect timeout:1000
+2023-11-27 16:55:29.941 INFO  com.alibaba.nacos.client.utils.ParamUtil          :105  [32m                  [0;39m PER_TASK_CONFIG_SIZE: 3000.0
+2023-11-27 16:55:29.967 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-27 16:55:29.967 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-27 16:55:29.971 INFO  c.a.n.client.auth.ram.identify.CredentialWatcher  :165  [32m                  [0;39m null No credential found
+2023-11-27 16:55:30.360 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:55:30.369 INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor :63   [32m                  [0;39m LOCAL_SNAPSHOT_PATH:C:\Users\ChenQi\nacos\config
+2023-11-27 16:55:30.372 INFO  com.alibaba.nacos.common.remote.client            :108  [32m                  [0;39m [RpcClientFactory] create a new rpc client of 1e168e1a-5915-42d5-a966-cac9f4b7ecf9_config-0
+2023-11-27 16:55:30.387 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [1e168e1a-5915-42d5-a966-cac9f4b7ecf9_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$591/0x0000000800f723f8
+2023-11-27 16:55:30.387 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [1e168e1a-5915-42d5-a966-cac9f4b7ecf9_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$592/0x0000000800f72818
+2023-11-27 16:55:30.388 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [1e168e1a-5915-42d5-a966-cac9f4b7ecf9_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-11-27 16:55:30.388 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [1e168e1a-5915-42d5-a966-cac9f4b7ecf9_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-11-27 16:55:30.391 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [1e168e1a-5915-42d5-a966-cac9f4b7ecf9_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2023-11-27 16:55:30.413 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :182  [32m                  [0;39m grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-11-27 16:55:31.125 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [1e168e1a-5915-42d5-a966-cac9f4b7ecf9_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1701075330964_127.0.0.1_63126
+2023-11-27 16:55:31.125 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [1e168e1a-5915-42d5-a966-cac9f4b7ecf9_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-11-27 16:55:31.125 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [1e168e1a-5915-42d5-a966-cac9f4b7ecf9_config-0] Notify connected event to listeners.
+2023-11-27 16:55:31.125 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :639  [32m                  [0;39m [1e168e1a-5915-42d5-a966-cac9f4b7ecf9_config-0] Connected,notify listen context...
+2023-11-27 16:55:31.126 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [1e168e1a-5915-42d5-a966-cac9f4b7ecf9_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$608/0x00000008010d6ee0
+2023-11-27 16:55:31.148 INFO  com.alibaba.nacos.client.config.impl.Limiter      :62   [32m                  [0;39m limitTime:5.0
+2023-11-27 16:55:31.162 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[member] & group[DEFAULT_GROUP]
+2023-11-27 16:55:31.168 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[member.yaml] & group[DEFAULT_GROUP]
+2023-11-27 16:55:31.169 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :108  [32m                  [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-member.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-member,DEFAULT_GROUP'}]
+2023-11-27 16:55:31.183 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:55:31.184 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:55:31.599 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=921729bf-22c3-3382-84b0-ef055510dc5e
+2023-11-27 16:55:32.006 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:55:32.013 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:55:32.013 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:55:32.013 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:55:32.051 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:55:32.052 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 858 ms
+2023-11-27 16:55:33.028 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:55:33.258 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:55:33.268 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:55:33.271 INFO  com.alibaba.nacos.client.naming                   :62   [32m                  [0;39m initializer namespace from ans.namespace attribute : null
+2023-11-27 16:55:33.272 INFO  com.alibaba.nacos.client.naming                   :66   [32m                  [0;39m initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2023-11-27 16:55:33.272 INFO  com.alibaba.nacos.client.naming                   :73   [32m                  [0;39m initializer namespace from namespace attribute :null
+2023-11-27 16:55:33.277 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-27 16:55:33.278 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-27 16:55:33.282 INFO  com.alibaba.nacos.common.remote.client            :108  [32m                  [0;39m [RpcClientFactory] create a new rpc client of 6c82a41d-507f-4c5c-9652-a1dcf32f035c
+2023-11-27 16:55:33.283 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6c82a41d-507f-4c5c-9652-a1dcf32f035c] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2023-11-27 16:55:33.284 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6c82a41d-507f-4c5c-9652-a1dcf32f035c] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2023-11-27 16:55:33.284 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6c82a41d-507f-4c5c-9652-a1dcf32f035c] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2023-11-27 16:55:33.284 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6c82a41d-507f-4c5c-9652-a1dcf32f035c] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2023-11-27 16:55:33.284 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :182  [32m                  [0;39m grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-11-27 16:55:33.403 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6c82a41d-507f-4c5c-9652-a1dcf32f035c] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1701075333287_127.0.0.1_63131
+2023-11-27 16:55:33.403 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6c82a41d-507f-4c5c-9652-a1dcf32f035c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-11-27 16:55:33.404 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6c82a41d-507f-4c5c-9652-a1dcf32f035c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$608/0x00000008010d6ee0
+2023-11-27 16:55:33.404 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6c82a41d-507f-4c5c-9652-a1dcf32f035c] Notify connected event to listeners.
+2023-11-27 16:55:33.404 INFO  com.alibaba.nacos.client.naming                   :78   [32m                  [0;39m Grpc connection connect
+2023-11-27 16:55:33.405 INFO  com.alibaba.nacos.client.naming                   :121  [32m                  [0;39m [REGISTER-SERVICE] train registering service member with instance Instance{instanceId='null', ip='10.20.68.187', port=8001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2023-11-27 16:55:33.417 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :76   [32m                  [0;39m nacos registry, DEFAULT_GROUP member 10.20.68.187:8001 register finished
+2023-11-27 16:55:33.616 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 4.603 seconds (process running for 5.022)
+2023-11-27 16:55:33.619 INFO  com.alibaba.nacos.client.config.impl.CacheData    :67   [32m                  [0;39m nacos.cache.data.init.snapshot = true 
+2023-11-27 16:55:33.619 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :380  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [subscribe] member+DEFAULT_GROUP+train
+2023-11-27 16:55:33.623 INFO  com.alibaba.nacos.client.config.impl.CacheData    :197  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [add-listener] ok, tenant=train, dataId=member, group=DEFAULT_GROUP, cnt=1
+2023-11-27 16:55:33.624 INFO  c.a.cloud.nacos.refresh.NacosContextRefresher     :129  [32m                  [0;39m [Nacos Config] Listening config: dataId=member, group=DEFAULT_GROUP
+2023-11-27 16:55:33.624 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :380  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [subscribe] member.yaml+DEFAULT_GROUP+train
+2023-11-27 16:55:33.625 INFO  com.alibaba.nacos.client.config.impl.CacheData    :197  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [add-listener] ok, tenant=train, dataId=member.yaml, group=DEFAULT_GROUP, cnt=1
+2023-11-27 16:55:33.626 INFO  c.a.cloud.nacos.refresh.NacosContextRefresher     :129  [32m                  [0;39m [Nacos Config] Listening config: dataId=member.yaml, group=DEFAULT_GROUP
+2023-11-27 16:55:33.627 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:55:33.627 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:56:37.385 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 47 class path changes (0 additions, 47 deletions, 0 modifications)
+2023-11-27 16:56:37.401 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:56:37.401 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:56:37.404 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:56:37.405 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:56:37.407 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :95   [32m                  [0;39m De-registering from Nacos Server now...
+2023-11-27 16:56:37.407 INFO  com.alibaba.nacos.client.naming                   :217  [32m                  [0;39m [DEREGISTER-SERVICE] train deregistering service member with instance: Instance{instanceId='null', ip='10.20.68.187', port=8001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-11-27 16:56:37.413 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :115  [32m                  [0;39m De-registration finished.
+2023-11-27 16:56:37.413 INFO  com.alibaba.nacos.client.naming                   :256  [32m                  [0;39m com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2023-11-27 16:56:37.414 INFO  com.alibaba.nacos.client.naming                   :136  [32m                  [0;39m com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-11-27 16:56:37.414 INFO  com.alibaba.nacos.client.naming                   :138  [32m                  [0;39m com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-11-27 16:56:37.414 INFO  com.alibaba.nacos.client.naming                   :258  [32m                  [0;39m com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2023-11-27 16:56:37.414 INFO  com.alibaba.nacos.client.naming                   :204  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2023-11-27 16:56:37.414 INFO  com.alibaba.nacos.client.naming                   :143  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2023-11-27 16:56:37.414 INFO  com.alibaba.nacos.client.naming                   :145  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2023-11-27 16:56:37.414 INFO  com.alibaba.nacos.client.naming                   :194  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2023-11-27 16:56:37.414 WARN  com.alibaba.nacos.client.naming                   :74   [32m                  [0;39m [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-11-27 16:56:37.414 WARN  com.alibaba.nacos.client.naming                   :81   [32m                  [0;39m [NamingHttpClientManager] Destruction of the end
+2023-11-27 16:56:37.414 INFO  com.alibaba.nacos.client.naming                   :199  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2023-11-27 16:56:37.415 INFO  com.alibaba.nacos.client.naming                   :484  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2023-11-27 16:56:37.415 WARN  com.alibaba.nacos.client.naming                   :74   [32m                  [0;39m [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-11-27 16:56:37.415 WARN  com.alibaba.nacos.client.naming                   :81   [32m                  [0;39m [NamingHttpClientManager] Destruction of the end
+2023-11-27 16:56:37.415 INFO  com.alibaba.nacos.client.naming                   :486  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2023-11-27 16:56:37.415 INFO  com.alibaba.nacos.common.remote.client            :429  [32m                  [0;39m Shutdown rpc client, set status to shutdown
+2023-11-27 16:56:37.415 INFO  com.alibaba.nacos.common.remote.client            :431  [32m                  [0;39m Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@2ca2c527[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2023-11-27 16:56:37.415 INFO  com.alibaba.nacos.common.remote.client            :584  [32m                  [0;39m Close current connection 1701075333287_127.0.0.1_63131
+2023-11-27 16:56:37.418 WARN  c.a.nacos.common.remote.client.grpc.GrpcClient    :89   [32m                  [0;39m [1701075333287_127.0.0.1_63131]Ignore error event,isRunning:false,isAbandon=false
+2023-11-27 16:56:37.419 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :159  [32m                  [0;39m Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@3ab26363[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 25]
+2023-11-27 16:56:37.420 INFO  com.alibaba.nacos.client.naming                   :318  [32m                  [0;39m Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@7b6d6811[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 21]
+2023-11-27 16:56:37.420 INFO  c.a.n.client.auth.ram.identify.CredentialWatcher  :106  [32m                  [0;39m [null] CredentialWatcher is stopped
+2023-11-27 16:56:37.420 INFO  c.a.n.client.auth.ram.identify.CredentialService  :100  [32m                  [0;39m [null] CredentialService is freed
+2023-11-27 16:56:37.420 INFO  com.alibaba.nacos.client.naming                   :211  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2023-11-27 16:56:37.692 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:56:37.695 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:56:37.940 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:56:37.949 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[member] & group[DEFAULT_GROUP]
+2023-11-27 16:56:37.954 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[member.yaml] & group[DEFAULT_GROUP]
+2023-11-27 16:56:37.954 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :108  [32m                  [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-member.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-member,DEFAULT_GROUP'}]
+2023-11-27 16:56:37.963 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:56:37.963 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:56:38.203 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=921729bf-22c3-3382-84b0-ef055510dc5e
+2023-11-27 16:56:38.258 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:56:38.259 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:56:38.259 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:56:38.259 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:56:38.274 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:56:38.274 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 309 ms
+2023-11-27 16:56:39.234 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:56:39.527 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:56:39.529 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:56:39.530 INFO  com.alibaba.nacos.client.naming                   :62   [32m                  [0;39m initializer namespace from ans.namespace attribute : null
+2023-11-27 16:56:39.530 INFO  com.alibaba.nacos.client.naming                   :66   [32m                  [0;39m initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2023-11-27 16:56:39.530 INFO  com.alibaba.nacos.client.naming                   :73   [32m                  [0;39m initializer namespace from namespace attribute :null
+2023-11-27 16:56:39.530 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-27 16:56:39.531 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-27 16:56:39.531 INFO  c.a.n.client.auth.ram.identify.CredentialWatcher  :165  [32m                  [0;39m null No credential found
+2023-11-27 16:56:39.531 INFO  com.alibaba.nacos.common.remote.client            :108  [32m                  [0;39m [RpcClientFactory] create a new rpc client of 77fdde8c-b0b6-4d3c-bcc7-a65ce212b346
+2023-11-27 16:56:39.531 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [77fdde8c-b0b6-4d3c-bcc7-a65ce212b346] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2023-11-27 16:56:39.532 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [77fdde8c-b0b6-4d3c-bcc7-a65ce212b346] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2023-11-27 16:56:39.532 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [77fdde8c-b0b6-4d3c-bcc7-a65ce212b346] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2023-11-27 16:56:39.532 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [77fdde8c-b0b6-4d3c-bcc7-a65ce212b346] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2023-11-27 16:56:39.532 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :182  [32m                  [0;39m grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-11-27 16:56:39.656 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [77fdde8c-b0b6-4d3c-bcc7-a65ce212b346] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1701075399537_127.0.0.1_63249
+2023-11-27 16:56:39.656 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [77fdde8c-b0b6-4d3c-bcc7-a65ce212b346] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-11-27 16:56:39.656 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [77fdde8c-b0b6-4d3c-bcc7-a65ce212b346] Notify connected event to listeners.
+2023-11-27 16:56:39.656 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [77fdde8c-b0b6-4d3c-bcc7-a65ce212b346] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$608/0x00000008010d6ee0
+2023-11-27 16:56:39.656 INFO  com.alibaba.nacos.client.naming                   :78   [32m                  [0;39m Grpc connection connect
+2023-11-27 16:56:39.656 INFO  com.alibaba.nacos.client.naming                   :121  [32m                  [0;39m [REGISTER-SERVICE] train registering service member with instance Instance{instanceId='null', ip='10.20.68.187', port=8001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2023-11-27 16:56:39.660 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :76   [32m                  [0;39m nacos registry, DEFAULT_GROUP member 10.20.68.187:8001 register finished
+2023-11-27 16:56:39.905 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.449 seconds (process running for 71.311)
+2023-11-27 16:56:39.906 INFO  com.alibaba.nacos.client.config.impl.CacheData    :197  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [add-listener] ok, tenant=train, dataId=member, group=DEFAULT_GROUP, cnt=2
+2023-11-27 16:56:39.907 INFO  c.a.cloud.nacos.refresh.NacosContextRefresher     :129  [32m                  [0;39m [Nacos Config] Listening config: dataId=member, group=DEFAULT_GROUP
+2023-11-27 16:56:39.907 INFO  com.alibaba.nacos.client.config.impl.CacheData    :197  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [add-listener] ok, tenant=train, dataId=member.yaml, group=DEFAULT_GROUP, cnt=2
+2023-11-27 16:56:39.907 INFO  c.a.cloud.nacos.refresh.NacosContextRefresher     :129  [32m                  [0;39m [Nacos Config] Listening config: dataId=member.yaml, group=DEFAULT_GROUP
+2023-11-27 16:56:39.908 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:56:39.908 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:56:39.909 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:56:40.654 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 47 class path changes (47 additions, 0 deletions, 0 modifications)
+2023-11-27 16:56:40.666 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:56:40.666 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:56:40.667 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:56:40.668 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:56:40.668 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :95   [32m                  [0;39m De-registering from Nacos Server now...
+2023-11-27 16:56:40.669 INFO  com.alibaba.nacos.client.naming                   :217  [32m                  [0;39m [DEREGISTER-SERVICE] train deregistering service member with instance: Instance{instanceId='null', ip='10.20.68.187', port=8001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-11-27 16:56:40.673 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :115  [32m                  [0;39m De-registration finished.
+2023-11-27 16:56:40.673 INFO  com.alibaba.nacos.client.naming                   :256  [32m                  [0;39m com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2023-11-27 16:56:40.673 INFO  com.alibaba.nacos.client.naming                   :136  [32m                  [0;39m com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-11-27 16:56:40.996 INFO  com.alibaba.nacos.client.naming                   :138  [32m                  [0;39m com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-11-27 16:56:40.996 INFO  com.alibaba.nacos.client.naming                   :258  [32m                  [0;39m com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2023-11-27 16:56:40.996 INFO  com.alibaba.nacos.client.naming                   :204  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2023-11-27 16:56:40.997 INFO  com.alibaba.nacos.client.naming                   :143  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2023-11-27 16:56:40.997 INFO  com.alibaba.nacos.client.naming                   :145  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2023-11-27 16:56:40.997 INFO  com.alibaba.nacos.client.naming                   :194  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2023-11-27 16:56:40.997 WARN  com.alibaba.nacos.client.naming                   :74   [32m                  [0;39m [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-11-27 16:56:40.997 WARN  com.alibaba.nacos.client.naming                   :81   [32m                  [0;39m [NamingHttpClientManager] Destruction of the end
+2023-11-27 16:56:40.997 INFO  com.alibaba.nacos.client.naming                   :199  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2023-11-27 16:56:40.997 INFO  com.alibaba.nacos.client.naming                   :484  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2023-11-27 16:56:40.997 WARN  com.alibaba.nacos.client.naming                   :74   [32m                  [0;39m [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-11-27 16:56:40.997 WARN  com.alibaba.nacos.client.naming                   :81   [32m                  [0;39m [NamingHttpClientManager] Destruction of the end
+2023-11-27 16:56:40.997 INFO  com.alibaba.nacos.client.naming                   :486  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2023-11-27 16:56:40.997 INFO  com.alibaba.nacos.common.remote.client            :429  [32m                  [0;39m Shutdown rpc client, set status to shutdown
+2023-11-27 16:56:40.997 INFO  com.alibaba.nacos.common.remote.client            :431  [32m                  [0;39m Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@3151b343[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2023-11-27 16:56:40.997 INFO  com.alibaba.nacos.common.remote.client            :584  [32m                  [0;39m Close current connection 1701075399537_127.0.0.1_63249
+2023-11-27 16:56:40.997 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :159  [32m                  [0;39m Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@603428d9[Running, pool size = 10, active threads = 1, queued tasks = 0, completed tasks = 9]
+2023-11-27 16:56:40.998 INFO  com.alibaba.nacos.client.naming                   :318  [32m                  [0;39m Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@48dd90bc[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 0]
+2023-11-27 16:56:40.998 INFO  c.a.n.client.auth.ram.identify.CredentialWatcher  :106  [32m                  [0;39m [null] CredentialWatcher is stopped
+2023-11-27 16:56:40.998 WARN  c.a.nacos.common.remote.client.grpc.GrpcClient    :89   [32m                  [0;39m [1701075399537_127.0.0.1_63249]Ignore error event,isRunning:false,isAbandon=false
+2023-11-27 16:56:40.998 INFO  c.a.n.client.auth.ram.identify.CredentialService  :100  [32m                  [0;39m [null] CredentialService is freed
+2023-11-27 16:56:40.998 INFO  com.alibaba.nacos.client.naming                   :211  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2023-11-27 16:56:41.239 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:56:41.242 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:56:41.501 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:56:41.509 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[member] & group[DEFAULT_GROUP]
+2023-11-27 16:56:41.514 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[member.yaml] & group[DEFAULT_GROUP]
+2023-11-27 16:56:41.514 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :108  [32m                  [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-member.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-member,DEFAULT_GROUP'}]
+2023-11-27 16:56:41.523 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:56:41.523 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:56:41.636 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=921729bf-22c3-3382-84b0-ef055510dc5e
+2023-11-27 16:56:41.684 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:56:41.685 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:56:41.685 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:56:41.685 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:56:41.700 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:56:41.701 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 177 ms
+2023-11-27 16:56:42.375 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:56:42.678 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:56:42.681 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:56:42.682 INFO  com.alibaba.nacos.client.naming                   :62   [32m                  [0;39m initializer namespace from ans.namespace attribute : null
+2023-11-27 16:56:42.682 INFO  com.alibaba.nacos.client.naming                   :66   [32m                  [0;39m initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2023-11-27 16:56:42.682 INFO  com.alibaba.nacos.client.naming                   :73   [32m                  [0;39m initializer namespace from namespace attribute :null
+2023-11-27 16:56:42.683 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-27 16:56:42.683 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-27 16:56:42.684 INFO  c.a.n.client.auth.ram.identify.CredentialWatcher  :165  [32m                  [0;39m null No credential found
+2023-11-27 16:56:42.685 INFO  com.alibaba.nacos.common.remote.client            :108  [32m                  [0;39m [RpcClientFactory] create a new rpc client of 9e0e914c-7bac-4e79-905e-3bb88ff6f40f
+2023-11-27 16:56:42.685 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [9e0e914c-7bac-4e79-905e-3bb88ff6f40f] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2023-11-27 16:56:42.685 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [9e0e914c-7bac-4e79-905e-3bb88ff6f40f] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2023-11-27 16:56:42.686 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [9e0e914c-7bac-4e79-905e-3bb88ff6f40f] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2023-11-27 16:56:42.686 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [9e0e914c-7bac-4e79-905e-3bb88ff6f40f] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2023-11-27 16:56:42.686 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :182  [32m                  [0;39m grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-11-27 16:56:42.806 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [9e0e914c-7bac-4e79-905e-3bb88ff6f40f] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1701075402690_127.0.0.1_63258
+2023-11-27 16:56:42.806 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [9e0e914c-7bac-4e79-905e-3bb88ff6f40f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-11-27 16:56:42.806 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [9e0e914c-7bac-4e79-905e-3bb88ff6f40f] Notify connected event to listeners.
+2023-11-27 16:56:42.806 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [9e0e914c-7bac-4e79-905e-3bb88ff6f40f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$608/0x00000008010d6ee0
+2023-11-27 16:56:42.806 INFO  com.alibaba.nacos.client.naming                   :78   [32m                  [0;39m Grpc connection connect
+2023-11-27 16:56:42.806 INFO  com.alibaba.nacos.client.naming                   :121  [32m                  [0;39m [REGISTER-SERVICE] train registering service member with instance Instance{instanceId='null', ip='10.20.68.187', port=8001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2023-11-27 16:56:42.809 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :76   [32m                  [0;39m nacos registry, DEFAULT_GROUP member 10.20.68.187:8001 register finished
+2023-11-27 16:56:43.045 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.017 seconds (process running for 74.452)
+2023-11-27 16:56:43.048 INFO  com.alibaba.nacos.client.config.impl.CacheData    :197  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [add-listener] ok, tenant=train, dataId=member, group=DEFAULT_GROUP, cnt=3
+2023-11-27 16:56:43.048 INFO  c.a.cloud.nacos.refresh.NacosContextRefresher     :129  [32m                  [0;39m [Nacos Config] Listening config: dataId=member, group=DEFAULT_GROUP
+2023-11-27 16:56:43.048 INFO  com.alibaba.nacos.client.config.impl.CacheData    :197  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [add-listener] ok, tenant=train, dataId=member.yaml, group=DEFAULT_GROUP, cnt=3
+2023-11-27 16:56:43.048 INFO  c.a.cloud.nacos.refresh.NacosContextRefresher     :129  [32m                  [0;39m [Nacos Config] Listening config: dataId=member.yaml, group=DEFAULT_GROUP
+2023-11-27 16:56:43.049 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:56:43.050 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:56:43.050 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:57:12.189 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-27 16:57:12.204 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:57:12.204 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:57:12.205 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:57:12.206 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:57:12.206 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :95   [32m                  [0;39m De-registering from Nacos Server now...
+2023-11-27 16:57:12.207 INFO  com.alibaba.nacos.client.naming                   :217  [32m                  [0;39m [DEREGISTER-SERVICE] train deregistering service member with instance: Instance{instanceId='null', ip='10.20.68.187', port=8001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-11-27 16:57:12.211 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :115  [32m                  [0;39m De-registration finished.
+2023-11-27 16:57:12.212 INFO  com.alibaba.nacos.client.naming                   :256  [32m                  [0;39m com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2023-11-27 16:57:12.212 INFO  com.alibaba.nacos.client.naming                   :136  [32m                  [0;39m com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-11-27 16:57:12.212 INFO  com.alibaba.nacos.client.naming                   :138  [32m                  [0;39m com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-11-27 16:57:12.212 INFO  com.alibaba.nacos.client.naming                   :258  [32m                  [0;39m com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2023-11-27 16:57:12.212 INFO  com.alibaba.nacos.client.naming                   :204  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2023-11-27 16:57:12.212 INFO  com.alibaba.nacos.client.naming                   :143  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2023-11-27 16:57:12.212 INFO  com.alibaba.nacos.client.naming                   :145  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2023-11-27 16:57:12.212 INFO  com.alibaba.nacos.client.naming                   :194  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2023-11-27 16:57:12.212 WARN  com.alibaba.nacos.client.naming                   :74   [32m                  [0;39m [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-11-27 16:57:12.212 WARN  com.alibaba.nacos.client.naming                   :81   [32m                  [0;39m [NamingHttpClientManager] Destruction of the end
+2023-11-27 16:57:12.212 INFO  com.alibaba.nacos.client.naming                   :199  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2023-11-27 16:57:12.212 INFO  com.alibaba.nacos.client.naming                   :484  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2023-11-27 16:57:12.212 WARN  com.alibaba.nacos.client.naming                   :74   [32m                  [0;39m [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-11-27 16:57:12.213 WARN  com.alibaba.nacos.client.naming                   :81   [32m                  [0;39m [NamingHttpClientManager] Destruction of the end
+2023-11-27 16:57:12.213 INFO  com.alibaba.nacos.client.naming                   :486  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2023-11-27 16:57:12.213 INFO  com.alibaba.nacos.common.remote.client            :429  [32m                  [0;39m Shutdown rpc client, set status to shutdown
+2023-11-27 16:57:12.213 INFO  com.alibaba.nacos.common.remote.client            :431  [32m                  [0;39m Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@6329973e[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2023-11-27 16:57:12.213 INFO  com.alibaba.nacos.common.remote.client            :584  [32m                  [0;39m Close current connection 1701075402690_127.0.0.1_63258
+2023-11-27 16:57:12.213 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :159  [32m                  [0;39m Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@321e7cd8[Running, pool size = 6, active threads = 1, queued tasks = 0, completed tasks = 15]
+2023-11-27 16:57:12.213 INFO  com.alibaba.nacos.client.naming                   :318  [32m                  [0;39m Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@5f03f78e[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 9]
+2023-11-27 16:57:12.213 INFO  c.a.n.client.auth.ram.identify.CredentialWatcher  :106  [32m                  [0;39m [null] CredentialWatcher is stopped
+2023-11-27 16:57:12.213 WARN  c.a.nacos.common.remote.client.grpc.GrpcClient    :89   [32m                  [0;39m [1701075402690_127.0.0.1_63258]Ignore error event,isRunning:false,isAbandon=false
+2023-11-27 16:57:12.214 INFO  c.a.n.client.auth.ram.identify.CredentialService  :100  [32m                  [0;39m [null] CredentialService is freed
+2023-11-27 16:57:12.214 INFO  com.alibaba.nacos.client.naming                   :211  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2023-11-27 16:57:12.562 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:57:12.565 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:57:12.859 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:57:12.864 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[member] & group[DEFAULT_GROUP]
+2023-11-27 16:57:12.867 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[member.yaml] & group[DEFAULT_GROUP]
+2023-11-27 16:57:12.867 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :108  [32m                  [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-member.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-member,DEFAULT_GROUP'}]
+2023-11-27 16:57:12.873 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-11-27 16:57:12.873 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:57:12.979 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=921729bf-22c3-3382-84b0-ef055510dc5e
+2023-11-27 16:57:13.030 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:57:13.030 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:57:13.030 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:57:13.030 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:57:13.044 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:57:13.044 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 169 ms
+2023-11-27 16:57:13.721 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:57:13.984 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:57:13.986 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:57:13.987 INFO  com.alibaba.nacos.client.naming                   :62   [32m                  [0;39m initializer namespace from ans.namespace attribute : null
+2023-11-27 16:57:13.987 INFO  com.alibaba.nacos.client.naming                   :66   [32m                  [0;39m initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2023-11-27 16:57:13.987 INFO  com.alibaba.nacos.client.naming                   :73   [32m                  [0;39m initializer namespace from namespace attribute :null
+2023-11-27 16:57:13.987 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-27 16:57:13.987 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-27 16:57:13.988 INFO  c.a.n.client.auth.ram.identify.CredentialWatcher  :165  [32m                  [0;39m null No credential found
+2023-11-27 16:57:13.988 INFO  com.alibaba.nacos.common.remote.client            :108  [32m                  [0;39m [RpcClientFactory] create a new rpc client of 6da44720-6f91-44d7-8908-4c6276c2877b
+2023-11-27 16:57:13.988 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6da44720-6f91-44d7-8908-4c6276c2877b] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2023-11-27 16:57:13.988 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6da44720-6f91-44d7-8908-4c6276c2877b] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2023-11-27 16:57:13.988 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6da44720-6f91-44d7-8908-4c6276c2877b] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2023-11-27 16:57:13.988 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6da44720-6f91-44d7-8908-4c6276c2877b] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2023-11-27 16:57:13.988 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :182  [32m                  [0;39m grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-11-27 16:57:14.108 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6da44720-6f91-44d7-8908-4c6276c2877b] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1701075433991_127.0.0.1_63317
+2023-11-27 16:57:14.108 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6da44720-6f91-44d7-8908-4c6276c2877b] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-11-27 16:57:14.108 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6da44720-6f91-44d7-8908-4c6276c2877b] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$608/0x00000008010d6ee0
+2023-11-27 16:57:14.108 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [6da44720-6f91-44d7-8908-4c6276c2877b] Notify connected event to listeners.
+2023-11-27 16:57:14.108 INFO  com.alibaba.nacos.client.naming                   :121  [32m                  [0;39m [REGISTER-SERVICE] train registering service member with instance Instance{instanceId='null', ip='10.20.68.187', port=8001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2023-11-27 16:57:14.108 INFO  com.alibaba.nacos.client.naming                   :78   [32m                  [0;39m Grpc connection connect
+2023-11-27 16:57:14.112 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :76   [32m                  [0;39m nacos registry, DEFAULT_GROUP member 10.20.68.187:8001 register finished
+2023-11-27 16:57:14.316 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.074 seconds (process running for 105.722)
+2023-11-27 16:57:14.317 INFO  com.alibaba.nacos.client.config.impl.CacheData    :197  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [add-listener] ok, tenant=train, dataId=member, group=DEFAULT_GROUP, cnt=4
+2023-11-27 16:57:14.317 INFO  c.a.cloud.nacos.refresh.NacosContextRefresher     :129  [32m                  [0;39m [Nacos Config] Listening config: dataId=member, group=DEFAULT_GROUP
+2023-11-27 16:57:14.317 INFO  com.alibaba.nacos.client.config.impl.CacheData    :197  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [add-listener] ok, tenant=train, dataId=member.yaml, group=DEFAULT_GROUP, cnt=4
+2023-11-27 16:57:14.317 INFO  c.a.cloud.nacos.refresh.NacosContextRefresher     :129  [32m                  [0;39m [Nacos Config] Listening config: dataId=member.yaml, group=DEFAULT_GROUP
+2023-11-27 16:57:14.317 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:57:14.318 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:57:14.318 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
