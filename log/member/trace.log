@@ -552,3 +552,153 @@ java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.Member
 2023-11-27 14:59:19.283 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2023-11-27 14:59:19.283 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
 2023-11-27 14:59:19.283 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 15:02:25.962 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-11-27 15:02:25.992 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22816 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 15:02:25.993 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 15:02:26.032 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-27 15:02:26.032 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-27 15:02:26.555 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=a0ba99c0-16cf-3da2-8da4-6d376c54a235
+2023-11-27 15:02:26.985 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 15:02:26.992 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:02:26.992 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 15:02:26.992 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 15:02:27.031 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 15:02:27.032 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1000 ms
+2023-11-27 15:02:27.610 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-27 15:02:27.850 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:02:27.862 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 15:02:28.118 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.683 seconds (process running for 3.05)
+2023-11-27 15:02:28.120 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 15:02:28.120 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 15:04:06.734 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-27 15:04:06.734 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-27 15:04:06.735 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-11-27 15:04:06.750 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjgzMDIsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NDcwMiwiaWF0IjoxNzAxMDY4MzAyfQ.MiLNpZenBpMiDDTtDw4jtMPjUZfRsyfnsNijpczIYJA
+2023-11-27 15:04:07.139 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 15:04:07.141 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 15:04:07.176 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701068647173Ltv  [0;39m ------------- 开始 -------------
+2023-11-27 15:04:07.176 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701068647173Ltv  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 15:04:07.176 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701068647173Ltv  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 15:04:07.177 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701068647173Ltv  [0;39m 远程地址: 127.0.0.1
+2023-11-27 15:04:07.206 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701068647173Ltv  [0;39m 请求参数: []
+2023-11-27 15:04:07.238 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1701068647173Ltv  [0;39m HikariPool-1 - Starting...
+2023-11-27 15:04:07.416 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1701068647173Ltv  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2281b7e2
+2023-11-27 15:04:07.417 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1701068647173Ltv  [0;39m HikariPool-1 - Start completed.
+2023-11-27 15:04:07.423 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701068647173Ltv  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 15:04:07.438 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701068647173Ltv  [0;39m ==> Parameters: 1(Long)
+2023-11-27 15:04:07.455 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701068647173Ltv  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 15:04:07.457 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701068647173Ltv  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 15:04:07.459 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701068647173Ltv  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 15:04:07.459 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701068647173Ltv  [0;39m <==      Total: 2
+2023-11-27 15:04:07.488 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701068647173Ltv  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 15:04:07.489 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701068647173Ltv  [0;39m ------------- 结束 耗时：316 ms -------------
+2023-11-27 15:04:10.068 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjgzMDIsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NDcwMiwiaWF0IjoxNzAxMDY4MzAyfQ.MiLNpZenBpMiDDTtDw4jtMPjUZfRsyfnsNijpczIYJA
+2023-11-27 15:04:10.069 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 15:04:10.070 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 15:04:10.141 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701068650141yMg  [0;39m ------------- 开始 -------------
+2023-11-27 15:04:10.141 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701068650141yMg  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
+2023-11-27 15:04:10.144 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701068650141yMg  [0;39m 类名方法: top.chen.train.member.controller.MemberController.sendCode
+2023-11-27 15:04:10.144 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701068650141yMg  [0;39m 远程地址: 127.0.0.1
+2023-11-27 15:04:10.147 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701068650141yMg  [0;39m 请求参数: [{"mobile":"13951905171"}]
+2023-11-27 15:04:10.153 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701068650141yMg  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-27 15:04:10.154 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701068650141yMg  [0;39m ==> Parameters: 13951905171(String)
+2023-11-27 15:04:10.155 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1701068650141yMg  [0;39m <==    Columns: id, mobile
+2023-11-27 15:04:10.155 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1701068650141yMg  [0;39m <==        Row: 1, 13951905171
+2023-11-27 15:04:10.156 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701068650141yMg  [0;39m <==      Total: 1
+2023-11-27 15:04:10.156 INFO  top.chen.train.member.service.MemberService       :87   [32m1701068650141yMg  [0;39m 手机号存在，不插入记录
+2023-11-27 15:04:10.156 INFO  top.chen.train.member.service.MemberService       :91   [32m1701068650141yMg  [0;39m 生成验证码：8888
+2023-11-27 15:04:10.156 INFO  top.chen.train.member.service.MemberService       :93   [32m1701068650141yMg  [0;39m 保存短信记录表
+2023-11-27 15:04:10.156 INFO  top.chen.train.member.service.MemberService       :95   [32m1701068650141yMg  [0;39m 对接短信通道
+2023-11-27 15:04:10.156 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701068650141yMg  [0;39m 返回结果: {"success":true}
+2023-11-27 15:04:10.156 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701068650141yMg  [0;39m ------------- 结束 耗时：15 ms -------------
+2023-11-27 15:04:11.378 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjgzMDIsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NDcwMiwiaWF0IjoxNzAxMDY4MzAyfQ.MiLNpZenBpMiDDTtDw4jtMPjUZfRsyfnsNijpczIYJA
+2023-11-27 15:04:11.379 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 15:04:11.379 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 15:04:11.384 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701068651384Sy8  [0;39m ------------- 开始 -------------
+2023-11-27 15:04:11.384 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701068651384Sy8  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-11-27 15:04:11.384 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701068651384Sy8  [0;39m 类名方法: top.chen.train.member.controller.MemberController.login
+2023-11-27 15:04:11.384 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701068651384Sy8  [0;39m 远程地址: 127.0.0.1
+2023-11-27 15:04:11.387 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701068651384Sy8  [0;39m 请求参数: [{"code":"8888","mobile":"13951905171"}]
+2023-11-27 15:04:11.388 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701068651384Sy8  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-11-27 15:04:11.388 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701068651384Sy8  [0;39m ==> Parameters: 13951905171(String)
+2023-11-27 15:04:11.390 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1701068651384Sy8  [0;39m <==    Columns: id, mobile
+2023-11-27 15:04:11.390 TRACE t.c.t.member.mapper.MemberMapper.selectByExample  :143  [32m1701068651384Sy8  [0;39m <==        Row: 1, 13951905171
+2023-11-27 15:04:11.392 DEBUG t.c.t.member.mapper.MemberMapper.selectByExample  :137  [32m1701068651384Sy8  [0;39m <==      Total: 1
+2023-11-27 15:04:11.401 INFO  top.chen.train.common.util.JwtUtil                :40   [32m1701068651384Sy8  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 15:04:11.403 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701068651384Sy8  [0;39m 返回结果: {"content":{"id":1,"mobile":"13951905171","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug"},"success":true}
+2023-11-27 15:04:11.403 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701068651384Sy8  [0;39m ------------- 结束 耗时：19 ms -------------
+2023-11-27 15:04:42.159 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 15:04:42.161 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 15:04:42.161 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 15:04:42.175 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701068682175sSP  [0;39m ------------- 开始 -------------
+2023-11-27 15:04:42.175 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701068682175sSP  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-11-27 15:04:42.175 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701068682175sSP  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryList
+2023-11-27 15:04:42.175 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701068682175sSP  [0;39m 远程地址: 127.0.0.1
+2023-11-27 15:04:42.178 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701068682175sSP  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 15:04:42.178 INFO  top.chen.train.member.service.PassengerService    :68   [32m1701068682175sSP  [0;39m 查询页码：1
+2023-11-27 15:04:42.179 INFO  top.chen.train.member.service.PassengerService    :69   [32m1701068682175sSP  [0;39m 每页条数：10
+2023-11-27 15:04:42.241 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1701068682175sSP  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-11-27 15:04:42.241 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1701068682175sSP  [0;39m ==> Parameters: 1(Long)
+2023-11-27 15:04:42.243 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1701068682175sSP  [0;39m <==    Columns: count(0)
+2023-11-27 15:04:42.243 TRACE t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1701068682175sSP  [0;39m <==        Row: 2
+2023-11-27 15:04:42.243 DEBUG t.c.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1701068682175sSP  [0;39m <==      Total: 1
+2023-11-27 15:04:42.245 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701068682175sSP  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-27 15:04:42.247 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701068682175sSP  [0;39m ==> Parameters: 1(Long), 10(Integer)
+2023-11-27 15:04:42.248 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701068682175sSP  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 15:04:42.249 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701068682175sSP  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 15:04:42.250 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701068682175sSP  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 15:04:42.251 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701068682175sSP  [0;39m <==      Total: 2
+2023-11-27 15:04:42.253 INFO  top.chen.train.member.service.PassengerService    :74   [32m1701068682175sSP  [0;39m 总行数：2
+2023-11-27 15:04:42.253 INFO  top.chen.train.member.service.PassengerService    :75   [32m1701068682175sSP  [0;39m 总页数：1
+2023-11-27 15:04:42.256 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701068682175sSP  [0;39m 返回结果: {"content":{"list":[{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559},{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360}],"total":2},"success":true}
+2023-11-27 15:04:42.257 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701068682175sSP  [0;39m ------------- 结束 耗时：82 ms -------------
+2023-11-27 15:04:46.052 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 15:04:46.052 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 15:04:46.053 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 15:04:46.053 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701068686053hli  [0;39m ------------- 开始 -------------
+2023-11-27 15:04:46.054 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701068686053hli  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 15:04:46.054 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701068686053hli  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 15:04:46.054 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701068686053hli  [0;39m 远程地址: 127.0.0.1
+2023-11-27 15:04:46.054 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701068686053hli  [0;39m 请求参数: []
+2023-11-27 15:04:46.055 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701068686053hli  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 15:04:46.056 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701068686053hli  [0;39m ==> Parameters: 1(Long)
+2023-11-27 15:04:46.057 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701068686053hli  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 15:04:46.057 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701068686053hli  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 15:04:46.058 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701068686053hli  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 15:04:46.059 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701068686053hli  [0;39m <==      Total: 2
+2023-11-27 15:04:46.060 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701068686053hli  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 15:04:46.060 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701068686053hli  [0;39m ------------- 结束 耗时：7 ms -------------
+2023-11-27 15:05:54.633 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-27 15:05:54.660 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:05:54.661 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 15:05:54.662 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-27 15:05:54.664 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-11-27 15:05:54.665 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:05:54.667 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:05:54.670 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-11-27 15:05:54.678 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-11-27 15:05:55.179 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22816 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 15:05:55.179 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 15:05:55.446 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=a0ba99c0-16cf-3da2-8da4-6d376c54a235
+2023-11-27 15:05:55.558 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 15:05:55.559 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:05:55.559 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 15:05:55.559 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 15:05:55.575 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 15:05:55.576 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 394 ms
+2023-11-27 15:05:55.994 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-27 15:05:56.480 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:05:56.484 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 15:05:56.877 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.156 seconds (process running for 211.809)
+2023-11-27 15:05:56.879 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 15:05:56.879 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 15:05:56.879 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
