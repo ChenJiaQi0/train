@@ -756,3 +756,5 @@ java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.Member
 2023-11-27 15:11:30.931 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m17010690909253WX  [0;39m <==      Total: 2
 2023-11-27 15:11:30.932 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m17010690909253WX  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
 2023-11-27 15:11:30.932 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m17010690909253WX  [0;39m ------------- 结束 耗时：7 ms -------------
+2023-11-27 15:26:49.269 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2023-11-27 15:26:49.273 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
