@@ -7,6 +7,7 @@ import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.context.annotation.Bean;
+import org.springframework.transaction.annotation.Transactional;
 import top.chen.train.business.domain.*;
 import top.chen.train.common.exception.BusinessException;
 import top.chen.train.common.exception.BusinessExceptionEnum;
@@ -42,10 +43,10 @@ public class TrainService {
      * 查询所有车次
      * @return
      */
+    @Transactional
     public List<TrainQueryResp> queryAll(){
-        TrainExample trainExample = new TrainExample();
-        trainExample.setOrderByClause("code desc");
-        List<Train> trainList = trainMapper.selectByExample(trainExample);
+        List<Train> trainList = selectAll();
+
         return BeanUtil.copyToList(trainList, TrainQueryResp.class);
     }
 
