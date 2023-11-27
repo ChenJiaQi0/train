@@ -758,3 +758,1114 @@ java.lang.NullPointerException: Cannot invoke "top.chen.train.common.resp.Member
 2023-11-27 15:11:30.932 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m17010690909253WX  [0;39m ------------- 结束 耗时：7 ms -------------
 2023-11-27 15:26:49.269 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
 2023-11-27 15:26:49.273 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2023-11-27 15:26:53.195 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-11-27 15:26:53.227 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 15:26:53.228 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 15:26:53.263 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-27 15:26:53.264 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-27 15:26:53.799 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=a0ba99c0-16cf-3da2-8da4-6d376c54a235
+2023-11-27 15:26:54.293 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 15:26:54.308 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:26:54.309 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 15:26:54.309 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 15:26:54.369 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 15:26:54.370 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1106 ms
+2023-11-27 15:26:54.919 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 15:26:55.201 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:26:55.214 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 15:26:55.482 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.913 seconds (process running for 3.394)
+2023-11-27 15:26:55.484 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 15:26:55.484 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 15:27:20.374 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-27 15:27:20.375 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-27 15:27:20.376 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-11-27 15:27:20.399 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 15:27:21.071 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 15:27:21.073 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 15:27:21.113 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701070041110k3O  [0;39m ------------- 开始 -------------
+2023-11-27 15:27:21.114 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701070041110k3O  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 15:27:21.115 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701070041110k3O  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 15:27:21.115 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701070041110k3O  [0;39m 远程地址: 127.0.0.1
+2023-11-27 15:27:21.155 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701070041110k3O  [0;39m 请求参数: []
+2023-11-27 15:27:21.210 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1701070041110k3O  [0;39m HikariPool-1 - Starting...
+2023-11-27 15:27:21.478 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1701070041110k3O  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2048f693
+2023-11-27 15:27:21.480 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1701070041110k3O  [0;39m HikariPool-1 - Start completed.
+2023-11-27 15:27:21.488 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701070041110k3O  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 15:27:21.512 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701070041110k3O  [0;39m ==> Parameters: 1(Long)
+2023-11-27 15:27:21.529 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701070041110k3O  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 15:27:21.532 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701070041110k3O  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 15:27:21.534 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701070041110k3O  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 15:27:21.534 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701070041110k3O  [0;39m <==      Total: 2
+2023-11-27 15:27:21.581 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701070041110k3O  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 15:27:21.583 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701070041110k3O  [0;39m ------------- 结束 耗时：473 ms -------------
+2023-11-27 15:29:59.942 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 15:29:59.942 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 15:29:59.942 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 15:29:59.942 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701070199942MJw  [0;39m ------------- 开始 -------------
+2023-11-27 15:29:59.942 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701070199942MJw  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 15:29:59.944 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701070199942MJw  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 15:29:59.944 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701070199942MJw  [0;39m 远程地址: 127.0.0.1
+2023-11-27 15:29:59.944 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701070199942MJw  [0;39m 请求参数: []
+2023-11-27 15:29:59.945 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701070199942MJw  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 15:29:59.945 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701070199942MJw  [0;39m ==> Parameters: 1(Long)
+2023-11-27 15:29:59.947 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701070199942MJw  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 15:29:59.947 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701070199942MJw  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 15:29:59.948 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701070199942MJw  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 15:29:59.948 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701070199942MJw  [0;39m <==      Total: 2
+2023-11-27 15:29:59.949 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701070199942MJw  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 15:29:59.949 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701070199942MJw  [0;39m ------------- 结束 耗时：7 ms -------------
+2023-11-27 15:43:35.519 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 15:43:35.520 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 15:43:35.520 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 15:43:35.520 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701071015520275  [0;39m ------------- 开始 -------------
+2023-11-27 15:43:35.522 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701071015520275  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 15:43:35.522 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701071015520275  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 15:43:35.522 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701071015520275  [0;39m 远程地址: 127.0.0.1
+2023-11-27 15:43:35.522 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701071015520275  [0;39m 请求参数: []
+2023-11-27 15:43:35.524 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701071015520275  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 15:43:35.524 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701071015520275  [0;39m ==> Parameters: 1(Long)
+2023-11-27 15:43:35.525 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701071015520275  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 15:43:35.526 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701071015520275  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 15:43:35.527 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701071015520275  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 15:43:35.529 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701071015520275  [0;39m <==      Total: 2
+2023-11-27 15:43:35.530 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701071015520275  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 15:43:35.530 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701071015520275  [0;39m ------------- 结束 耗时：10 ms -------------
+2023-11-27 15:52:43.478 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 15:52:43.479 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 15:52:43.480 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 15:52:43.481 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701071563480DS1  [0;39m ------------- 开始 -------------
+2023-11-27 15:52:43.481 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701071563480DS1  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 15:52:43.481 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701071563480DS1  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 15:52:43.481 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701071563480DS1  [0;39m 远程地址: 127.0.0.1
+2023-11-27 15:52:43.482 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701071563480DS1  [0;39m 请求参数: []
+2023-11-27 15:52:43.485 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701071563480DS1  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 15:52:43.489 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701071563480DS1  [0;39m ==> Parameters: 1(Long)
+2023-11-27 15:52:43.491 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701071563480DS1  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 15:52:43.492 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701071563480DS1  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 15:52:43.493 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701071563480DS1  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 15:52:43.494 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701071563480DS1  [0;39m <==      Total: 2
+2023-11-27 15:52:43.496 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701071563480DS1  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 15:52:43.497 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701071563480DS1  [0;39m ------------- 结束 耗时：17 ms -------------
+2023-11-27 15:52:54.835 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 15:52:54.835 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 15:52:54.837 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 15:52:54.838 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701071574838Tzt  [0;39m ------------- 开始 -------------
+2023-11-27 15:52:54.838 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701071574838Tzt  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 15:52:54.838 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701071574838Tzt  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 15:52:54.838 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701071574838Tzt  [0;39m 远程地址: 127.0.0.1
+2023-11-27 15:52:54.839 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701071574838Tzt  [0;39m 请求参数: []
+2023-11-27 15:52:54.840 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701071574838Tzt  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 15:52:54.840 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701071574838Tzt  [0;39m ==> Parameters: 1(Long)
+2023-11-27 15:52:54.842 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701071574838Tzt  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 15:52:54.842 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701071574838Tzt  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 15:52:54.843 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701071574838Tzt  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 15:52:54.844 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701071574838Tzt  [0;39m <==      Total: 2
+2023-11-27 15:52:54.844 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701071574838Tzt  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 15:52:54.844 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701071574838Tzt  [0;39m ------------- 结束 耗时：7 ms -------------
+2023-11-27 15:56:47.694 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-27 15:56:47.713 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:56:47.714 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 15:56:47.714 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-27 15:56:47.717 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-11-27 15:56:47.717 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-1 connection closer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-11-27 15:56:47.717 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-11-27 15:56:47.719 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:56:47.720 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:56:47.722 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-11-27 15:56:47.727 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-11-27 15:56:48.027 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 15:56:48.028 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 15:56:48.196 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=a0ba99c0-16cf-3da2-8da4-6d376c54a235
+2023-11-27 15:56:48.256 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 15:56:48.256 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:56:48.256 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 15:56:48.256 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 15:56:48.266 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 15:56:48.267 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 238 ms
+2023-11-27 15:56:48.318 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberController': Injection of resource dependencies failed
+2023-11-27 15:56:48.319 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 15:56:48.322 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-27 15:56:48.334 ERROR org.springframework.boot.SpringApplication        :820  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberController': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:303)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at top.chen.train.member.config.MemberApplication.main(MemberApplication.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberService': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:303)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:467)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:242)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:300)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberMapper' defined in file [D:\program\train\member\target\classes\top\chen\train\member\mapper\MemberMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory': Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\program\train\member\target\classes\mapper\TicketMapper.xml]'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1494)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1388)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:467)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:242)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:300)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\program\train\member\target\classes\mapper\TicketMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1479)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\program\train\member\target\classes\mapper\TicketMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 61 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [D:\program\train\member\target\classes\mapper\TicketMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:615)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:492)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:635)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 62 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\program\train\member\target\classes\mapper\TicketMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'top.chen.train.member.domain.Ticket'.  Cause: java.lang.ClassNotFoundException: Cannot find class: top.chen.train.member.domain.Ticket
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
+	... 70 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'top.chen.train.member.domain.Ticket'.  Cause: java.lang.ClassNotFoundException: Cannot find class: top.chen.train.member.domain.Ticket
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	... 72 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'top.chen.train.member.domain.Ticket'.  Cause: java.lang.ClassNotFoundException: Cannot find class: top.chen.train.member.domain.Ticket
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 76 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: top.chen.train.member.domain.Ticket
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
+	... 78 common frames omitted
+2023-11-27 15:56:49.982 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 15:56:49.983 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 15:56:50.120 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=e080619f-f8a3-3fde-bc0b-25aedad1c5a5
+2023-11-27 15:56:50.164 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 15:56:50.166 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:56:50.166 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 15:56:50.166 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 15:56:50.175 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 15:56:50.175 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 191 ms
+2023-11-27 15:56:50.379 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 15:56:50.598 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:56:50.602 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 15:56:50.799 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.033 seconds (process running for 1798.711)
+2023-11-27 15:56:50.800 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 15:56:50.801 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 15:56:50.801 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 15:57:29.427 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 5 class path changes (5 additions, 0 deletions, 0 modifications)
+2023-11-27 15:57:29.439 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:57:29.439 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 15:57:29.440 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:57:29.441 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:57:29.667 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 15:57:29.667 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 15:57:29.776 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=1b0755ea-0065-315d-9281-9002ea48f2a2
+2023-11-27 15:57:29.825 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 15:57:29.825 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:57:29.825 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 15:57:29.825 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 15:57:29.835 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 15:57:29.835 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 167 ms
+2023-11-27 15:57:30.009 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 15:57:30.234 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 15:57:30.241 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 15:57:30.456 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 0.982 seconds (process running for 1838.368)
+2023-11-27 15:57:30.457 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 15:57:30.458 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 15:57:30.458 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:02:59.833 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-27 16:02:59.834 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-27 16:02:59.835 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-11-27 16:02:59.907 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701072179906wBB  [0;39m ------------- 开始 -------------
+2023-11-27 16:02:59.907 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701072179906wBB  [0;39m 请求地址: http://127.0.0.1:8001/member/admin/ticket/query-list GET
+2023-11-27 16:02:59.907 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701072179906wBB  [0;39m 类名方法: top.chen.train.member.controller.admin.TicketAdminController.queryList
+2023-11-27 16:02:59.908 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701072179906wBB  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:02:59.909 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701072179906wBB  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:02:59.912 INFO  top.chen.train.member.service.TicketService       :50   [32m1701072179906wBB  [0;39m 查询页码：1
+2023-11-27 16:02:59.912 INFO  top.chen.train.member.service.TicketService       :51   [32m1701072179906wBB  [0;39m 每页条数：10
+2023-11-27 16:02:59.972 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1701072179906wBB  [0;39m HikariPool-2 - Starting...
+2023-11-27 16:02:59.987 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1701072179906wBB  [0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62c858c1
+2023-11-27 16:02:59.987 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1701072179906wBB  [0;39m HikariPool-2 - Start completed.
+2023-11-27 16:02:59.987 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072179906wBB  [0;39m ==>  Preparing: SELECT count(0) FROM ticket
+2023-11-27 16:02:59.987 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072179906wBB  [0;39m ==> Parameters: 
+2023-11-27 16:02:59.995 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072179906wBB  [0;39m <==    Columns: count(0)
+2023-11-27 16:02:59.995 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072179906wBB  [0;39m <==        Row: 0
+2023-11-27 16:02:59.996 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072179906wBB  [0;39m <==      Total: 1
+2023-11-27 16:02:59.997 INFO  top.chen.train.member.service.TicketService       :56   [32m1701072179906wBB  [0;39m 总行数：0
+2023-11-27 16:02:59.997 INFO  top.chen.train.member.service.TicketService       :57   [32m1701072179906wBB  [0;39m 总页数：0
+2023-11-27 16:02:59.998 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701072179906wBB  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2023-11-27 16:02:59.999 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701072179906wBB  [0;39m ------------- 结束 耗时：93 ms -------------
+2023-11-27 16:03:05.814 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m17010721858146VJ  [0;39m ------------- 开始 -------------
+2023-11-27 16:03:05.815 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m17010721858146VJ  [0;39m 请求地址: http://127.0.0.1:8001/member/admin/ticket/query-list GET
+2023-11-27 16:03:05.815 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m17010721858146VJ  [0;39m 类名方法: top.chen.train.member.controller.admin.TicketAdminController.queryList
+2023-11-27 16:03:05.815 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m17010721858146VJ  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:03:05.815 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m17010721858146VJ  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:03:05.815 INFO  top.chen.train.member.service.TicketService       :50   [32m17010721858146VJ  [0;39m 查询页码：1
+2023-11-27 16:03:05.816 INFO  top.chen.train.member.service.TicketService       :51   [32m17010721858146VJ  [0;39m 每页条数：10
+2023-11-27 16:03:05.820 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m17010721858146VJ  [0;39m ==>  Preparing: SELECT count(0) FROM ticket
+2023-11-27 16:03:05.820 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m17010721858146VJ  [0;39m ==> Parameters: 
+2023-11-27 16:03:05.821 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m17010721858146VJ  [0;39m <==    Columns: count(0)
+2023-11-27 16:03:05.822 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m17010721858146VJ  [0;39m <==        Row: 0
+2023-11-27 16:03:05.822 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m17010721858146VJ  [0;39m <==      Total: 1
+2023-11-27 16:03:05.822 INFO  top.chen.train.member.service.TicketService       :56   [32m17010721858146VJ  [0;39m 总行数：0
+2023-11-27 16:03:05.822 INFO  top.chen.train.member.service.TicketService       :57   [32m17010721858146VJ  [0;39m 总页数：0
+2023-11-27 16:03:05.822 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m17010721858146VJ  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2023-11-27 16:03:05.823 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m17010721858146VJ  [0;39m ------------- 结束 耗时：9 ms -------------
+2023-11-27 16:03:49.541 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701072229541ROl  [0;39m ------------- 开始 -------------
+2023-11-27 16:03:49.542 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701072229541ROl  [0;39m 请求地址: http://127.0.0.1:8001/member/admin/ticket/query-list GET
+2023-11-27 16:03:49.542 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701072229541ROl  [0;39m 类名方法: top.chen.train.member.controller.admin.TicketAdminController.queryList
+2023-11-27 16:03:49.542 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701072229541ROl  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:03:49.542 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701072229541ROl  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:03:49.542 INFO  top.chen.train.member.service.TicketService       :50   [32m1701072229541ROl  [0;39m 查询页码：1
+2023-11-27 16:03:49.542 INFO  top.chen.train.member.service.TicketService       :51   [32m1701072229541ROl  [0;39m 每页条数：10
+2023-11-27 16:03:49.545 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072229541ROl  [0;39m ==>  Preparing: SELECT count(0) FROM ticket
+2023-11-27 16:03:49.547 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072229541ROl  [0;39m ==> Parameters: 
+2023-11-27 16:03:49.549 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072229541ROl  [0;39m <==    Columns: count(0)
+2023-11-27 16:03:49.550 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072229541ROl  [0;39m <==        Row: 0
+2023-11-27 16:03:49.551 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072229541ROl  [0;39m <==      Total: 1
+2023-11-27 16:03:49.551 INFO  top.chen.train.member.service.TicketService       :56   [32m1701072229541ROl  [0;39m 总行数：0
+2023-11-27 16:03:49.552 INFO  top.chen.train.member.service.TicketService       :57   [32m1701072229541ROl  [0;39m 总页数：0
+2023-11-27 16:03:49.556 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701072229541ROl  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2023-11-27 16:03:49.556 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701072229541ROl  [0;39m ------------- 结束 耗时：15 ms -------------
+2023-11-27 16:03:56.025 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701072236025NxP  [0;39m ------------- 开始 -------------
+2023-11-27 16:03:56.026 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701072236025NxP  [0;39m 请求地址: http://127.0.0.1:8001/member/admin/ticket/query-list GET
+2023-11-27 16:03:56.026 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701072236025NxP  [0;39m 类名方法: top.chen.train.member.controller.admin.TicketAdminController.queryList
+2023-11-27 16:03:56.026 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701072236025NxP  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:03:56.026 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701072236025NxP  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:03:56.026 INFO  top.chen.train.member.service.TicketService       :50   [32m1701072236025NxP  [0;39m 查询页码：1
+2023-11-27 16:03:56.026 INFO  top.chen.train.member.service.TicketService       :51   [32m1701072236025NxP  [0;39m 每页条数：10
+2023-11-27 16:03:56.029 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072236025NxP  [0;39m ==>  Preparing: SELECT count(0) FROM ticket
+2023-11-27 16:03:56.030 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072236025NxP  [0;39m ==> Parameters: 
+2023-11-27 16:03:56.031 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072236025NxP  [0;39m <==    Columns: count(0)
+2023-11-27 16:03:56.031 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072236025NxP  [0;39m <==        Row: 0
+2023-11-27 16:03:56.031 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072236025NxP  [0;39m <==      Total: 1
+2023-11-27 16:03:56.031 INFO  top.chen.train.member.service.TicketService       :56   [32m1701072236025NxP  [0;39m 总行数：0
+2023-11-27 16:03:56.032 INFO  top.chen.train.member.service.TicketService       :57   [32m1701072236025NxP  [0;39m 总页数：0
+2023-11-27 16:03:56.032 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701072236025NxP  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2023-11-27 16:03:56.032 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701072236025NxP  [0;39m ------------- 结束 耗时：7 ms -------------
+2023-11-27 16:04:48.397 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-27 16:04:48.411 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:04:48.412 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:04:48.412 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-27 16:04:48.412 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-11-27 16:04:48.414 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:04:48.415 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:04:48.416 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2023-11-27 16:04:48.419 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2023-11-27 16:04:48.728 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:04:48.728 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:04:48.848 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=1b0755ea-0065-315d-9281-9002ea48f2a2
+2023-11-27 16:04:48.897 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:04:48.897 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:04:48.898 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:04:48.898 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:04:48.909 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:04:48.909 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 179 ms
+2023-11-27 16:04:49.113 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:04:49.350 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:04:49.352 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:04:49.639 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.191 seconds (process running for 2277.551)
+2023-11-27 16:04:49.639 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:04:49.640 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:04:49.640 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:05:07.753 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-11-27 16:05:07.767 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:07.767 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:05:07.769 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:07.770 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:08.068 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:05:08.068 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:05:08.167 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=1b0755ea-0065-315d-9281-9002ea48f2a2
+2023-11-27 16:05:08.215 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:05:08.215 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:08.215 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:05:08.215 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:05:08.223 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:05:08.224 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 155 ms
+2023-11-27 16:05:08.601 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:05:09.034 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:09.037 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:05:09.470 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.671 seconds (process running for 2297.383)
+2023-11-27 16:05:09.472 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:05:09.472 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:05:09.472 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:05:10.018 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-27 16:05:10.044 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:10.044 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:05:10.045 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:10.046 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:10.534 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:05:10.534 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:05:10.703 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=1b0755ea-0065-315d-9281-9002ea48f2a2
+2023-11-27 16:05:10.787 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:05:10.787 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:10.788 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:05:10.788 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:05:10.801 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:05:10.801 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 265 ms
+2023-11-27 16:05:11.178 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:05:11.647 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:11.650 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:05:12.095 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.01 seconds (process running for 2300.007)
+2023-11-27 16:05:12.096 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:05:12.096 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:05:12.096 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:05:32.724 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
+2023-11-27 16:05:32.746 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:32.746 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:05:32.747 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:32.749 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:33.248 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:05:33.248 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:05:33.472 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5e26f2b4-deb5-3b5c-b5df-94c443af9b7f
+2023-11-27 16:05:33.563 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:05:33.564 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:33.564 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:05:33.564 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:05:33.577 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:05:33.577 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 327 ms
+2023-11-27 16:05:34.023 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:05:34.395 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:34.398 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:05:34.736 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.917 seconds (process running for 2322.648)
+2023-11-27 16:05:34.739 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:05:34.740 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:05:34.740 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:05:38.912 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-27 16:05:38.925 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:38.926 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:05:38.927 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:38.927 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:39.171 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:05:39.172 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:05:39.266 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5e26f2b4-deb5-3b5c-b5df-94c443af9b7f
+2023-11-27 16:05:39.308 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:05:39.308 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:39.309 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:05:39.309 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:05:39.317 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:05:39.317 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 144 ms
+2023-11-27 16:05:39.502 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:05:39.712 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:39.714 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:05:39.917 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 0.961 seconds (process running for 2327.83)
+2023-11-27 16:05:39.918 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:05:39.918 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:05:39.918 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:05:40.925 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-11-27 16:05:40.938 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:40.938 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:05:40.939 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:40.940 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:41.176 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:05:41.176 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:05:41.262 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5e26f2b4-deb5-3b5c-b5df-94c443af9b7f
+2023-11-27 16:05:41.304 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:05:41.305 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:41.305 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:05:41.305 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:05:41.313 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:05:41.313 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 136 ms
+2023-11-27 16:05:41.488 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:05:41.698 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:41.700 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:05:41.921 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 0.956 seconds (process running for 2329.834)
+2023-11-27 16:05:41.922 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:05:41.922 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:05:41.922 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:05:42.907 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-27 16:05:42.922 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:42.922 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:05:42.922 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:42.923 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:43.177 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:05:43.178 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:05:43.260 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5e26f2b4-deb5-3b5c-b5df-94c443af9b7f
+2023-11-27 16:05:43.298 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:05:43.298 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:43.298 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:05:43.298 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:05:43.306 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:05:43.306 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 127 ms
+2023-11-27 16:05:43.508 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:05:43.722 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:43.724 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:05:43.911 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 0.955 seconds (process running for 2331.823)
+2023-11-27 16:05:43.912 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:05:43.912 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:05:43.912 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:05:51.010 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-11-27 16:05:51.031 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:51.032 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:05:51.033 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:51.035 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:51.434 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:05:51.435 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:05:51.594 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5e26f2b4-deb5-3b5c-b5df-94c443af9b7f
+2023-11-27 16:05:51.676 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:05:51.676 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:51.677 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:05:51.677 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:05:51.690 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:05:51.690 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 254 ms
+2023-11-27 16:05:52.034 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:05:52.432 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:52.436 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:05:52.776 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.703 seconds (process running for 2340.688)
+2023-11-27 16:05:52.777 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:05:52.777 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:05:52.777 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:05:54.497 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-11-27 16:05:54.542 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:54.542 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:05:54.544 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:54.545 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:55.021 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:05:55.021 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:05:55.217 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5e26f2b4-deb5-3b5c-b5df-94c443af9b7f
+2023-11-27 16:05:55.308 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:05:55.309 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:55.309 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:05:55.309 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:05:55.322 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:05:55.323 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 299 ms
+2023-11-27 16:05:55.672 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:05:56.058 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:56.061 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:05:56.538 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.952 seconds (process running for 2344.45)
+2023-11-27 16:05:56.538 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:05:56.539 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:05:56.539 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:05:57.104 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-27 16:05:57.125 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:57.125 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:05:57.127 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:57.128 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:57.575 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:05:57.576 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:05:57.736 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5e26f2b4-deb5-3b5c-b5df-94c443af9b7f
+2023-11-27 16:05:57.823 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:05:57.824 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:57.824 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:05:57.824 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:05:57.836 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:05:57.837 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 260 ms
+2023-11-27 16:05:58.191 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:05:58.579 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:05:58.582 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:05:58.922 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.723 seconds (process running for 2346.834)
+2023-11-27 16:05:58.922 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:05:58.925 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:05:58.925 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:06:11.836 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-11-27 16:06:11.849 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:11.849 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:06:11.850 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:11.851 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:12.092 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:06:12.092 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:06:12.188 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5e26f2b4-deb5-3b5c-b5df-94c443af9b7f
+2023-11-27 16:06:12.256 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:06:12.257 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:12.257 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:06:12.257 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:06:12.269 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:06:12.270 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 177 ms
+2023-11-27 16:06:12.600 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:06:12.960 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:12.969 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:06:13.301 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.422 seconds (process running for 2361.213)
+2023-11-27 16:06:13.302 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:06:13.302 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:06:13.302 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:06:14.036 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-27 16:06:14.083 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:14.084 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:06:14.085 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:14.087 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:14.496 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:06:14.496 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:06:14.664 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=e080619f-f8a3-3fde-bc0b-25aedad1c5a5
+2023-11-27 16:06:14.736 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:06:14.737 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:14.737 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:06:14.737 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:06:14.749 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:06:14.749 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 251 ms
+2023-11-27 16:06:15.072 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:06:15.437 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:15.440 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:06:15.795 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.657 seconds (process running for 2363.707)
+2023-11-27 16:06:15.796 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:06:15.796 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:06:15.796 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:06:16.493 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-27 16:06:16.514 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:16.514 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:06:16.515 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:16.516 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:16.979 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:06:16.980 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:06:17.147 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5e26f2b4-deb5-3b5c-b5df-94c443af9b7f
+2023-11-27 16:06:17.222 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:06:17.223 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:17.223 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:06:17.223 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:06:17.238 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:06:17.238 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 257 ms
+2023-11-27 16:06:17.626 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:06:18.006 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:18.009 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:06:18.251 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.688 seconds (process running for 2366.163)
+2023-11-27 16:06:18.251 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:06:18.252 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:06:18.252 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:06:21.076 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-11-27 16:06:21.090 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:21.090 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:06:21.091 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:21.091 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:21.340 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:06:21.341 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:06:21.435 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5e26f2b4-deb5-3b5c-b5df-94c443af9b7f
+2023-11-27 16:06:21.477 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:06:21.477 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:21.477 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:06:21.477 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:06:21.487 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:06:21.487 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 145 ms
+2023-11-27 16:06:21.684 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:06:21.902 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:21.904 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:06:22.123 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.003 seconds (process running for 2370.036)
+2023-11-27 16:06:22.124 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:06:22.124 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:06:22.124 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:06:23.110 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-27 16:06:23.122 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:23.122 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:06:23.123 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:23.124 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:23.378 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:06:23.378 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:06:23.491 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5e26f2b4-deb5-3b5c-b5df-94c443af9b7f
+2023-11-27 16:06:23.535 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:06:23.536 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:23.536 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:06:23.536 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:06:23.545 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:06:23.546 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 166 ms
+2023-11-27 16:06:23.753 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:06:23.972 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:23.974 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:06:24.185 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.03 seconds (process running for 2372.097)
+2023-11-27 16:06:24.185 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:06:24.186 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:06:24.186 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:06:32.685 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 3 class path changes (2 additions, 0 deletions, 1 modification)
+2023-11-27 16:06:32.697 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:32.697 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:06:32.698 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:32.699 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:33.160 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 23036 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:06:33.160 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:06:33.304 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2fbb2789-1e11-38fe-97f2-6c0cc5bd0ad5
+2023-11-27 16:06:33.389 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:06:33.389 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:33.390 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:06:33.390 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:06:33.404 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:06:33.404 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 243 ms
+2023-11-27 16:06:33.767 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:06:34.128 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:06:34.131 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:06:34.464 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.673 seconds (process running for 2382.376)
+2023-11-27 16:06:34.465 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:06:34.465 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:06:34.465 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:09:02.544 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-11-27 16:09:02.576 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22596 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:09:02.577 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:09:02.614 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-27 16:09:02.615 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-27 16:09:03.139 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2fbb2789-1e11-38fe-97f2-6c0cc5bd0ad5
+2023-11-27 16:09:03.666 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:09:03.675 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:09:03.676 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:09:03.676 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:09:03.715 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:09:03.716 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1101 ms
+2023-11-27 16:09:04.338 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-27 16:09:04.637 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:09:04.649 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:09:04.880 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.927 seconds (process running for 3.377)
+2023-11-27 16:09:04.883 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:09:04.883 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:09:28.743 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-27 16:09:28.744 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-27 16:09:28.747 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 2 ms
+2023-11-27 16:09:28.845 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701072568842S9q  [0;39m ------------- 开始 -------------
+2023-11-27 16:09:28.845 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701072568842S9q  [0;39m 请求地址: http://127.0.0.1:8001/member/admin/ticket/query-list GET
+2023-11-27 16:09:28.846 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701072568842S9q  [0;39m 类名方法: top.chen.train.member.controller.admin.TicketAdminController.queryList
+2023-11-27 16:09:28.846 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701072568842S9q  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:09:28.919 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701072568842S9q  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:09:28.923 INFO  top.chen.train.member.service.TicketService       :46   [32m1701072568842S9q  [0;39m 查询页码：1
+2023-11-27 16:09:28.924 INFO  top.chen.train.member.service.TicketService       :47   [32m1701072568842S9q  [0;39m 每页条数：10
+2023-11-27 16:09:29.027 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1701072568842S9q  [0;39m HikariPool-1 - Starting...
+2023-11-27 16:09:29.325 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1701072568842S9q  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70597640
+2023-11-27 16:09:29.327 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1701072568842S9q  [0;39m HikariPool-1 - Start completed.
+2023-11-27 16:09:29.336 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072568842S9q  [0;39m ==>  Preparing: SELECT count(0) FROM ticket
+2023-11-27 16:09:29.360 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072568842S9q  [0;39m ==> Parameters: 
+2023-11-27 16:09:29.384 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072568842S9q  [0;39m <==    Columns: count(0)
+2023-11-27 16:09:29.384 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072568842S9q  [0;39m <==        Row: 0
+2023-11-27 16:09:29.386 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072568842S9q  [0;39m <==      Total: 1
+2023-11-27 16:09:29.393 INFO  top.chen.train.member.service.TicketService       :52   [32m1701072568842S9q  [0;39m 总行数：0
+2023-11-27 16:09:29.393 INFO  top.chen.train.member.service.TicketService       :53   [32m1701072568842S9q  [0;39m 总页数：0
+2023-11-27 16:09:29.405 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701072568842S9q  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2023-11-27 16:09:29.406 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701072568842S9q  [0;39m ------------- 结束 耗时：564 ms -------------
+2023-11-27 16:09:41.599 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 16:09:42.228 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 16:09:42.232 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 16:09:42.265 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701072582265Nvb  [0;39m ------------- 开始 -------------
+2023-11-27 16:09:42.265 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701072582265Nvb  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 16:09:42.266 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701072582265Nvb  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 16:09:42.266 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701072582265Nvb  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:09:42.266 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701072582265Nvb  [0;39m 请求参数: []
+2023-11-27 16:09:42.273 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701072582265Nvb  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 16:09:42.273 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701072582265Nvb  [0;39m ==> Parameters: 1(Long)
+2023-11-27 16:09:42.275 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701072582265Nvb  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 16:09:42.279 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701072582265Nvb  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 16:09:42.280 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701072582265Nvb  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 16:09:42.281 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701072582265Nvb  [0;39m <==      Total: 2
+2023-11-27 16:09:42.288 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701072582265Nvb  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 16:09:42.288 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701072582265Nvb  [0;39m ------------- 结束 耗时：23 ms -------------
+2023-11-27 16:10:03.304 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701072603304AGK  [0;39m ------------- 开始 -------------
+2023-11-27 16:10:03.305 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701072603304AGK  [0;39m 请求地址: http://127.0.0.1:8001/member/feign/ticket/save POST
+2023-11-27 16:10:03.368 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701072603304AGK  [0;39m 类名方法: top.chen.train.member.controller.feign.FeignTicketController.save
+2023-11-27 16:10:03.369 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701072603304AGK  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:10:04.083 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701072603304AGK  [0;39m 请求参数: [{"carriageIndex":2,"col":"D","date":1701100800000,"end":"北京站","endTime":36000000,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1"}]
+2023-11-27 16:10:04.091 DEBUG top.chen.train.member.mapper.TicketMapper.insert  :137  [32m1701072603304AGK  [0;39m ==>  Preparing: insert into ticket (id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-11-27 16:10:04.681 DEBUG top.chen.train.member.mapper.TicketMapper.insert  :137  [32m1701072603304AGK  [0;39m ==> Parameters: 1729049938081484800(Long), 1(Long), 1726848580230189056(Long), ccen(String), 2023-11-28(Date), G1(String), 2(Integer), 01(String), D(String), 徐州站(String), 14:10:00(Time), 北京站(String), 18:00:00(Time), 2(String), 2023-11-27 16:10:04.084(Timestamp), 2023-11-27 16:10:04.084(Timestamp)
+2023-11-27 16:10:04.691 DEBUG top.chen.train.member.mapper.TicketMapper.insert  :137  [32m1701072603304AGK  [0;39m <==    Updates: 1
+2023-11-27 16:10:05.928 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701072603304AGK  [0;39m 返回结果: {"success":true}
+2023-11-27 16:10:05.949 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701072603304AGK  [0;39m ------------- 结束 耗时：2645 ms -------------
+2023-11-27 16:10:18.077 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701072618077bOt  [0;39m ------------- 开始 -------------
+2023-11-27 16:10:18.078 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701072618077bOt  [0;39m 请求地址: http://127.0.0.1:8001/member/admin/ticket/query-list GET
+2023-11-27 16:10:18.079 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701072618077bOt  [0;39m 类名方法: top.chen.train.member.controller.admin.TicketAdminController.queryList
+2023-11-27 16:10:18.079 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701072618077bOt  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:10:18.217 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701072618077bOt  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:10:18.217 INFO  top.chen.train.member.service.TicketService       :46   [32m1701072618077bOt  [0;39m 查询页码：1
+2023-11-27 16:10:19.090 INFO  top.chen.train.member.service.TicketService       :47   [32m1701072618077bOt  [0;39m 每页条数：10
+2023-11-27 16:10:19.093 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072618077bOt  [0;39m ==>  Preparing: SELECT count(0) FROM ticket
+2023-11-27 16:10:19.341 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072618077bOt  [0;39m ==> Parameters: 
+2023-11-27 16:10:19.342 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072618077bOt  [0;39m <==    Columns: count(0)
+2023-11-27 16:10:19.622 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072618077bOt  [0;39m <==        Row: 1
+2023-11-27 16:10:19.622 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072618077bOt  [0;39m <==      Total: 1
+2023-11-27 16:10:19.879 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701072618077bOt  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket order by id desc LIMIT ?
+2023-11-27 16:10:19.879 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701072618077bOt  [0;39m ==> Parameters: 10(Integer)
+2023-11-27 16:10:20.133 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701072618077bOt  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:10:20.134 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701072618077bOt  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:10:21.093 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701072618077bOt  [0;39m <==      Total: 1
+2023-11-27 16:10:21.094 INFO  top.chen.train.member.service.TicketService       :52   [32m1701072618077bOt  [0;39m 总行数：1
+2023-11-27 16:10:21.221 INFO  top.chen.train.member.service.TicketService       :53   [32m1701072618077bOt  [0;39m 总页数：1
+2023-11-27 16:10:21.227 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701072618077bOt  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":1},"success":true}
+2023-11-27 16:10:22.236 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701072618077bOt  [0;39m ------------- 结束 耗时：4159 ms -------------
+2023-11-27 16:10:35.293 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 16:10:35.294 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 16:10:35.294 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 16:10:35.294 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701072635294Ik5  [0;39m ------------- 开始 -------------
+2023-11-27 16:10:35.295 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701072635294Ik5  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-mine GET
+2023-11-27 16:10:35.295 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701072635294Ik5  [0;39m 类名方法: top.chen.train.member.controller.PassengerController.queryMine
+2023-11-27 16:10:35.295 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701072635294Ik5  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:10:35.295 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701072635294Ik5  [0;39m 请求参数: []
+2023-11-27 16:10:35.296 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701072635294Ik5  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by name asc
+2023-11-27 16:10:35.297 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701072635294Ik5  [0;39m ==> Parameters: 1(Long)
+2023-11-27 16:10:35.298 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701072635294Ik5  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-11-27 16:10:35.298 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701072635294Ik5  [0;39m <==        Row: 1726848580230189056, 1, ccen, 123456789, 1, null, 2023-11-21 16:23:20.360
+2023-11-27 16:10:35.299 TRACE t.c.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1701072635294Ik5  [0;39m <==        Row: 1726886828423909376, 1, 李四, 456, 1, 2023-11-21 16:54:38.559, 2023-11-21 16:54:38.559
+2023-11-27 16:10:35.299 DEBUG t.c.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1701072635294Ik5  [0;39m <==      Total: 2
+2023-11-27 16:10:35.300 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701072635294Ik5  [0;39m 返回结果: {"content":[{"id":1726848580230189056,"idCard":"123456789","memberId":1,"name":"ccen","type":"1","updateTime":1700555000360},{"createTime":1700556878559,"id":1726886828423909376,"idCard":"456","memberId":1,"name":"李四","type":"1","updateTime":1700556878559}],"success":true}
+2023-11-27 16:10:35.300 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701072635294Ik5  [0;39m ------------- 结束 耗时：6 ms -------------
+2023-11-27 16:12:36.306 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701072756306kcM  [0;39m ------------- 开始 -------------
+2023-11-27 16:12:36.306 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701072756306kcM  [0;39m 请求地址: http://127.0.0.1:8001/member/admin/ticket/query-list GET
+2023-11-27 16:12:36.307 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701072756306kcM  [0;39m 类名方法: top.chen.train.member.controller.admin.TicketAdminController.queryList
+2023-11-27 16:12:36.307 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701072756306kcM  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:12:36.307 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701072756306kcM  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:12:36.307 INFO  top.chen.train.member.service.TicketService       :46   [32m1701072756306kcM  [0;39m 查询页码：1
+2023-11-27 16:12:36.307 INFO  top.chen.train.member.service.TicketService       :47   [32m1701072756306kcM  [0;39m 每页条数：10
+2023-11-27 16:12:36.310 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072756306kcM  [0;39m ==>  Preparing: SELECT count(0) FROM ticket
+2023-11-27 16:12:36.310 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072756306kcM  [0;39m ==> Parameters: 
+2023-11-27 16:12:36.314 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072756306kcM  [0;39m <==    Columns: count(0)
+2023-11-27 16:12:36.314 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072756306kcM  [0;39m <==        Row: 1
+2023-11-27 16:12:36.315 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072756306kcM  [0;39m <==      Total: 1
+2023-11-27 16:12:36.315 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701072756306kcM  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket order by id desc LIMIT ?
+2023-11-27 16:12:36.315 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701072756306kcM  [0;39m ==> Parameters: 10(Integer)
+2023-11-27 16:12:36.316 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701072756306kcM  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:12:36.316 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701072756306kcM  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:12:36.317 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701072756306kcM  [0;39m <==      Total: 1
+2023-11-27 16:12:36.317 INFO  top.chen.train.member.service.TicketService       :52   [32m1701072756306kcM  [0;39m 总行数：1
+2023-11-27 16:12:36.318 INFO  top.chen.train.member.service.TicketService       :53   [32m1701072756306kcM  [0;39m 总页数：1
+2023-11-27 16:12:36.318 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701072756306kcM  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":1},"success":true}
+2023-11-27 16:12:36.318 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701072756306kcM  [0;39m ------------- 结束 耗时：12 ms -------------
+2023-11-27 16:12:47.594 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701072767594MQu  [0;39m ------------- 开始 -------------
+2023-11-27 16:12:47.594 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701072767594MQu  [0;39m 请求地址: http://127.0.0.1:8001/member/admin/ticket/query-list GET
+2023-11-27 16:12:47.594 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701072767594MQu  [0;39m 类名方法: top.chen.train.member.controller.admin.TicketAdminController.queryList
+2023-11-27 16:12:47.594 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701072767594MQu  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:12:47.594 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701072767594MQu  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:12:47.594 INFO  top.chen.train.member.service.TicketService       :46   [32m1701072767594MQu  [0;39m 查询页码：1
+2023-11-27 16:12:47.594 INFO  top.chen.train.member.service.TicketService       :47   [32m1701072767594MQu  [0;39m 每页条数：10
+2023-11-27 16:12:47.594 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072767594MQu  [0;39m ==>  Preparing: SELECT count(0) FROM ticket
+2023-11-27 16:12:47.594 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072767594MQu  [0;39m ==> Parameters: 
+2023-11-27 16:12:47.594 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072767594MQu  [0;39m <==    Columns: count(0)
+2023-11-27 16:12:47.602 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072767594MQu  [0;39m <==        Row: 1
+2023-11-27 16:12:47.602 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072767594MQu  [0;39m <==      Total: 1
+2023-11-27 16:12:47.603 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701072767594MQu  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket order by id desc LIMIT ?
+2023-11-27 16:12:47.603 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701072767594MQu  [0;39m ==> Parameters: 10(Integer)
+2023-11-27 16:12:47.603 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701072767594MQu  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:12:47.603 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701072767594MQu  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:12:47.603 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701072767594MQu  [0;39m <==      Total: 1
+2023-11-27 16:12:47.603 INFO  top.chen.train.member.service.TicketService       :52   [32m1701072767594MQu  [0;39m 总行数：1
+2023-11-27 16:12:47.603 INFO  top.chen.train.member.service.TicketService       :53   [32m1701072767594MQu  [0;39m 总页数：1
+2023-11-27 16:12:47.603 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701072767594MQu  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":1},"success":true}
+2023-11-27 16:12:47.603 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701072767594MQu  [0;39m ------------- 结束 耗时：9 ms -------------
+2023-11-27 16:16:00.229 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701072960229swY  [0;39m ------------- 开始 -------------
+2023-11-27 16:16:00.229 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701072960229swY  [0;39m 请求地址: http://127.0.0.1:8001/member/admin/ticket/query-list GET
+2023-11-27 16:16:00.229 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701072960229swY  [0;39m 类名方法: top.chen.train.member.controller.admin.TicketAdminController.queryList
+2023-11-27 16:16:00.229 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701072960229swY  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:16:00.229 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701072960229swY  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:16:00.229 INFO  top.chen.train.member.service.TicketService       :46   [32m1701072960229swY  [0;39m 查询页码：1
+2023-11-27 16:16:00.229 INFO  top.chen.train.member.service.TicketService       :47   [32m1701072960229swY  [0;39m 每页条数：10
+2023-11-27 16:16:00.235 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072960229swY  [0;39m ==>  Preparing: SELECT count(0) FROM ticket
+2023-11-27 16:16:00.236 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072960229swY  [0;39m ==> Parameters: 
+2023-11-27 16:16:00.236 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072960229swY  [0;39m <==    Columns: count(0)
+2023-11-27 16:16:00.236 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701072960229swY  [0;39m <==        Row: 1
+2023-11-27 16:16:00.236 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701072960229swY  [0;39m <==      Total: 1
+2023-11-27 16:16:00.239 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701072960229swY  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket order by id desc LIMIT ?
+2023-11-27 16:16:00.239 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701072960229swY  [0;39m ==> Parameters: 10(Integer)
+2023-11-27 16:16:00.241 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701072960229swY  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:16:00.241 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701072960229swY  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:16:00.241 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701072960229swY  [0;39m <==      Total: 1
+2023-11-27 16:16:00.241 INFO  top.chen.train.member.service.TicketService       :52   [32m1701072960229swY  [0;39m 总行数：1
+2023-11-27 16:16:00.241 INFO  top.chen.train.member.service.TicketService       :53   [32m1701072960229swY  [0;39m 总页数：1
+2023-11-27 16:16:00.241 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701072960229swY  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":1},"success":true}
+2023-11-27 16:16:00.241 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701072960229swY  [0;39m ------------- 结束 耗时：12 ms -------------
+2023-11-27 16:16:37.356 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-11-27 16:16:37.372 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:16:37.373 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:16:37.374 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-27 16:16:37.376 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-11-27 16:16:37.377 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:16:37.378 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:16:37.381 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-11-27 16:16:37.388 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-11-27 16:16:37.652 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22596 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:16:37.652 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:16:37.795 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2fbb2789-1e11-38fe-97f2-6c0cc5bd0ad5
+2023-11-27 16:16:37.854 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:16:37.854 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:16:37.855 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:16:37.855 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:16:37.864 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:16:37.864 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 210 ms
+2023-11-27 16:16:38.075 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-27 16:16:38.288 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:16:38.290 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:16:38.487 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.066 seconds (process running for 456.983)
+2023-11-27 16:16:38.488 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:16:38.488 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:16:38.488 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:16:39.493 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-27 16:16:39.506 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:16:39.506 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:16:39.507 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:16:39.508 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:16:39.747 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22596 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:16:39.747 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:16:39.840 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2fbb2789-1e11-38fe-97f2-6c0cc5bd0ad5
+2023-11-27 16:16:39.882 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:16:39.882 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:16:39.883 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:16:39.883 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:16:39.891 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:16:39.891 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 143 ms
+2023-11-27 16:16:40.091 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-27 16:16:40.292 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:16:40.293 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:16:40.482 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 0.939 seconds (process running for 458.978)
+2023-11-27 16:16:40.482 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:16:40.482 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:16:40.482 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:17:19.431 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-27 16:17:19.464 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:17:19.464 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:17:19.464 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:17:19.464 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:17:19.874 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22596 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:17:19.874 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:17:20.059 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2fbb2789-1e11-38fe-97f2-6c0cc5bd0ad5
+2023-11-27 16:17:20.139 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:17:20.139 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:17:20.139 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:17:20.139 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:17:20.154 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:17:20.155 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 278 ms
+2023-11-27 16:17:20.534 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-27 16:17:20.823 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:17:20.832 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:17:21.184 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.68 seconds (process running for 499.68)
+2023-11-27 16:17:21.184 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:17:21.184 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:17:21.184 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:17:49.364 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-27 16:17:49.389 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:17:49.389 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-11-27 16:17:49.391 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:17:49.393 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:17:49.813 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 22596 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:17:49.815 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:17:50.003 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2c529e05-dcff-37a1-9e75-023a3446a33e
+2023-11-27 16:17:50.082 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:17:50.083 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:17:50.083 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:17:50.083 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:17:50.094 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:17:50.094 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 278 ms
+2023-11-27 16:17:50.479 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-11-27 16:17:50.855 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:17:50.858 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:17:51.194 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 1.759 seconds (process running for 529.696)
+2023-11-27 16:17:51.194 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-11-27 16:17:51.194 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:17:51.202 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:19:34.683 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-27 16:19:34.683 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-27 16:19:34.683 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-11-27 16:19:34.683 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 16:19:34.683 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 16:19:34.683 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 16:19:34.711 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701073174710ony  [0;39m ------------- 开始 -------------
+2023-11-27 16:19:34.711 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701073174710ony  [0;39m 请求地址: http://127.0.0.1:8001/member/ticket/query-list GET
+2023-11-27 16:19:34.711 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701073174710ony  [0;39m 类名方法: top.chen.train.member.controller.TicketController.query
+2023-11-27 16:19:34.711 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701073174710ony  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:19:34.713 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701073174710ony  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:19:34.713 INFO  top.chen.train.member.service.TicketService       :49   [32m1701073174710ony  [0;39m 查询页码：1
+2023-11-27 16:19:34.713 INFO  top.chen.train.member.service.TicketService       :50   [32m1701073174710ony  [0;39m 每页条数：10
+2023-11-27 16:19:34.733 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1701073174710ony  [0;39m HikariPool-2 - Starting...
+2023-11-27 16:19:34.759 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1701073174710ony  [0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fa9cb94
+2023-11-27 16:19:34.759 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1701073174710ony  [0;39m HikariPool-2 - Start completed.
+2023-11-27 16:19:34.759 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701073174710ony  [0;39m ==>  Preparing: SELECT count(0) FROM ticket WHERE (member_id = ?)
+2023-11-27 16:19:34.759 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701073174710ony  [0;39m ==> Parameters: 1(Long)
+2023-11-27 16:19:34.760 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701073174710ony  [0;39m <==    Columns: count(0)
+2023-11-27 16:19:34.760 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701073174710ony  [0;39m <==        Row: 1
+2023-11-27 16:19:34.761 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701073174710ony  [0;39m <==      Total: 1
+2023-11-27 16:19:34.761 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701073174710ony  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-27 16:19:34.761 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701073174710ony  [0;39m ==> Parameters: 1(Long), 10(Integer)
+2023-11-27 16:19:34.761 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701073174710ony  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:19:34.763 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701073174710ony  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:19:34.763 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701073174710ony  [0;39m <==      Total: 1
+2023-11-27 16:19:34.763 INFO  top.chen.train.member.service.TicketService       :55   [32m1701073174710ony  [0;39m 总行数：1
+2023-11-27 16:19:34.763 INFO  top.chen.train.member.service.TicketService       :56   [32m1701073174710ony  [0;39m 总页数：1
+2023-11-27 16:19:34.763 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701073174710ony  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":1},"success":true}
+2023-11-27 16:19:34.763 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701073174710ony  [0;39m ------------- 结束 耗时：53 ms -------------
+2023-11-27 16:24:48.986 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2023-11-27 16:24:48.990 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2023-11-27 16:27:12.754 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-11-27 16:27:12.805 INFO  top.chen.train.member.config.MemberApplication    :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.4.1 with PID 12416 (D:\program\train\member\target\classes started by ChenQi in D:\program\train)
+2023-11-27 16:27:12.806 INFO  top.chen.train.member.config.MemberApplication    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-11-27 16:27:12.855 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-27 16:27:12.855 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-27 16:27:13.548 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2c529e05-dcff-37a1-9e75-023a3446a33e
+2023-11-27 16:27:14.008 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-11-27 16:27:14.014 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:27:14.015 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-11-27 16:27:14.015 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-27 16:27:14.053 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-11-27 16:27:14.054 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1198 ms
+2023-11-27 16:27:14.662 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-11-27 16:27:14.898 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-11-27 16:27:14.909 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-11-27 16:27:15.106 INFO  top.chen.train.member.config.MemberApplication    :57   [32m                  [0;39m Started MemberApplication in 2.945 seconds (process running for 3.402)
+2023-11-27 16:27:15.110 INFO  top.chen.train.member.config.MemberApplication    :25   [32m                  [0;39m 启动成功！！！
+2023-11-27 16:27:15.110 INFO  top.chen.train.member.config.MemberApplication    :26   [32m                  [0;39m 测试地址：	http://127.0.0.1:8001/hello
+2023-11-27 16:27:22.381 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-27 16:27:22.382 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-11-27 16:27:22.382 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-11-27 16:27:22.398 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 16:27:22.780 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 16:27:22.785 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 16:27:22.851 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701073642849ETG  [0;39m ------------- 开始 -------------
+2023-11-27 16:27:22.852 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701073642849ETG  [0;39m 请求地址: http://127.0.0.1:8001/member/ticket/query-list GET
+2023-11-27 16:27:22.852 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701073642849ETG  [0;39m 类名方法: top.chen.train.member.controller.TicketController.query
+2023-11-27 16:27:22.852 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701073642849ETG  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:27:22.895 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701073642849ETG  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:27:22.898 INFO  top.chen.train.member.service.TicketService       :49   [32m1701073642849ETG  [0;39m 查询页码：1
+2023-11-27 16:27:22.898 INFO  top.chen.train.member.service.TicketService       :50   [32m1701073642849ETG  [0;39m 每页条数：10
+2023-11-27 16:27:22.968 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1701073642849ETG  [0;39m HikariPool-1 - Starting...
+2023-11-27 16:27:23.207 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1701073642849ETG  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66f0147e
+2023-11-27 16:27:23.209 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1701073642849ETG  [0;39m HikariPool-1 - Start completed.
+2023-11-27 16:27:23.214 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701073642849ETG  [0;39m ==>  Preparing: SELECT count(0) FROM ticket WHERE (member_id = ?)
+2023-11-27 16:27:23.228 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701073642849ETG  [0;39m ==> Parameters: 1(Long)
+2023-11-27 16:27:23.242 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701073642849ETG  [0;39m <==    Columns: count(0)
+2023-11-27 16:27:23.242 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701073642849ETG  [0;39m <==        Row: 1
+2023-11-27 16:27:23.243 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701073642849ETG  [0;39m <==      Total: 1
+2023-11-27 16:27:23.247 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701073642849ETG  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-27 16:27:23.249 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701073642849ETG  [0;39m ==> Parameters: 1(Long), 10(Integer)
+2023-11-27 16:27:23.250 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701073642849ETG  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:27:23.253 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701073642849ETG  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:27:23.254 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701073642849ETG  [0;39m <==      Total: 1
+2023-11-27 16:27:23.255 INFO  top.chen.train.member.service.TicketService       :55   [32m1701073642849ETG  [0;39m 总行数：1
+2023-11-27 16:27:23.256 INFO  top.chen.train.member.service.TicketService       :56   [32m1701073642849ETG  [0;39m 总页数：1
+2023-11-27 16:27:23.266 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701073642849ETG  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":1},"success":true}
+2023-11-27 16:27:23.266 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701073642849ETG  [0;39m ------------- 结束 耗时：417 ms -------------
+2023-11-27 16:27:33.260 INFO  t.chen.train.common.interceptor.MemberInterceptor :28   [32m                  [0;39m 获取会员登录token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDEwNjg2NTEsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTE1NTA1MSwiaWF0IjoxNzAxMDY4NjUxfQ.YDMKgWXE2jc4TfhISDSgEcdUhByyOJPvLlLDWLNh5ug
+2023-11-27 16:27:33.261 INFO  top.chen.train.common.util.JwtUtil                :58   [32m                  [0;39m 根据token获取原始内容：{"mobile":"13951905171","id":1}
+2023-11-27 16:27:33.261 INFO  t.chen.train.common.interceptor.MemberInterceptor :30   [32m                  [0;39m 当前登录会员：{"mobile":"13951905171","id":1}
+2023-11-27 16:27:33.262 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701073653262MJW  [0;39m ------------- 开始 -------------
+2023-11-27 16:27:33.262 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701073653262MJW  [0;39m 请求地址: http://127.0.0.1:8001/member/ticket/query-list GET
+2023-11-27 16:27:33.263 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701073653262MJW  [0;39m 类名方法: top.chen.train.member.controller.TicketController.query
+2023-11-27 16:27:33.263 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701073653262MJW  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:27:33.263 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701073653262MJW  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:27:33.263 INFO  top.chen.train.member.service.TicketService       :49   [32m1701073653262MJW  [0;39m 查询页码：1
+2023-11-27 16:27:33.263 INFO  top.chen.train.member.service.TicketService       :50   [32m1701073653262MJW  [0;39m 每页条数：10
+2023-11-27 16:27:33.269 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701073653262MJW  [0;39m ==>  Preparing: SELECT count(0) FROM ticket WHERE (member_id = ?)
+2023-11-27 16:27:33.272 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701073653262MJW  [0;39m ==> Parameters: 1(Long)
+2023-11-27 16:27:33.273 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701073653262MJW  [0;39m <==    Columns: count(0)
+2023-11-27 16:27:33.274 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701073653262MJW  [0;39m <==        Row: 1
+2023-11-27 16:27:33.274 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701073653262MJW  [0;39m <==      Total: 1
+2023-11-27 16:27:33.275 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701073653262MJW  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-11-27 16:27:33.277 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701073653262MJW  [0;39m ==> Parameters: 1(Long), 10(Integer)
+2023-11-27 16:27:33.278 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701073653262MJW  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:27:33.280 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701073653262MJW  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:27:33.282 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701073653262MJW  [0;39m <==      Total: 1
+2023-11-27 16:27:33.282 INFO  top.chen.train.member.service.TicketService       :55   [32m1701073653262MJW  [0;39m 总行数：1
+2023-11-27 16:27:33.283 INFO  top.chen.train.member.service.TicketService       :56   [32m1701073653262MJW  [0;39m 总页数：1
+2023-11-27 16:27:33.283 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701073653262MJW  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":1},"success":true}
+2023-11-27 16:27:33.284 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701073653262MJW  [0;39m ------------- 结束 耗时：22 ms -------------
+2023-11-27 16:28:34.532 INFO  top.chen.train.common.aspect.LogAspect            :56   [32m1701073714532gMG  [0;39m ------------- 开始 -------------
+2023-11-27 16:28:34.533 INFO  top.chen.train.common.aspect.LogAspect            :57   [32m1701073714532gMG  [0;39m 请求地址: http://127.0.0.1:8001/member/admin/ticket/query-list GET
+2023-11-27 16:28:34.533 INFO  top.chen.train.common.aspect.LogAspect            :58   [32m1701073714532gMG  [0;39m 类名方法: top.chen.train.member.controller.admin.TicketAdminController.queryList
+2023-11-27 16:28:34.533 INFO  top.chen.train.common.aspect.LogAspect            :59   [32m1701073714532gMG  [0;39m 远程地址: 127.0.0.1
+2023-11-27 16:28:34.534 INFO  top.chen.train.common.aspect.LogAspect            :80   [32m1701073714532gMG  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-11-27 16:28:34.535 INFO  top.chen.train.member.service.TicketService       :49   [32m1701073714532gMG  [0;39m 查询页码：1
+2023-11-27 16:28:34.535 INFO  top.chen.train.member.service.TicketService       :50   [32m1701073714532gMG  [0;39m 每页条数：10
+2023-11-27 16:28:34.539 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701073714532gMG  [0;39m ==>  Preparing: SELECT count(0) FROM ticket
+2023-11-27 16:28:34.540 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701073714532gMG  [0;39m ==> Parameters: 
+2023-11-27 16:28:34.542 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701073714532gMG  [0;39m <==    Columns: count(0)
+2023-11-27 16:28:34.543 TRACE t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :143  [32m1701073714532gMG  [0;39m <==        Row: 1
+2023-11-27 16:28:34.543 DEBUG t.c.t.m.mapper.TicketMapper.selectByExample_COUNT :137  [32m1701073714532gMG  [0;39m <==      Total: 1
+2023-11-27 16:28:34.544 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701073714532gMG  [0;39m ==>  Preparing: select id, member_id, passenger_id, passenger_name, `date`, train_code, carriage_index, `row`, col, `start`, start_time, `end`, end_time, seat_type, create_time, update_time from ticket order by id desc LIMIT ?
+2023-11-27 16:28:34.544 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701073714532gMG  [0;39m ==> Parameters: 10(Integer)
+2023-11-27 16:28:34.546 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701073714532gMG  [0;39m <==    Columns: id, member_id, passenger_id, passenger_name, date, train_code, carriage_index, row, col, start, start_time, end, end_time, seat_type, create_time, update_time
+2023-11-27 16:28:34.547 TRACE t.c.t.member.mapper.TicketMapper.selectByExample  :143  [32m1701073714532gMG  [0;39m <==        Row: 1729049938081484800, 1, 1726848580230189056, ccen, 2023-11-28, G1, 2, 01, D, 徐州站, 14:10:00, 北京站, 18:00:00, 2, 2023-11-27 16:10:04.084, 2023-11-27 16:10:04.084
+2023-11-27 16:28:34.548 DEBUG t.c.t.member.mapper.TicketMapper.selectByExample  :137  [32m1701073714532gMG  [0;39m <==      Total: 1
+2023-11-27 16:28:34.548 INFO  top.chen.train.member.service.TicketService       :55   [32m1701073714532gMG  [0;39m 总行数：1
+2023-11-27 16:28:34.549 INFO  top.chen.train.member.service.TicketService       :56   [32m1701073714532gMG  [0;39m 总页数：1
+2023-11-27 16:28:34.550 INFO  top.chen.train.common.aspect.LogAspect            :92   [32m1701073714532gMG  [0;39m 返回结果: {"content":{"list":[{"carriageIndex":2,"col":"D","createTime":1701072604084,"date":1701100800000,"end":"北京站","endTime":36000000,"id":1729049938081484800,"memberId":1,"passengerId":1726848580230189056,"passengerName":"ccen","row":"01","seatType":"2","start":"徐州站","startTime":22200000,"trainCode":"G1","updateTime":1701072604084}],"total":1},"success":true}
+2023-11-27 16:28:34.551 INFO  top.chen.train.common.aspect.LogAspect            :93   [32m1701073714532gMG  [0;39m ------------- 结束 耗时：19 ms -------------
+2023-11-27 16:33:13.719 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-11-27 16:33:13.729 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
