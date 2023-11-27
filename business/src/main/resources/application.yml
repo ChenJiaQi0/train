@@ -11,11 +11,22 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  cache:
+    type: redis
+    redis:
+      use-key-prefix: true
+      key-prefix: train_cache_
+      cache-null-values: false
+      time-to-live: 60s
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   configuration:
-    local-cache-scope: session
+    local-cache-scope: statement
 
 logging:
   level:
