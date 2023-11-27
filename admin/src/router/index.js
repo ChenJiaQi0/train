@@ -39,6 +39,10 @@ const routes = [
           {
             path: 'programmers',
             component: () => import('../views/main/business/programmers.vue')
+          },
+          {
+            path: 'confirm-order',
+            component: () => import('../views/main/business/confirm-order.vue')
           }
         ]
       },
