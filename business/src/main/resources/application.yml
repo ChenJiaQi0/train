@@ -22,6 +22,11 @@ spring:
       key-prefix: train_cache_
       cache-null-values: true
       time-to-live: 60s
+  cloud:
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
