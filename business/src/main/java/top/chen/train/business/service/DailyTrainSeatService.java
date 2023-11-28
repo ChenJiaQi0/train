@@ -93,7 +93,7 @@ public class DailyTrainSeatService {
 
         //
         List<TrainStation> stationList = trainStationService.selectByTrainCode(trainCode);
-        String sell = StrUtil.fillBefore("", '0', stationList.size() - 1);
+        String sell = StrUtil.fillBefore("", '0', stationList.size());
 
         // 查出某车次的所有座位信息
         List<TrainSeat> seatList = trainSeatService.selectByTrainCode(trainCode);

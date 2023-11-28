@@ -1,0 +1,19 @@
+POST http://localhost:8000/business/confirm-order/do
+Content-Type: application/json
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDExNTA0OTYsIm1vYmlsZSI6IjEzOTUxOTA1MTcxIiwiaWQiOjEsImV4cCI6MTcwMTIzNjg5NiwiaWF0IjoxNzAxMTUwNDk2fQ._HjaE8Gi7DOY6oVGB26RYlF-btwNiEUGvgRFSKxjNCg
+
+{
+  "dailyTrainTicketId":1729385193988558848,
+  "date":1701273600000,
+  "end":"北京站",
+  "start":"徐州站",
+  "tickets":[
+    {"passengerId":1726848580230189056,
+      "passengerIdCard":"123456789",
+      "passengerName":"ccen",
+      "passengerType":"1",
+      "seatTypeCode":"2"
+    }
+  ],
+  "trainCode":"G1"
+}

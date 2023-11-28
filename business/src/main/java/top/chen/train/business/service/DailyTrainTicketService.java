@@ -59,18 +59,18 @@ public class DailyTrainTicketService {
         }
     }
 
-    @Cacheable(value = "DailyTrainTicketService.queryList3")
+//    @Cacheable(value = "DailyTrainTicketService.queryList3")
     public PageResp<DailyTrainTicketQueryResp> queryList3(DailyTrainTicketQueryReq req) {
         LOG.info("测试缓存击穿");
         return null;
     }
 
-    @CachePut(value = "DailyTrainTicketService.queryList")
+//    @CachePut(value = "DailyTrainTicketService.queryList")
     public PageResp<DailyTrainTicketQueryResp> queryList2(DailyTrainTicketQueryReq req){
         return queryList(req);
     }
 
-    @Cacheable(value = "DailyTrainTicketService.queryList")
+//    @Cacheable(value = "DailyTrainTicketService.queryList")
     public PageResp<DailyTrainTicketQueryResp> queryList(DailyTrainTicketQueryReq req) {
         DailyTrainTicketExample dailyTrainTicketExample = new DailyTrainTicketExample();
         dailyTrainTicketExample.setOrderByClause("id desc");
