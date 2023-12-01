@@ -14,7 +14,6 @@ import top.chen.train.business.mapper.ConfirmOrderMapper;
 import top.chen.train.business.mapper.DailyTrainSeatMapper;
 import top.chen.train.business.mapper.DailyTrainTicketMapperCust;
 import top.chen.train.business.req.ConfirmOrderTicketReq;
-import top.chen.train.common.context.LoginMemberContext;
 import top.chen.train.common.req.MemberTicketReq;
 import top.chen.train.common.resp.CommonResp;
 
@@ -109,7 +108,8 @@ public class AfterConfirmOrderService {
 
             // 调用会员服务接口，为会员增加一张车票
             MemberTicketReq memberTicketReq = new MemberTicketReq();
-            memberTicketReq.setMemberId(LoginMemberContext.getId());
+//            memberTicketReq.setMemberId(LoginMemberContext.getId());
+            memberTicketReq.setMemberId(confirmOrder.getMemberId());
             memberTicketReq.setPassengerId(tickets.get(j).getPassengerId());
             memberTicketReq.setPassengerName(tickets.get(j).getPassengerName());
             memberTicketReq.setDate(dailyTrainTicket.getDate());
