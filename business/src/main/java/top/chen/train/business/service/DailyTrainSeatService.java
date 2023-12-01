@@ -8,17 +8,22 @@ import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import top.chen.train.business.domain.*;
-import top.chen.train.common.resp.PageResp;
-import top.chen.train.common.util.SnowUtil;
-import top.chen.train.business.mapper.DailyTrainSeatMapper;
-import top.chen.train.business.req.DailyTrainSeatQueryReq;
-import top.chen.train.business.req.DailyTrainSeatSaveReq;
-import top.chen.train.business.resp.DailyTrainSeatQueryResp;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import top.chen.train.business.domain.DailyTrainSeat;
+import top.chen.train.business.domain.DailyTrainSeatExample;
+import top.chen.train.business.domain.TrainSeat;
+import top.chen.train.business.domain.TrainStation;
+import top.chen.train.business.mapper.DailyTrainSeatMapper;
+import top.chen.train.business.req.DailyTrainSeatQueryReq;
+import top.chen.train.business.req.DailyTrainSeatSaveReq;
+import top.chen.train.business.req.SeatSellReq;
+import top.chen.train.business.resp.DailyTrainSeatQueryResp;
+import top.chen.train.business.resp.SeatSellResp;
+import top.chen.train.common.resp.PageResp;
+import top.chen.train.common.util.SnowUtil;
 
 import java.util.Date;
 import java.util.List;
@@ -149,5 +154,20 @@ public class DailyTrainSeatService {
                 .andTrainCodeEqualTo(trainCode)
                 .andCarriageIndexEqualTo(carriageIndex);
         return dailyTrainSeatMapper.selectByExample(example);
+    }
+
+    /**
+     * 查询某日某车次的所有座位
+     */
+    public List<SeatSellResp> querySeatSell(SeatSellReq req) {
+        Date date = req.getDate();
+        String trainCode = req.getTrainCode();
+        LOG.info("查询日期【{}】车次【{}】的座位销售信息", DateUtil.formatDate(date), trainCode);
+        DailyTrainSeatExample dailyTrainSeatExample = new DailyTrainSeatExample();
+        dailyTrainSeatExample.setOrderByClause("`carriage_index` asc, carriage_seat_index asc");
+        dailyTrainSeatExample.createCriteria()
+                .andDateEqualTo(date)
+                .andTrainCodeEqualTo(trainCode);
+        return BeanUtil.copyToList(dailyTrainSeatMapper.selectByExample(dailyTrainSeatExample), SeatSellResp.class);
     }
 }
