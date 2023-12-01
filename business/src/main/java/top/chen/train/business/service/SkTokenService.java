@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import top.chen.train.business.domain.SkToken;
 import top.chen.train.business.domain.SkTokenExample;
 import top.chen.train.business.mapper.SkTokenMapper;
+import top.chen.train.business.mapper.SkTokenMapperCust;
 import top.chen.train.business.req.SkTokenQueryReq;
 import top.chen.train.business.req.SkTokenSaveReq;
 import top.chen.train.business.resp.SkTokenQueryResp;
@@ -34,6 +35,8 @@ public class SkTokenService {
 
     @Resource
     private SkTokenMapper skTokenMapper;
+    @Resource
+    private SkTokenMapperCust skTokenMapperCust;
 
     public void save(SkTokenSaveReq req) {
         DateTime now = DateTime.now();
@@ -101,5 +104,15 @@ public class SkTokenService {
         skToken.setCount(count);
 
         skTokenMapper.insert(skToken);
+    }
+
+    /**
+     * 获取令牌
+     */
+    public boolean validSkToken(Date date, String trainCode, Long memberId) {
+        LOG.info("会员【{}】获取日期【{}】车次【{}】的令牌开始", memberId, DateUtil.formatDate(date), trainCode);
+        // 令牌约等于库存，令牌没有了，就不再卖票，不需要再进入购票主流程去判断库存，判断令牌肯定比判断库存效率高
+        int updateCount = skTokenMapperCust.decrease(date, trainCode);
+        return updateCount > 0;
     }
 }

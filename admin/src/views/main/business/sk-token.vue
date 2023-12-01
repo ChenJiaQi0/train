@@ -20,7 +20,7 @@
   <a-modal v-model:visible="visible" title="秒杀令牌" @ok="handleOk" ok-text="确认" cancel-text="取消">
     <a-form :model="skToken" :label-col="{span: 4}" :wrapper-col="{ span: 20 }">
       <a-form-item label="日期">
-        <a-date-picker v-model:value="skToken.date" valueFormat="YYYY-MM-DD" placeholder="请选择日期" />
+        <a-date-picker v-model:value="skToken.date" valueFormat="YYYY-MM-dd" placeholder="请选择日期" />
       </a-form-item>
       <a-form-item label="车次编号">
         <a-input v-model:value="skToken.trainCode" />

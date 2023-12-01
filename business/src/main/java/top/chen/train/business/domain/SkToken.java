@@ -10,9 +10,9 @@ public class SkToken {
     private String trainCode;
 
     private Integer count;
-
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
     private Date createTime;
-
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
     private Date updateTime;
 
     public Long getId() {
