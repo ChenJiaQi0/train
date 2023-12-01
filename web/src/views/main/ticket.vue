@@ -12,7 +12,8 @@
   <a-table :dataSource="dailyTrainTickets" :columns="columns" :pagination="pagination" @change="handleTableChange" :loading="loading">
     <template #bodyCell="{ column, record }">
       <template v-if="column.dataIndex === 'operation'">
-        <a-button type="primary" @click="toOrder(record)">预订</a-button>
+        <a-button type="primary" @click="toOrder(record)" style="margin-right: 5px">预订</a-button>
+        <a-button type="primary" @click="showStation(record)">途径车站</a-button>
       </template>
       <template v-else-if="column.dataIndex === 'station'">
         {{ record.start }}<br />
@@ -69,6 +70,29 @@
       </template>
     </template>
   </a-table>
+
+  <!-- 途经车站 -->
+  <a-modal style="top: 30px" v-model:visible="visible" :title="null" :footer="null" :closable="false">
+    <a-table :data-source="stations" :pagination="false">
+      <a-table-column key="index" title="站序" data-index="index" />
+      <a-table-column key="name" title="站名" data-index="name" />
+      <a-table-column key="inTime" title="进站时间" data-index="inTime">
+        <template #default="{ record }">
+          {{record.index === 0 ? '-' : record.inTime}}
+        </template>
+      </a-table-column>
+      <a-table-column key="outTime" title="出站时间" data-index="outTime">
+        <template #default="{ record }">
+          {{record.index === (stations.length - 1) ? '-' : record.outTime}}
+        </template>
+      </a-table-column>
+      <a-table-column key="stopTime" title="停站时长" data-index="stopTime">
+        <template #default="{ record }">
+          {{record.index === 0 || record.index === (stations.length - 1) ? '-' : record.stopTime}}
+        </template>
+      </a-table-column>
+    </a-table>
+  </a-modal>
 </template>
 
 <script setup>
@@ -79,6 +103,25 @@ import TrainSelectView from '@/components/train-select'
 import StationSelectView from '@/components/station-select'
 import dayjs from 'dayjs'
 import router from '@/router'
+
+// ---------------------- 途经车站 ----------------------
+const stations = ref([])
+const showStation = record => {
+  visible.value = true
+  axios.get('/business/daily-train-station/query-by-train-code', {
+    params: {
+      date: record.date,
+      trainCode: record.trainCode
+    }
+  }).then((response) => {
+    const data = response.data
+    if (data.success) {
+      stations.value = data.content
+    } else {
+      notification.error({ description: data.message })
+    }
+  })
+}
 
 const toOrder = (record) => {
   dailyTrainTicket.value = Tool.copy(record)
