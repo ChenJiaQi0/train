@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import top.chen.train.business.req.ConfirmOrderDoReq;
+import top.chen.train.business.service.BeforeConfirmOrderService;
 import top.chen.train.business.service.ConfirmOrderService;
 import top.chen.train.common.resp.CommonResp;
 
@@ -29,6 +30,8 @@ public class ConfirmOrderController {
     private ConfirmOrderService confirmOrderService;
     @Autowired
     private StringRedisTemplate redisTemplate;
+    @Resource
+    private BeforeConfirmOrderService beforeConfirmOrderService;
 
     // 接口的资源名称不要和接口路径一致，会导致限流后走不到降级方法中
     @SentinelResource(value = "confirmOrderDo", blockHandler = "doConfirmBlock")
@@ -49,7 +52,7 @@ public class ConfirmOrderController {
             // 验证通过后，移除验证码
             redisTemplate.delete(imageCodeToken);
         }
-        confirmOrderService.doConfirm(req);
+        beforeConfirmOrderService.beforeDoConfirm(req);
         return new CommonResp<>();
     }
 }
