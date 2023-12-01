@@ -2,7 +2,7 @@
   <p>
     <a-space style="float: left;">
       <train-select-view v-model="params.trainCode" width="200px" />
-      <a-date-picker v-model:value="params.date" valueFormat="YYYY-MM-DD" placeholder="请选择日期" />
+      <a-date-picker v-model:value="params.date" valueFormat="YYYY-MM-DD" placeholder="请选择日期" :disabled-date="disabledDate" />
       <station-select-view v-model="params.start" width="200px" />
       <station-select-view v-model="params.end" width="200px" />
       <a-button type="primary" @click="handleQuery()">查找</a-button>
@@ -12,7 +12,7 @@
   <a-table :dataSource="dailyTrainTickets" :columns="columns" :pagination="pagination" @change="handleTableChange" :loading="loading">
     <template #bodyCell="{ column, record }">
       <template v-if="column.dataIndex === 'operation'">
-        <a-button type="primary" @click="toOrder(record)" style="margin-right: 5px">预订</a-button>
+        <a-button type="primary" @click="toOrder(record)" :disabled="isExpire(record)" style="margin-right: 5px">{{isExpire(record) ? "过期" : "预订"}}</a-button>
         <router-link style="margin-right: 5px" :to="{
           path: '/seat',
           query: {
@@ -116,6 +116,24 @@ import TrainSelectView from '@/components/train-select'
 import StationSelectView from '@/components/station-select'
 import dayjs from 'dayjs'
 import router from '@/router'
+
+// 判断是否过期
+const isExpire = (record) => {
+  // 标准时间：2000/01/01 00:00:00
+  const startDateTimeString = record.date.replace(/-/g, '/') + ' ' + record.startTime
+  const startDateTime = new Date(startDateTimeString)
+
+  // 当前时间
+  const now = new Date()
+
+  console.log(startDateTime)
+  return now.valueOf() >= startDateTime.valueOf()
+}
+
+// 不能选择今天以前及两周以后的日期
+const disabledDate = current => {
+  return current && (current <= dayjs().add(-1, 'day') || current > dayjs().add(14, 'day'))
+}
 
 // ---------------------- 途经车站 ----------------------
 const stations = ref([])
