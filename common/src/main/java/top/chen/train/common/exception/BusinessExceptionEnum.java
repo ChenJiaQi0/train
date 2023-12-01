@@ -22,7 +22,7 @@ public enum BusinessExceptionEnum {
     CONFIRM_ORDER_EXCEPTION("服务器忙，请稍候重试"),
     CONFIRM_ORDER_LOCK_FAIL("当前抢票人数多，请稍候重试"),
     CONFIRM_ORDER_FLOW_EXCEPTION("当前抢票人数多，请稍候重试"),
-    CONFIRM_ORDER_SK_TOKEN_FAIL("票已抢光");
+    CONFIRM_ORDER_SK_TOKEN_FAIL("当前抢票人数过多，请5秒后重试");
 
     private String desc;
 
