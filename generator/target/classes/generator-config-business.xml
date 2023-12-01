@@ -41,6 +41,6 @@
                              targetPackage="top.chen.train.business.mapper"
                              type="XMLMAPPER"/>
 
-        <table tableName="student" domainObjectName="Student" />
+        <table tableName="sk_token" domainObjectName="SkToken" />
     </context>
 </generatorConfiguration>
