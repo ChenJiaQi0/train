@@ -23,7 +23,7 @@ public class ServerGenerator {
     static String serverPath = "[module]/src/main/java/top/chen/train/[module]/";
     static String vuePath = "admin/src/views/main/business/";
     // 配置生成只读的页面代码
-    static boolean readOnly = true;
+    static boolean readOnly = false;
     static String pomPath = "generator/pom.xml";
     static {
         new File(servicePath).mkdirs();

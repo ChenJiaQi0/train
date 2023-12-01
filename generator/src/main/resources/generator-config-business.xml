@@ -41,6 +41,6 @@
                              targetPackage="top.chen.train.business.mapper"
                              type="XMLMAPPER"/>
 
-        <table tableName="confirm_order" domainObjectName="ConfirmOrder" />
+        <table tableName="student" domainObjectName="Student" />
     </context>
 </generatorConfiguration>

@@ -1,0 +1,9 @@
+GET http://localhost:8000/business/admin/student/query-list?page=1&size=10
+Accept: application/json
+
+###
+
+GET http://localhost:8000/business/admin/student/query-all?school=西北
+Accept: application/json
+
+###
