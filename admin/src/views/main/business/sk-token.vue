@@ -2,16 +2,16 @@
   <p>
     <a-space style="float: left;">
       <a-button type="primary" @click="handleQuery()">刷新</a-button>
-      <a-button type="primary" @click="onAdd">新增</a-button>
+      <!-- <a-button type="primary" @click="onAdd">新增</a-button> -->
     </a-space>
   </p>
   <a-table :dataSource="skTokens" :columns="columns" :pagination="pagination" @change="handleTableChange" :loading="loading">
     <template #bodyCell="{ column, record }">
       <template v-if="column.dataIndex === 'operation'">
         <a-space>
-          <a-popconfirm title="删除后不可恢复，确认删除?" @confirm="onDelete(record)" ok-text="确认" cancel-text="取消">
+          <!-- <a-popconfirm title="删除后不可恢复，确认删除?" @confirm="onDelete(record)" ok-text="确认" cancel-text="取消">
             <a style="color: red">删除</a>
-          </a-popconfirm>
+          </a-popconfirm> -->
           <a @click="onEdit(record)">编辑</a>
         </a-space>
       </template>

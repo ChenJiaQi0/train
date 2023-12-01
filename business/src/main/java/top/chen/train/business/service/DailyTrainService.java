@@ -7,20 +7,19 @@ import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import top.chen.train.business.domain.DailyTrainSeatExample;
-import top.chen.train.business.domain.Train;
-import top.chen.train.common.resp.PageResp;
-import top.chen.train.common.util.SnowUtil;
-import top.chen.train.business.domain.DailyTrain;
-import top.chen.train.business.domain.DailyTrainExample;
-import top.chen.train.business.mapper.DailyTrainMapper;
-import top.chen.train.business.req.DailyTrainQueryReq;
-import top.chen.train.business.req.DailyTrainSaveReq;
-import top.chen.train.business.resp.DailyTrainQueryResp;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import top.chen.train.business.domain.DailyTrain;
+import top.chen.train.business.domain.DailyTrainExample;
+import top.chen.train.business.domain.Train;
+import top.chen.train.business.mapper.DailyTrainMapper;
+import top.chen.train.business.req.DailyTrainQueryReq;
+import top.chen.train.business.req.DailyTrainSaveReq;
+import top.chen.train.business.resp.DailyTrainQueryResp;
+import top.chen.train.common.resp.PageResp;
+import top.chen.train.common.util.SnowUtil;
 
 import java.util.Date;
 import java.util.List;
@@ -42,6 +41,8 @@ public class DailyTrainService {
     private DailyTrainSeatService dailyTrainSeatService;
     @Resource
     private DailyTrainTicketService dailyTrainTicketService;
+    @Resource
+    private SkTokenService skTokenService;
 
     public void save(DailyTrainSaveReq req) {
         DateTime now = DateTime.now();
@@ -137,5 +138,8 @@ public class DailyTrainService {
         // 生成每日该车次余票信息
         dailyTrainTicketService.genDaily(dailyTrain, date, train.getCode());
         LOG.info("生成日期：【{}】车次【{}】的余票信息结束", DateUtil.formatDate(date), train.getCode());
+
+        // 生成令牌余量数量
+        skTokenService.genDaily(date, train.getCode());
     }
 }
