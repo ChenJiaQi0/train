@@ -281,7 +281,9 @@ const handleOk = () => {
     trainCode: dailyTrainTicket.trainCode,
     start: dailyTrainTicket.start,
     end: dailyTrainTicket.end,
-    tickets: tickets.value
+    tickets: tickets.value,
+    imageCodeToken: imageCodeToken.value,
+    imageCode: imageCode.value
   }).then((resp) => {
     const data = resp.data
     if (data.success) {
